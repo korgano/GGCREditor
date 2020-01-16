@@ -1,11 +1,14 @@
-﻿using System;
+﻿using GGCREditorLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace GGCREditor
 {
@@ -44,6 +47,7 @@ namespace GGCREditor
                     config.Save();
 
                     this.currentDir = dialog.SelectedPath;
+                    GGCRStaticConfig.PATH = this.currentDir;
                     enableAll();
                     tslblDir.Text = this.currentDir;
                 }
@@ -52,8 +56,7 @@ namespace GGCREditor
 
         private void btnEditUser_Click(object sender, EventArgs e)
         {
-            string url = this.currentDir + "\\resident\\CharacterSpecList.pkd";
-            FrmEditPeople form = FrmEditPeople.CreateForm(url);
+            FrmEditPeople form = FrmEditPeople.CreateForm();
             form.Show();
             form.BringToFront();
         }
@@ -66,50 +69,114 @@ namespace GGCREditor
             {
                 this.currentDir = config.AppSettings.Settings["path"].Value;
                 tslblDir.Text = this.currentDir;
+                GGCRStaticConfig.PATH = this.currentDir;
                 enableAll();
             }
+
+            if (config.AppSettings.Settings["language"] != null)
+            {
+                showLanguage(config.AppSettings.Settings["language"].Value);
+            }
+            else
+            {
+                showLanguage("schinese");
+            }
+
         }
 
         private void enableAll()
         {
-            btnEditMaster.Enabled = true;
-            btnEditGundam.Enabled = true;
-            btnSearch.Enabled = true;
-            btnSearchWeapon.Enabled = true;
-            btnEditWeapon.Enabled = true;
+            flowContainer.Enabled = true;
+            flowContainer2.Enabled = true;
         }
 
         private void btnEditGundam_Click(object sender, EventArgs e)
         {
-            string url = this.currentDir + "\\resident\\MachineSpecList.pkd";
-
-            new FrmEditGundam(url).ShowDialog();
+            new FrmEditGundam().ShowDialog();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            string url = this.currentDir + "\\resident\\MachineSpecList.pkd";
-
-            FrmSearchGundam form = FrmSearchGundam.CreateForm(url);
-            form.Show();
-            form.BringToFront();
-        }
-
-        private void btnSearchWeapon_Click(object sender, EventArgs e)
-        {
-            string url = this.currentDir + "\\resident\\MachineSpecList.pkd";
-
-            FrmSearchWeapon form = FrmSearchWeapon.CreateForm(url);
-            form.Show();
-            form.BringToFront();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string url = this.currentDir + "\\resident\\MachineSpecList.pkd";
-
-            FrmEditWeapon form = new FrmEditWeapon(url);
+            FrmEditWeapon form = new FrmEditWeapon();
             form.ShowDialog();
         }
+
+        private void btnEditText_Click(object sender, EventArgs e)
+        {
+            FrmEditText form = new FrmEditText(GGCRStaticConfig.PATH + @"\language\" + GGCRStaticConfig.Language + @"\CharacterSpecList.tbl");
+            form.ShowDialog();
+        }
+
+        private void btnEditMachineTxt_Click(object sender, EventArgs e)
+        {
+            FrmEditText form = new FrmEditText(GGCRStaticConfig.PATH + @"\language\" + GGCRStaticConfig.Language + @"\MachineSpecList.tbl");
+            form.ShowDialog();
+        }
+
+        private void btnEditMachineDesc_Click(object sender, EventArgs e)
+        {
+            FrmEditText form = new FrmEditText(GGCRStaticConfig.PATH + @"\language\" + GGCRStaticConfig.Language + @"\SpecProfileList.tbl");
+            form.ShowDialog();
+        }
+
+        private void btnEditAbility_Click(object sender, EventArgs e)
+        {
+            FrmEditText form = new FrmEditText(GGCRStaticConfig.PATH + @"\language\" + GGCRStaticConfig.Language + @"\AbilitySpecList.tbl");
+            form.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "TBL文件|*.tbl";
+            // dialog.InitialDirectory = GGCRStaticConfig.PATH;
+            dialog.RestoreDirectory = true;
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                FrmEditText form = new FrmEditText(dialog.FileName);
+                form.ShowDialog();
+            }
+        }
+
+        private void btnEditAbility_Click_1(object sender, EventArgs e)
+        {
+            FrmEditAbility form = new FrmEditAbility();
+            form.ShowDialog();
+        }
+
+        private void koreanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+            if (config.AppSettings.Settings["language"] == null)
+            {
+                config.AppSettings.Settings.Add("language", (sender as ToolStripMenuItem).Tag.ToString());
+            }
+            config.AppSettings.Settings["language"].Value = (sender as ToolStripMenuItem).Tag.ToString();
+            config.Save();
+
+            showLanguage((sender as ToolStripMenuItem).Tag.ToString());
+        }
+
+        private void showLanguage(string language)
+        {
+            lblLang.Text = language;
+            GGCRStaticConfig.Language = language;
+
+            foreach (ToolStripDropDownItem item in tsmiLanguage.DropDownItems)
+            {
+                if ((item.Tag != null ? item.Tag.ToString() : "") == language)
+                {
+                    (item as ToolStripMenuItem).Checked = true;
+                }
+                else
+                {
+                    (item as ToolStripMenuItem).Checked = false;
+                }
+            }
+        }
+
     }
 }

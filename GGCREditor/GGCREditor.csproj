@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\exe\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,6 +34,9 @@
     <ApplicationIcon>2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -43,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmEditAbility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditAbility.Designer.cs">
+      <DependentUpon>FrmEditAbility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditMachineConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditMachineConvert.Designer.cs">
+      <DependentUpon>FrmEditMachineConvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditText.Designer.cs">
+      <DependentUpon>FrmEditText.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditWeapon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,20 +88,19 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSearchWeapon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSearchWeapon.Designer.cs">
-      <DependentUpon>FrmSearchWeapon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSearchGundam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSearchGundam.Designer.cs">
-      <DependentUpon>FrmSearchGundam.cs</DependentUpon>
-    </Compile>
+    <Compile Include="IndexText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZipHelper.cs" />
+    <EmbeddedResource Include="FrmEditAbility.resx">
+      <DependentUpon>FrmEditAbility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditMachineConvert.resx">
+      <DependentUpon>FrmEditMachineConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditText.resx">
+      <DependentUpon>FrmEditText.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEditWeapon.resx">
       <DependentUpon>FrmEditWeapon.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,12 +113,6 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSearchWeapon.resx">
-      <DependentUpon>FrmSearchWeapon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSearchGundam.resx">
-      <DependentUpon>FrmSearchGundam.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,6 +122,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,19 +141,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2.ico" />
-    <Content Include="机体能力.txt">
+    <Content Include="招聘可能.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="机体数据.txt">
+    <Content Include="占地面积.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="人物数据.txt">
+    <Content Include="射程代码.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="固有技能.txt">
+    <Content Include="换装动作.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="武器数据.txt">
+    <Content Include="成长规律.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="武器类型.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -32,17 +32,37 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ByteHelper.cs" />
-    <Compile Include="GundamFile.cs" />
-    <Compile Include="WeaponInfo.cs" />
-    <Compile Include="GundamInfo.cs" />
-    <Compile Include="MasterFile.cs" />
-    <Compile Include="MasterInfo.cs" />
-    <Compile Include="MasterSkill.cs" />
+    <Compile Include="CDBItem\Ability\OPInfo.cs" />
+    <Compile Include="CDBItem\Ability\PersonAbility.cs" />
+    <Compile Include="CDBItem\Ability\AbstractAbility.cs" />
+    <Compile Include="CDBItem\Ability\GundamAbility.cs" />
+    <Compile Include="CDBItem\Ability\WarAbility.cs" />
+    <Compile Include="CDBItem\Ability\XiaoGuoAbility.cs" />
+    <Compile Include="CDBItem\MachineConvertInfo.cs" />
+    <Compile Include="CDBItem\SpecProfileInfo.cs" />
+    <Compile Include="DDSImage.cs" />
+    <Compile Include="GGCRResource\GGCRPkdFile.cs" />
+    <Compile Include="GGCRResource\GGCRPkdInnerFile.cs" />
+    <Compile Include="GGCRResource\GGCRResourceFile.cs" />
+    <Compile Include="GGCRResource\SpecProfileCdbFile.cs" />
+    <Compile Include="GGCRStaticConfig.cs" />
+    <Compile Include="GGCRResource\GGCRTblFile.cs" />
+    <Compile Include="CDBItem\GGCRUnitInfo.cs" />
+    <Compile Include="GGCRUtil.cs" />
+    <Compile Include="GGCRResource\GundamFile.cs" />
+    <Compile Include="GGCRResource\AbilitySpecFile.cs" />
+    <Compile Include="CDBItem\WeaponInfo.cs" />
+    <Compile Include="CDBItem\GundamInfo.cs" />
+    <Compile Include="GGCRResource\MasterFile.cs" />
+    <Compile Include="CDBItem\MasterInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CDBItem\WeaponMapInfo.cs" />
+    <Compile Include="CDBItem\WeaponNormalInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
