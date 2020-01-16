@@ -69,7 +69,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 5, 0, 5);
-            this.menuStrip1.Size = new System.Drawing.Size(958, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(1070, 46);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -174,7 +174,7 @@
             this.btnEditWeapon.Location = new System.Drawing.Point(369, 8);
             this.btnEditWeapon.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditWeapon.Name = "btnEditWeapon";
-            this.btnEditWeapon.Size = new System.Drawing.Size(167, 143);
+            this.btnEditWeapon.Size = new System.Drawing.Size(195, 143);
             this.btnEditWeapon.TabIndex = 3;
             this.btnEditWeapon.Text = "修改武器 (Modify weapon)";
             this.btnEditWeapon.UseVisualStyleBackColor = true;
@@ -188,7 +188,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 512);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 30, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(958, 37);
+            this.statusStrip1.Size = new System.Drawing.Size(1070, 37);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -201,7 +201,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(114, 32);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(226, 32);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // lblLang
@@ -225,7 +225,7 @@
             // 
             // btnEditPeopleText
             // 
-            this.btnEditPeopleText.Location = new System.Drawing.Point(731, 8);
+            this.btnEditPeopleText.Location = new System.Drawing.Point(842, 8);
             this.btnEditPeopleText.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditPeopleText.Name = "btnEditPeopleText";
             this.btnEditPeopleText.Size = new System.Drawing.Size(167, 143);
@@ -282,15 +282,15 @@
             this.flowContainer.Location = new System.Drawing.Point(26, 74);
             this.flowContainer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.flowContainer.Name = "flowContainer";
-            this.flowContainer.Size = new System.Drawing.Size(908, 163);
+            this.flowContainer.Size = new System.Drawing.Size(1020, 163);
             this.flowContainer.TabIndex = 4;
             // 
             // btnEditAbility
             // 
-            this.btnEditAbility.Location = new System.Drawing.Point(550, 8);
+            this.btnEditAbility.Location = new System.Drawing.Point(578, 8);
             this.btnEditAbility.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditAbility.Name = "btnEditAbility";
-            this.btnEditAbility.Size = new System.Drawing.Size(167, 143);
+            this.btnEditAbility.Size = new System.Drawing.Size(250, 143);
             this.btnEditAbility.TabIndex = 3;
             this.btnEditAbility.Text = "修改能力/技能/OP (Modify ability / skill)";
             this.btnEditAbility.UseVisualStyleBackColor = true;
@@ -301,7 +301,7 @@
             this.btnEditTBL.Location = new System.Drawing.Point(729, 8);
             this.btnEditTBL.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditTBL.Name = "btnEditTBL";
-            this.btnEditTBL.Size = new System.Drawing.Size(167, 143);
+            this.btnEditTBL.Size = new System.Drawing.Size(211, 143);
             this.btnEditTBL.TabIndex = 3;
             this.btnEditTBL.Text = "修改其他TBL文件 (other TBL files)";
             this.btnEditTBL.UseVisualStyleBackColor = true;
@@ -321,14 +321,14 @@
             this.flowContainer2.Location = new System.Drawing.Point(26, 253);
             this.flowContainer2.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.flowContainer2.Name = "flowContainer2";
-            this.flowContainer2.Size = new System.Drawing.Size(908, 163);
+            this.flowContainer2.Size = new System.Drawing.Size(1020, 163);
             this.flowContainer2.TabIndex = 5;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 549);
+            this.ClientSize = new System.Drawing.Size(1070, 549);
             this.Controls.Add(this.flowContainer2);
             this.Controls.Add(this.flowContainer);
             this.Controls.Add(this.label1);
