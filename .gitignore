@@ -244,3 +244,5 @@ paket-files/
 .fake/
 
 .DS_Store
+
+**/.idea

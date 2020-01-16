@@ -72,7 +72,7 @@ namespace GGCREditor
         {
             if (!File.Exists(sourceFile))
             {
-                throw new ArgumentException("要解压的文件不存在。");
+                throw new ArgumentException("The file to be extracted does not exist.");
             }
 
             Dictionary<string, byte[]> dic = new Dictionary<string, byte[]>();
