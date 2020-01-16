@@ -7,3 +7,6 @@
 开放`机体修改-名称`修改
 开放`武器修改-名称`修改
 支持机体/人物/武器的批量导入
+
+
+Merge of english translation by ps7720 and latest from origin
