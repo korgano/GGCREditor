@@ -230,7 +230,7 @@
             this.btnEditPeopleText.Name = "btnEditPeopleText";
             this.btnEditPeopleText.Size = new System.Drawing.Size(167, 143);
             this.btnEditPeopleText.TabIndex = 3;
-            this.btnEditPeopleText.Text = "修改角色相关文本 Modify character text";
+            this.btnEditPeopleText.Text = "修改角色相关文本 pilot text";
             this.btnEditPeopleText.UseVisualStyleBackColor = true;
             this.btnEditPeopleText.Click += new System.EventHandler(this.btnEditText_Click);
             // 
