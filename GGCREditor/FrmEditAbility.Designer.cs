@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(GGCREditor.FrmEditAbility));
+                new System.ComponentModel.ComponentResourceManager(typeof(FrmEditAbility));
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lsAbility = new System.Windows.Forms.ListBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -218,6 +218,9 @@
             this.pan4.SuspendLayout();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // txtSearch
+            // 
             this.txtSearch.Anchor =
                 ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top |
                                                         System.Windows.Forms.AnchorStyles.Bottom) |
@@ -228,6 +231,9 @@
             this.txtSearch.Size = new System.Drawing.Size(559, 39);
             this.txtSearch.TabIndex = 10;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // lsAbility
+            // 
             this.lsAbility.Anchor =
                 ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top |
                                                         System.Windows.Forms.AnchorStyles.Bottom) |
@@ -238,11 +244,14 @@
             this.lsAbility.Location = new System.Drawing.Point(26, 123);
             this.lsAbility.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.lsAbility.Name = "lsAbility";
-            this.lsAbility.Size = new System.Drawing.Size(604, 1562);
+            this.lsAbility.Size = new System.Drawing.Size(604, 1658);
             this.lsAbility.TabIndex = 9;
             this.lsAbility.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lsMasters_DrawItem);
             this.lsAbility.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lsMasters_MeasureItem);
             this.lsAbility.SelectedIndexChanged += new System.EventHandler(this.lsAbility_SelectedIndexChanged);
+            // 
+            // label19
+            // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(16, 9);
             this.label19.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
@@ -250,58 +259,88 @@
             this.label19.Size = new System.Drawing.Size(117, 32);
             this.label19.TabIndex = 8;
             this.label19.Text = "搜 Search";
+            // 
+            // statusStrip1
+            // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]
                 {this.tsmiFile, this.tsmiState, this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1886);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1982);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 30, 0);
             this.statusStrip1.Size = new System.Drawing.Size(2487, 37);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tsmiFile
+            // 
             this.tsmiFile.Name = "tsmiFile";
             this.tsmiFile.Size = new System.Drawing.Size(238, 32);
             this.tsmiFile.Text = "toolStripStatusLabel1";
+            // 
+            // tsmiState
+            // 
             this.tsmiState.Name = "tsmiState";
             this.tsmiState.Size = new System.Drawing.Size(1949, 32);
             this.tsmiState.Spring = true;
             this.tsmiState.Text = "toolStripStatusLabel2";
             this.tsmiState.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // toolStripStatusLabel3
+            // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(268, 32);
             this.toolStripStatusLabel3.Text = "感谢hj和lxdlxd99的研究";
-            this.label1.Location = new System.Drawing.Point(704, 27);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(647, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 72);
             this.label1.TabIndex = 12;
             this.label1.Text = "地址 Address";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtAddress.Location = new System.Drawing.Point(834, 40);
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(947, 40);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(117, 39);
             this.txtAddress.TabIndex = 13;
-            this.label2.Location = new System.Drawing.Point(1151, 27);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(1142, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 72);
+            this.label2.Size = new System.Drawing.Size(190, 72);
             this.label2.TabIndex = 12;
             this.label2.Text = "单位名称 Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtName.Location = new System.Drawing.Point(1281, 40);
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(1356, 35);
             this.txtName.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(117, 39);
             this.txtName.TabIndex = 13;
-            this.label3.Location = new System.Drawing.Point(1597, 27);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(1614, -11);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(277, 72);
+            this.label3.Size = new System.Drawing.Size(372, 72);
             this.label3.TabIndex = 12;
             this.label3.Text = "对应技能效果编号 Skill Effect #";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(1151, 1494);
             this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
@@ -309,6 +348,9 @@
             this.label4.Size = new System.Drawing.Size(706, 32);
             this.label4.TabIndex = 12;
             this.label4.Text = "效果说明(也可以修改哦) Effect description (can also be modified)";
+            // 
+            // txtXiaoGuoRemark
+            // 
             this.txtXiaoGuoRemark.Location = new System.Drawing.Point(1144, 1555);
             this.txtXiaoGuoRemark.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtXiaoGuoRemark.Multiline = true;
@@ -316,19 +358,28 @@
             this.txtXiaoGuoRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtXiaoGuoRemark.Size = new System.Drawing.Size(1306, 201);
             this.txtXiaoGuoRemark.TabIndex = 13;
-            this.label5.Location = new System.Drawing.Point(2043, 27);
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(2047, 23);
             this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(277, 72);
             this.label5.TabIndex = 12;
             this.label5.Text = "技能效果说明编号 Skill effect description number";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtRemarkId.Location = new System.Drawing.Point(2173, 40);
+            // 
+            // txtRemarkId
+            // 
+            this.txtRemarkId.Location = new System.Drawing.Point(2338, 35);
             this.txtRemarkId.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtRemarkId.Name = "txtRemarkId";
             this.txtRemarkId.Size = new System.Drawing.Size(117, 39);
             this.txtRemarkId.TabIndex = 13;
             this.txtRemarkId.TextChanged += new System.EventHandler(this.txtRemarkId_TextChanged);
+            // 
+            // label6
+            // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label6.Location = new System.Drawing.Point(26, 83);
@@ -337,6 +388,9 @@
             this.label6.Size = new System.Drawing.Size(795, 32);
             this.label6.TabIndex = 14;
             this.label6.Text = "搜索功能支持效果说明 The search feature supports Effect Description ???";
+            // 
+            // label7
+            // 
             this.label7.Location = new System.Drawing.Point(7, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label7.Name = "label7";
@@ -344,12 +398,18 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "HP";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtHP.Location = new System.Drawing.Point(138, 8);
+            // 
+            // txtHP
+            // 
+            this.txtHP.Location = new System.Drawing.Point(298, 8);
             this.txtHP.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtHP.Name = "txtHP";
             this.txtHP.Size = new System.Drawing.Size(117, 39);
             this.txtHP.TabIndex = 13;
             this.txtHP.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label8
+            // 
             this.label8.Location = new System.Drawing.Point(7, 72);
             this.label8.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label8.Name = "label8";
@@ -357,12 +417,18 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "EN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerGeDou.Location = new System.Drawing.Point(138, 440);
+            // 
+            // txtPowerGeDou
+            // 
+            this.txtPowerGeDou.Location = new System.Drawing.Point(298, 440);
             this.txtPowerGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerGeDou.Name = "txtPowerGeDou";
             this.txtPowerGeDou.Size = new System.Drawing.Size(117, 39);
             this.txtPowerGeDou.TabIndex = 13;
             this.txtPowerGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label9
+            // 
             this.label9.Location = new System.Drawing.Point(7, 144);
             this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label9.Name = "label9";
@@ -370,12 +436,18 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "攻击 ATK";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtEN.Location = new System.Drawing.Point(138, 80);
+            // 
+            // txtEN
+            // 
+            this.txtEN.Location = new System.Drawing.Point(298, 80);
             this.txtEN.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtEN.Name = "txtEN";
             this.txtEN.Size = new System.Drawing.Size(117, 39);
             this.txtEN.TabIndex = 13;
             this.txtEN.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label10
+            // 
             this.label10.Location = new System.Drawing.Point(7, 216);
             this.label10.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label10.Name = "label10";
@@ -383,12 +455,18 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "防御 DEF";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerWuLi.Location = new System.Drawing.Point(138, 512);
+            // 
+            // txtPowerWuLi
+            // 
+            this.txtPowerWuLi.Location = new System.Drawing.Point(298, 512);
             this.txtPowerWuLi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerWuLi.Name = "txtPowerWuLi";
             this.txtPowerWuLi.Size = new System.Drawing.Size(117, 39);
             this.txtPowerWuLi.TabIndex = 13;
             this.txtPowerWuLi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label11
+            // 
             this.label11.Location = new System.Drawing.Point(7, 288);
             this.label11.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label11.Name = "label11";
@@ -396,12 +474,18 @@
             this.label11.TabIndex = 12;
             this.label11.Text = "机动 MAN";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtMachAct.Location = new System.Drawing.Point(138, 152);
+            // 
+            // txtMachAct
+            // 
+            this.txtMachAct.Location = new System.Drawing.Point(298, 152);
             this.txtMachAct.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMachAct.Name = "txtMachAct";
             this.txtMachAct.Size = new System.Drawing.Size(117, 39);
             this.txtMachAct.TabIndex = 13;
             this.txtMachAct.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label12
+            // 
             this.label12.Location = new System.Drawing.Point(7, 360);
             this.label12.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label12.Name = "label12";
@@ -409,12 +493,18 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "射击Power RANGED";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerBean.Location = new System.Drawing.Point(138, 584);
+            // 
+            // txtPowerBean
+            // 
+            this.txtPowerBean.Location = new System.Drawing.Point(298, 584);
             this.txtPowerBean.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerBean.Name = "txtPowerBean";
             this.txtPowerBean.Size = new System.Drawing.Size(117, 39);
             this.txtPowerBean.TabIndex = 13;
             this.txtPowerBean.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label13
+            // 
             this.label13.Location = new System.Drawing.Point(7, 432);
             this.label13.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label13.Name = "label13";
@@ -422,12 +512,18 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "格斗Power MELEE";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtMachDef.Location = new System.Drawing.Point(138, 224);
+            // 
+            // txtMachDef
+            // 
+            this.txtMachDef.Location = new System.Drawing.Point(298, 224);
             this.txtMachDef.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMachDef.Name = "txtMachDef";
             this.txtMachDef.Size = new System.Drawing.Size(117, 39);
             this.txtMachDef.TabIndex = 13;
             this.txtMachDef.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label14
+            // 
             this.label14.Location = new System.Drawing.Point(7, 504);
             this.label14.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label14.Name = "label14";
@@ -435,12 +531,18 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "物理Power PHYSICAL";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerMap.Location = new System.Drawing.Point(138, 656);
+            // 
+            // txtPowerMap
+            // 
+            this.txtPowerMap.Location = new System.Drawing.Point(298, 656);
             this.txtPowerMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerMap.Name = "txtPowerMap";
             this.txtPowerMap.Size = new System.Drawing.Size(117, 39);
             this.txtPowerMap.TabIndex = 13;
             this.txtPowerMap.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label15
+            // 
             this.label15.Location = new System.Drawing.Point(7, 576);
             this.label15.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label15.Name = "label15";
@@ -448,12 +550,18 @@
             this.label15.TabIndex = 12;
             this.label15.Text = "BEAM Power";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtMachSpd.Location = new System.Drawing.Point(138, 296);
+            // 
+            // txtMachSpd
+            // 
+            this.txtMachSpd.Location = new System.Drawing.Point(298, 296);
             this.txtMachSpd.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMachSpd.Name = "txtMachSpd";
             this.txtMachSpd.Size = new System.Drawing.Size(117, 39);
             this.txtMachSpd.TabIndex = 13;
             this.txtMachSpd.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label16
+            // 
             this.label16.Location = new System.Drawing.Point(7, 648);
             this.label16.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label16.Name = "label16";
@@ -461,12 +569,18 @@
             this.label16.TabIndex = 12;
             this.label16.Text = "地图Power MAP";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerZhanJianUnion.Location = new System.Drawing.Point(138, 728);
+            // 
+            // txtPowerZhanJianUnion
+            // 
+            this.txtPowerZhanJianUnion.Location = new System.Drawing.Point(298, 728);
             this.txtPowerZhanJianUnion.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerZhanJianUnion.Name = "txtPowerZhanJianUnion";
             this.txtPowerZhanJianUnion.Size = new System.Drawing.Size(117, 39);
             this.txtPowerZhanJianUnion.TabIndex = 13;
             this.txtPowerZhanJianUnion.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label17
+            // 
             this.label17.Location = new System.Drawing.Point(7, 720);
             this.label17.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label17.Name = "label17";
@@ -474,12 +588,18 @@
             this.label17.TabIndex = 12;
             this.label17.Text = "战舰联攻Power Warship Link";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerSheJi.Location = new System.Drawing.Point(138, 368);
+            // 
+            // txtPowerSheJi
+            // 
+            this.txtPowerSheJi.Location = new System.Drawing.Point(298, 368);
             this.txtPowerSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerSheJi.Name = "txtPowerSheJi";
             this.txtPowerSheJi.Size = new System.Drawing.Size(117, 39);
             this.txtPowerSheJi.TabIndex = 13;
             this.txtPowerSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label18
+            // 
             this.label18.Location = new System.Drawing.Point(7, 792);
             this.label18.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label18.Name = "label18";
@@ -487,12 +607,18 @@
             this.label18.TabIndex = 12;
             this.label18.Text = "游击联攻Power Raid Link";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPowerXiaoDuiUnion.Location = new System.Drawing.Point(138, 800);
+            // 
+            // txtPowerXiaoDuiUnion
+            // 
+            this.txtPowerXiaoDuiUnion.Location = new System.Drawing.Point(298, 800);
             this.txtPowerXiaoDuiUnion.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPowerXiaoDuiUnion.Name = "txtPowerXiaoDuiUnion";
             this.txtPowerXiaoDuiUnion.Size = new System.Drawing.Size(117, 39);
             this.txtPowerXiaoDuiUnion.TabIndex = 13;
             this.txtPowerXiaoDuiUnion.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label20
+            // 
             this.label20.Location = new System.Drawing.Point(7, 0);
             this.label20.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label20.Name = "label20";
@@ -500,12 +626,18 @@
             this.label20.TabIndex = 12;
             this.label20.Text = "射击 Ranged";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerSheJi.Location = new System.Drawing.Point(138, 8);
+            // 
+            // txtPerSheJi
+            // 
+            this.txtPerSheJi.Location = new System.Drawing.Point(298, 8);
             this.txtPerSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerSheJi.Name = "txtPerSheJi";
             this.txtPerSheJi.Size = new System.Drawing.Size(117, 39);
             this.txtPerSheJi.TabIndex = 13;
             this.txtPerSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label21
+            // 
             this.label21.Location = new System.Drawing.Point(7, 72);
             this.label21.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label21.Name = "label21";
@@ -513,12 +645,18 @@
             this.label21.TabIndex = 12;
             this.label21.Text = "格斗 Melee";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerShouBei.Location = new System.Drawing.Point(138, 152);
+            // 
+            // txtPerShouBei
+            // 
+            this.txtPerShouBei.Location = new System.Drawing.Point(298, 152);
             this.txtPerShouBei.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerShouBei.Name = "txtPerShouBei";
             this.txtPerShouBei.Size = new System.Drawing.Size(117, 39);
             this.txtPerShouBei.TabIndex = 13;
             this.txtPerShouBei.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label22
+            // 
             this.label22.Location = new System.Drawing.Point(7, 144);
             this.label22.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label22.Name = "label22";
@@ -526,12 +664,18 @@
             this.label22.TabIndex = 12;
             this.label22.Text = "守备 Guard";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerGedou.Location = new System.Drawing.Point(138, 80);
+            // 
+            // txtPerGedou
+            // 
+            this.txtPerGedou.Location = new System.Drawing.Point(298, 80);
             this.txtPerGedou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerGedou.Name = "txtPerGedou";
             this.txtPerGedou.Size = new System.Drawing.Size(117, 39);
             this.txtPerGedou.TabIndex = 13;
             this.txtPerGedou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label23
+            // 
             this.label23.Location = new System.Drawing.Point(7, 216);
             this.label23.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label23.Name = "label23";
@@ -539,12 +683,18 @@
             this.label23.TabIndex = 12;
             this.label23.Text = "反应 Reaction";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerCaoDuo.Location = new System.Drawing.Point(138, 584);
+            // 
+            // txtPerCaoDuo
+            // 
+            this.txtPerCaoDuo.Location = new System.Drawing.Point(298, 584);
             this.txtPerCaoDuo.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerCaoDuo.Name = "txtPerCaoDuo";
             this.txtPerCaoDuo.Size = new System.Drawing.Size(117, 39);
             this.txtPerCaoDuo.TabIndex = 13;
             this.txtPerCaoDuo.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label24
+            // 
             this.label24.Location = new System.Drawing.Point(7, 288);
             this.label24.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label24.Name = "label24";
@@ -552,12 +702,18 @@
             this.label24.TabIndex = 12;
             this.label24.Text = "觉醒 Awakening";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerFanYin.Location = new System.Drawing.Point(138, 224);
+            // 
+            // txtPerFanYin
+            // 
+            this.txtPerFanYin.Location = new System.Drawing.Point(298, 224);
             this.txtPerFanYin.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerFanYin.Name = "txtPerFanYin";
             this.txtPerFanYin.Size = new System.Drawing.Size(117, 39);
             this.txtPerFanYin.TabIndex = 13;
             this.txtPerFanYin.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label25
+            // 
             this.label25.Location = new System.Drawing.Point(7, 360);
             this.label25.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label25.Name = "label25";
@@ -565,12 +721,18 @@
             this.label25.TabIndex = 12;
             this.label25.Text = "指挥 Command";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerZhiHui.Location = new System.Drawing.Point(138, 368);
+            // 
+            // txtPerZhiHui
+            // 
+            this.txtPerZhiHui.Location = new System.Drawing.Point(298, 368);
             this.txtPerZhiHui.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerZhiHui.Name = "txtPerZhiHui";
             this.txtPerZhiHui.Size = new System.Drawing.Size(117, 39);
             this.txtPerZhiHui.TabIndex = 13;
             this.txtPerZhiHui.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label26
+            // 
             this.label26.Location = new System.Drawing.Point(7, 432);
             this.label26.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label26.Name = "label26";
@@ -578,12 +740,18 @@
             this.label26.TabIndex = 12;
             this.label26.Text = "辅佐 XO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerJueXin.Location = new System.Drawing.Point(138, 296);
+            // 
+            // txtPerJueXin
+            // 
+            this.txtPerJueXin.Location = new System.Drawing.Point(298, 296);
             this.txtPerJueXin.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerJueXin.Name = "txtPerJueXin";
             this.txtPerJueXin.Size = new System.Drawing.Size(117, 39);
             this.txtPerJueXin.TabIndex = 13;
             this.txtPerJueXin.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label27
+            // 
             this.label27.Location = new System.Drawing.Point(7, 504);
             this.label27.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label27.Name = "label27";
@@ -591,12 +759,18 @@
             this.label27.TabIndex = 12;
             this.label27.Text = "通讯 COMM";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerTongXun.Location = new System.Drawing.Point(138, 512);
+            // 
+            // txtPerTongXun
+            // 
+            this.txtPerTongXun.Location = new System.Drawing.Point(298, 512);
             this.txtPerTongXun.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerTongXun.Name = "txtPerTongXun";
             this.txtPerTongXun.Size = new System.Drawing.Size(117, 39);
             this.txtPerTongXun.TabIndex = 13;
             this.txtPerTongXun.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label28
+            // 
             this.label28.Location = new System.Drawing.Point(7, 576);
             this.label28.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label28.Name = "label28";
@@ -604,12 +778,18 @@
             this.label28.TabIndex = 12;
             this.label28.Text = "操舵 Navigation";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerFuZuo.Location = new System.Drawing.Point(138, 440);
+            // 
+            // txtPerFuZuo
+            // 
+            this.txtPerFuZuo.Location = new System.Drawing.Point(298, 440);
             this.txtPerFuZuo.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerFuZuo.Name = "txtPerFuZuo";
             this.txtPerFuZuo.Size = new System.Drawing.Size(117, 39);
             this.txtPerFuZuo.TabIndex = 13;
             this.txtPerFuZuo.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label29
+            // 
             this.label29.Location = new System.Drawing.Point(7, 648);
             this.label29.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label29.Name = "label29";
@@ -617,12 +797,18 @@
             this.label29.TabIndex = 12;
             this.label29.Text = "维修 Repair";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerWeiXiu.Location = new System.Drawing.Point(138, 656);
+            // 
+            // txtPerWeiXiu
+            // 
+            this.txtPerWeiXiu.Location = new System.Drawing.Point(298, 656);
             this.txtPerWeiXiu.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerWeiXiu.Name = "txtPerWeiXiu";
             this.txtPerWeiXiu.Size = new System.Drawing.Size(117, 39);
             this.txtPerWeiXiu.TabIndex = 13;
             this.txtPerWeiXiu.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label30
+            // 
             this.label30.Location = new System.Drawing.Point(7, 720);
             this.label30.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label30.Name = "label30";
@@ -630,12 +816,18 @@
             this.label30.TabIndex = 12;
             this.label30.Text = "魅力 Charisma";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerMeiLi.Location = new System.Drawing.Point(138, 728);
+            // 
+            // txtPerMeiLi
+            // 
+            this.txtPerMeiLi.Location = new System.Drawing.Point(298, 728);
             this.txtPerMeiLi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerMeiLi.Name = "txtPerMeiLi";
             this.txtPerMeiLi.Size = new System.Drawing.Size(117, 39);
             this.txtPerMeiLi.TabIndex = 13;
             this.txtPerMeiLi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // pan3
+            // 
             this.pan3.Controls.Add(this.label20);
             this.pan3.Controls.Add(this.txtPerSheJi);
             this.pan3.Controls.Add(this.label21);
@@ -677,6 +869,9 @@
             this.pan3.Name = "pan3";
             this.pan3.Size = new System.Drawing.Size(433, 1368);
             this.pan3.TabIndex = 15;
+            // 
+            // label31
+            // 
             this.label31.Location = new System.Drawing.Point(7, 792);
             this.label31.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label31.Name = "label31";
@@ -684,12 +879,18 @@
             this.label31.TabIndex = 14;
             this.label31.Text = "战意MP War?";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerZhanYi.Location = new System.Drawing.Point(138, 800);
+            // 
+            // txtPerZhanYi
+            // 
+            this.txtPerZhanYi.Location = new System.Drawing.Point(298, 800);
             this.txtPerZhanYi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerZhanYi.Name = "txtPerZhanYi";
             this.txtPerZhanYi.Size = new System.Drawing.Size(117, 39);
             this.txtPerZhanYi.TabIndex = 15;
             this.txtPerZhanYi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label82
+            // 
             this.label82.Location = new System.Drawing.Point(7, 864);
             this.label82.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label82.Name = "label82";
@@ -697,12 +898,18 @@
             this.label82.TabIndex = 16;
             this.label82.Text = "额外行动次数 Extra Action";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtPerEWaiXinDong.Location = new System.Drawing.Point(138, 872);
+            // 
+            // txtPerEWaiXinDong
+            // 
+            this.txtPerEWaiXinDong.Location = new System.Drawing.Point(298, 872);
             this.txtPerEWaiXinDong.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtPerEWaiXinDong.Name = "txtPerEWaiXinDong";
             this.txtPerEWaiXinDong.Size = new System.Drawing.Size(117, 39);
             this.txtPerEWaiXinDong.TabIndex = 17;
             this.txtPerEWaiXinDong.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label83
+            // 
             this.label83.Location = new System.Drawing.Point(7, 936);
             this.label83.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label83.Name = "label83";
@@ -710,12 +917,18 @@
             this.label83.TabIndex = 18;
             this.label83.Text = "指挥区域 Comm Area";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtAreaZhiHui.Location = new System.Drawing.Point(138, 944);
+            // 
+            // txtAreaZhiHui
+            // 
+            this.txtAreaZhiHui.Location = new System.Drawing.Point(298, 944);
             this.txtAreaZhiHui.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtAreaZhiHui.Name = "txtAreaZhiHui";
             this.txtAreaZhiHui.Size = new System.Drawing.Size(117, 39);
             this.txtAreaZhiHui.TabIndex = 19;
             this.txtAreaZhiHui.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label84
+            // 
             this.label84.Location = new System.Drawing.Point(7, 1008);
             this.label84.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label84.Name = "label84";
@@ -723,12 +936,18 @@
             this.label84.TabIndex = 20;
             this.label84.Text = "未使用 (Unused)78 UNUSED";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtAreaUnknow78.Location = new System.Drawing.Point(138, 1016);
+            // 
+            // txtAreaUnknow78
+            // 
+            this.txtAreaUnknow78.Location = new System.Drawing.Point(298, 1016);
             this.txtAreaUnknow78.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtAreaUnknow78.Name = "txtAreaUnknow78";
             this.txtAreaUnknow78.Size = new System.Drawing.Size(117, 39);
             this.txtAreaUnknow78.TabIndex = 21;
             this.txtAreaUnknow78.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label85
+            // 
             this.label85.Location = new System.Drawing.Point(7, 1080);
             this.label85.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label85.Name = "label85";
@@ -736,12 +955,18 @@
             this.label85.TabIndex = 22;
             this.label85.Text = "范围技能范围 Skill Range";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtAreaJiNen.Location = new System.Drawing.Point(138, 1088);
+            // 
+            // txtAreaJiNen
+            // 
+            this.txtAreaJiNen.Location = new System.Drawing.Point(298, 1088);
             this.txtAreaJiNen.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtAreaJiNen.Name = "txtAreaJiNen";
             this.txtAreaJiNen.Size = new System.Drawing.Size(117, 39);
             this.txtAreaJiNen.TabIndex = 23;
             this.txtAreaJiNen.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label81
+            // 
             this.label81.Location = new System.Drawing.Point(7, 1152);
             this.label81.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label81.Name = "label81";
@@ -749,12 +974,18 @@
             this.label81.TabIndex = 40;
             this.label81.Text = "未使用 (Unused)75";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnKnow75.Location = new System.Drawing.Point(138, 1160);
+            // 
+            // txtUnKnow75
+            // 
+            this.txtUnKnow75.Location = new System.Drawing.Point(298, 1160);
             this.txtUnKnow75.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnKnow75.Name = "txtUnKnow75";
             this.txtUnKnow75.Size = new System.Drawing.Size(117, 39);
             this.txtUnKnow75.TabIndex = 41;
             this.txtUnKnow75.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label86
+            // 
             this.label86.Location = new System.Drawing.Point(7, 1224);
             this.label86.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label86.Name = "label86";
@@ -762,12 +993,18 @@
             this.label86.TabIndex = 24;
             this.label86.Text = "未知 (Unknown) (Unknown)80?";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnknow80.Location = new System.Drawing.Point(138, 1232);
+            // 
+            // txtUnknow80
+            // 
+            this.txtUnknow80.Location = new System.Drawing.Point(298, 1232);
             this.txtUnknow80.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnknow80.Name = "txtUnknow80";
             this.txtUnknow80.Size = new System.Drawing.Size(117, 39);
             this.txtUnknow80.TabIndex = 25;
             this.txtUnknow80.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // pan1
+            // 
             this.pan1.Controls.Add(this.label7);
             this.pan1.Controls.Add(this.txtHP);
             this.pan1.Controls.Add(this.label8);
@@ -819,6 +1056,9 @@
             this.pan1.Name = "pan1";
             this.pan1.Size = new System.Drawing.Size(433, 1664);
             this.pan1.TabIndex = 15;
+            // 
+            // label32
+            // 
             this.label32.Location = new System.Drawing.Point(7, 864);
             this.label32.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label32.Name = "label32";
@@ -826,12 +1066,18 @@
             this.label32.TabIndex = 14;
             this.label32.Text = "HP回复%";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtHPRec.Location = new System.Drawing.Point(138, 872);
+            // 
+            // txtHPRec
+            // 
+            this.txtHPRec.Location = new System.Drawing.Point(298, 872);
             this.txtHPRec.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtHPRec.Name = "txtHPRec";
             this.txtHPRec.Size = new System.Drawing.Size(117, 39);
             this.txtHPRec.TabIndex = 15;
             this.txtHPRec.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label33
+            // 
             this.label33.Location = new System.Drawing.Point(7, 936);
             this.label33.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label33.Name = "label33";
@@ -839,12 +1085,18 @@
             this.label33.TabIndex = 16;
             this.label33.Text = "EN回复%";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENRec.Location = new System.Drawing.Point(138, 944);
+            // 
+            // txtENRec
+            // 
+            this.txtENRec.Location = new System.Drawing.Point(298, 944);
             this.txtENRec.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENRec.Name = "txtENRec";
             this.txtENRec.Size = new System.Drawing.Size(117, 39);
             this.txtENRec.TabIndex = 17;
             this.txtENRec.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label41
+            // 
             this.label41.Location = new System.Drawing.Point(7, 1008);
             this.label41.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label41.Name = "label41";
@@ -852,12 +1104,18 @@
             this.label41.TabIndex = 24;
             this.label41.Text = "移动力 MOV";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtMove.Location = new System.Drawing.Point(138, 1016);
+            // 
+            // txtMove
+            // 
+            this.txtMove.Location = new System.Drawing.Point(298, 1016);
             this.txtMove.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMove.Name = "txtMove";
             this.txtMove.Size = new System.Drawing.Size(117, 39);
             this.txtMove.TabIndex = 25;
             this.txtMove.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label34
+            // 
             this.label34.Location = new System.Drawing.Point(7, 1080);
             this.label34.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label34.Name = "label34";
@@ -865,12 +1123,18 @@
             this.label34.TabIndex = 18;
             this.label34.Text = "适(宇) Space Suitable";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShiXin1.Location = new System.Drawing.Point(138, 1088);
+            // 
+            // txtShiXin1
+            // 
+            this.txtShiXin1.Location = new System.Drawing.Point(298, 1088);
             this.txtShiXin1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShiXin1.Name = "txtShiXin1";
             this.txtShiXin1.Size = new System.Drawing.Size(117, 39);
             this.txtShiXin1.TabIndex = 19;
             this.txtShiXin1.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label35
+            // 
             this.label35.Location = new System.Drawing.Point(7, 1152);
             this.label35.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label35.Name = "label35";
@@ -878,12 +1142,18 @@
             this.label35.TabIndex = 20;
             this.label35.Text = "适(空) Can Fly";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShiXin2.Location = new System.Drawing.Point(138, 1160);
+            // 
+            // txtShiXin2
+            // 
+            this.txtShiXin2.Location = new System.Drawing.Point(298, 1160);
             this.txtShiXin2.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShiXin2.Name = "txtShiXin2";
             this.txtShiXin2.Size = new System.Drawing.Size(117, 39);
             this.txtShiXin2.TabIndex = 21;
             this.txtShiXin2.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label36
+            // 
             this.label36.Location = new System.Drawing.Point(7, 1224);
             this.label36.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label36.Name = "label36";
@@ -891,12 +1161,18 @@
             this.label36.TabIndex = 22;
             this.label36.Text = "适(地) Can Ground";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShiXin3.Location = new System.Drawing.Point(138, 1232);
+            // 
+            // txtShiXin3
+            // 
+            this.txtShiXin3.Location = new System.Drawing.Point(298, 1232);
             this.txtShiXin3.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShiXin3.Name = "txtShiXin3";
             this.txtShiXin3.Size = new System.Drawing.Size(117, 39);
             this.txtShiXin3.TabIndex = 23;
             this.txtShiXin3.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label58
+            // 
             this.label58.Location = new System.Drawing.Point(7, 1296);
             this.label58.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label58.Name = "label58";
@@ -904,12 +1180,18 @@
             this.label58.TabIndex = 26;
             this.label58.Text = "适(水面) Can Water Surface";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShiXin4.Location = new System.Drawing.Point(138, 1304);
+            // 
+            // txtShiXin4
+            // 
+            this.txtShiXin4.Location = new System.Drawing.Point(298, 1304);
             this.txtShiXin4.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShiXin4.Name = "txtShiXin4";
             this.txtShiXin4.Size = new System.Drawing.Size(117, 39);
             this.txtShiXin4.TabIndex = 27;
             this.txtShiXin4.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label59
+            // 
             this.label59.Location = new System.Drawing.Point(7, 1368);
             this.label59.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label59.Name = "label59";
@@ -917,12 +1199,18 @@
             this.label59.TabIndex = 28;
             this.label59.Text = "适(水中) Can underwater";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShiXin5.Location = new System.Drawing.Point(138, 1376);
+            // 
+            // txtShiXin5
+            // 
+            this.txtShiXin5.Location = new System.Drawing.Point(298, 1376);
             this.txtShiXin5.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShiXin5.Name = "txtShiXin5";
             this.txtShiXin5.Size = new System.Drawing.Size(117, 39);
             this.txtShiXin5.TabIndex = 29;
             this.txtShiXin5.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label60
+            // 
             this.label60.Location = new System.Drawing.Point(7, 1440);
             this.label60.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label60.Name = "label60";
@@ -930,12 +1218,18 @@
             this.label60.TabIndex = 30;
             this.label60.Text = "取得经验 Gain EXP";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtJinYan.Location = new System.Drawing.Point(138, 1448);
+            // 
+            // txtJinYan
+            // 
+            this.txtJinYan.Location = new System.Drawing.Point(298, 1448);
             this.txtJinYan.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtJinYan.Name = "txtJinYan";
             this.txtJinYan.Size = new System.Drawing.Size(117, 39);
             this.txtJinYan.TabIndex = 31;
             this.txtJinYan.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label61
+            // 
             this.label61.Location = new System.Drawing.Point(7, 1512);
             this.label61.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label61.Name = "label61";
@@ -943,12 +1237,18 @@
             this.label61.TabIndex = 32;
             this.label61.Text = "取得积分 Score Points";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtJiFen.Location = new System.Drawing.Point(138, 1520);
+            // 
+            // txtJiFen
+            // 
+            this.txtJiFen.Location = new System.Drawing.Point(298, 1520);
             this.txtJiFen.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtJiFen.Name = "txtJiFen";
             this.txtJiFen.Size = new System.Drawing.Size(117, 39);
             this.txtJiFen.TabIndex = 33;
             this.txtJiFen.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label62
+            // 
             this.label62.Location = new System.Drawing.Point(7, 1584);
             this.label62.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label62.Name = "label62";
@@ -956,12 +1256,18 @@
             this.label62.TabIndex = 34;
             this.label62.Text = "售出金额 Sell Price";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtJinE.Location = new System.Drawing.Point(138, 1592);
+            // 
+            // txtJinE
+            // 
+            this.txtJinE.Location = new System.Drawing.Point(298, 1592);
             this.txtJinE.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtJinE.Name = "txtJinE";
             this.txtJinE.Size = new System.Drawing.Size(117, 39);
             this.txtJinE.TabIndex = 35;
             this.txtJinE.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // pan4
+            // 
             this.pan4.Controls.Add(this.label43);
             this.pan4.Controls.Add(this.txtDmgWuLiSheJi);
             this.pan4.Controls.Add(this.label42);
@@ -1002,271 +1308,395 @@
             this.pan4.Controls.Add(this.txtUnknow49);
             this.pan4.Controls.Add(this.label40);
             this.pan4.Controls.Add(this.txtUnknow50);
+            this.pan4.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.pan4.Location = new System.Drawing.Point(2037, 106);
             this.pan4.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.pan4.Name = "pan4";
             this.pan4.Size = new System.Drawing.Size(433, 1440);
             this.pan4.TabIndex = 15;
+            // 
+            // label43
+            // 
             this.label43.Location = new System.Drawing.Point(7, 0);
             this.label43.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(277, 72);
+            this.label43.Size = new System.Drawing.Size(277, 83);
             this.label43.TabIndex = 12;
-            this.label43.Text = "物理射击损伤减轻 Physical Ranged damage reduction";
+            this.label43.Text = "物理射击损伤减轻\r\nPhysical Ranged damage reduction";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgWuLiSheJi.Location = new System.Drawing.Point(138, 8);
+            // 
+            // txtDmgWuLiSheJi
+            // 
+            this.txtDmgWuLiSheJi.Location = new System.Drawing.Point(298, 8);
             this.txtDmgWuLiSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgWuLiSheJi.Name = "txtDmgWuLiSheJi";
-            this.txtDmgWuLiSheJi.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgWuLiSheJi.Size = new System.Drawing.Size(117, 32);
             this.txtDmgWuLiSheJi.TabIndex = 13;
             this.txtDmgWuLiSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label42.Location = new System.Drawing.Point(7, 72);
+            // 
+            // label42
+            // 
+            this.label42.Location = new System.Drawing.Point(7, 83);
             this.label42.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(277, 72);
             this.label42.TabIndex = 12;
             this.label42.Text = "物理格斗损伤减轻 Physical Melee DMG Reduction";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgWuLiGeDou.Location = new System.Drawing.Point(138, 80);
+            // 
+            // txtDmgWuLiGeDou
+            // 
+            this.txtDmgWuLiGeDou.Location = new System.Drawing.Point(298, 91);
             this.txtDmgWuLiGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgWuLiGeDou.Name = "txtDmgWuLiGeDou";
-            this.txtDmgWuLiGeDou.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgWuLiGeDou.Size = new System.Drawing.Size(117, 32);
             this.txtDmgWuLiGeDou.TabIndex = 13;
             this.txtDmgWuLiGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label44.Location = new System.Drawing.Point(7, 144);
+            // 
+            // label44
+            // 
+            this.label44.Location = new System.Drawing.Point(7, 155);
             this.label44.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(277, 72);
             this.label44.TabIndex = 12;
             this.label44.Text = "Beam射击损伤减轻 Ranged DMG Reduction";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgBeanSheJi.Location = new System.Drawing.Point(138, 152);
+            // 
+            // txtDmgBeanSheJi
+            // 
+            this.txtDmgBeanSheJi.Location = new System.Drawing.Point(298, 163);
             this.txtDmgBeanSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgBeanSheJi.Name = "txtDmgBeanSheJi";
-            this.txtDmgBeanSheJi.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgBeanSheJi.Size = new System.Drawing.Size(117, 32);
             this.txtDmgBeanSheJi.TabIndex = 13;
             this.txtDmgBeanSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label45.Location = new System.Drawing.Point(7, 216);
+            // 
+            // label45
+            // 
+            this.label45.Location = new System.Drawing.Point(7, 227);
             this.label45.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(277, 72);
             this.label45.TabIndex = 12;
             this.label45.Text = "Beam格斗损伤减轻 Melee DMG Reduction";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgBeanGeDou.Location = new System.Drawing.Point(138, 224);
+            // 
+            // txtDmgBeanGeDou
+            // 
+            this.txtDmgBeanGeDou.Location = new System.Drawing.Point(298, 235);
             this.txtDmgBeanGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgBeanGeDou.Name = "txtDmgBeanGeDou";
-            this.txtDmgBeanGeDou.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgBeanGeDou.Size = new System.Drawing.Size(117, 32);
             this.txtDmgBeanGeDou.TabIndex = 13;
             this.txtDmgBeanGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label46.Location = new System.Drawing.Point(7, 288);
+            // 
+            // label46
+            // 
+            this.label46.Location = new System.Drawing.Point(7, 299);
             this.label46.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(277, 72);
             this.label46.TabIndex = 12;
             this.label46.Text = "特殊射击损伤减轻 Special Ranged DMG Reduction";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgUnknow35.Location = new System.Drawing.Point(138, 296);
+            // 
+            // txtDmgUnknow35
+            // 
+            this.txtDmgUnknow35.Location = new System.Drawing.Point(298, 307);
             this.txtDmgUnknow35.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgUnknow35.Name = "txtDmgUnknow35";
-            this.txtDmgUnknow35.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgUnknow35.Size = new System.Drawing.Size(117, 32);
             this.txtDmgUnknow35.TabIndex = 13;
             this.txtDmgUnknow35.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label47.Location = new System.Drawing.Point(7, 360);
+            // 
+            // label47
+            // 
+            this.label47.Location = new System.Drawing.Point(7, 371);
             this.label47.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(277, 72);
             this.label47.TabIndex = 12;
             this.label47.Text = "特殊格斗损伤减轻 Special Melee DMG Reduction";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgUnknow36.Location = new System.Drawing.Point(138, 368);
+            // 
+            // txtDmgUnknow36
+            // 
+            this.txtDmgUnknow36.Location = new System.Drawing.Point(298, 379);
             this.txtDmgUnknow36.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgUnknow36.Name = "txtDmgUnknow36";
-            this.txtDmgUnknow36.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgUnknow36.Size = new System.Drawing.Size(117, 32);
             this.txtDmgUnknow36.TabIndex = 13;
             this.txtDmgUnknow36.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label48.Location = new System.Drawing.Point(7, 432);
+            // 
+            // label48
+            // 
+            this.label48.Location = new System.Drawing.Point(7, 443);
             this.label48.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(277, 72);
             this.label48.TabIndex = 12;
             this.label48.Text = "MAP武器损伤减轻 DMG Reduction";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtDmgMap.Location = new System.Drawing.Point(138, 440);
+            // 
+            // txtDmgMap
+            // 
+            this.txtDmgMap.Location = new System.Drawing.Point(298, 451);
             this.txtDmgMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtDmgMap.Name = "txtDmgMap";
-            this.txtDmgMap.Size = new System.Drawing.Size(117, 39);
+            this.txtDmgMap.Size = new System.Drawing.Size(117, 32);
             this.txtDmgMap.TabIndex = 13;
             this.txtDmgMap.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label50.Location = new System.Drawing.Point(7, 504);
+            // 
+            // label50
+            // 
+            this.label50.Location = new System.Drawing.Point(7, 515);
             this.label50.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(277, 72);
             this.label50.TabIndex = 12;
             this.label50.Text = "物理射击损伤无效 Immune Physical Ranged";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoWuLiSheJi.Location = new System.Drawing.Point(138, 512);
+            // 
+            // txtWuXiaoWuLiSheJi
+            // 
+            this.txtWuXiaoWuLiSheJi.Location = new System.Drawing.Point(298, 523);
             this.txtWuXiaoWuLiSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoWuLiSheJi.Name = "txtWuXiaoWuLiSheJi";
-            this.txtWuXiaoWuLiSheJi.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoWuLiSheJi.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoWuLiSheJi.TabIndex = 13;
             this.txtWuXiaoWuLiSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label49.Location = new System.Drawing.Point(7, 576);
+            // 
+            // label49
+            // 
+            this.label49.Location = new System.Drawing.Point(7, 587);
             this.label49.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(277, 72);
             this.label49.TabIndex = 12;
             this.label49.Text = "物理格斗损伤无效 Immune Physical Melee";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoWuLiGeDou.Location = new System.Drawing.Point(138, 584);
+            // 
+            // txtWuXiaoWuLiGeDou
+            // 
+            this.txtWuXiaoWuLiGeDou.Location = new System.Drawing.Point(298, 595);
             this.txtWuXiaoWuLiGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoWuLiGeDou.Name = "txtWuXiaoWuLiGeDou";
-            this.txtWuXiaoWuLiGeDou.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoWuLiGeDou.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoWuLiGeDou.TabIndex = 13;
             this.txtWuXiaoWuLiGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label51.Location = new System.Drawing.Point(7, 648);
+            // 
+            // label51
+            // 
+            this.label51.Location = new System.Drawing.Point(7, 659);
             this.label51.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(277, 72);
             this.label51.TabIndex = 12;
             this.label51.Text = "Beam射击损伤无效 Ranged Immune";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoBeanSheJi.Location = new System.Drawing.Point(138, 656);
+            // 
+            // txtWuXiaoBeanSheJi
+            // 
+            this.txtWuXiaoBeanSheJi.Location = new System.Drawing.Point(298, 667);
             this.txtWuXiaoBeanSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoBeanSheJi.Name = "txtWuXiaoBeanSheJi";
-            this.txtWuXiaoBeanSheJi.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoBeanSheJi.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoBeanSheJi.TabIndex = 13;
             this.txtWuXiaoBeanSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label52.Location = new System.Drawing.Point(7, 720);
+            // 
+            // label52
+            // 
+            this.label52.Location = new System.Drawing.Point(7, 731);
             this.label52.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(277, 72);
             this.label52.TabIndex = 12;
             this.label52.Text = "Bean格斗损伤无效 Melee Immune";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoBeanGeDou.Location = new System.Drawing.Point(138, 728);
+            // 
+            // txtWuXiaoBeanGeDou
+            // 
+            this.txtWuXiaoBeanGeDou.Location = new System.Drawing.Point(298, 739);
             this.txtWuXiaoBeanGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoBeanGeDou.Name = "txtWuXiaoBeanGeDou";
-            this.txtWuXiaoBeanGeDou.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoBeanGeDou.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoBeanGeDou.TabIndex = 13;
             this.txtWuXiaoBeanGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label53.Location = new System.Drawing.Point(7, 792);
+            // 
+            // label53
+            // 
+            this.label53.Location = new System.Drawing.Point(7, 803);
             this.label53.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(277, 72);
             this.label53.TabIndex = 23;
             this.label53.Text = "特殊射击损伤无效 Special Ranged Immune";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoUnknow42.Location = new System.Drawing.Point(138, 800);
+            // 
+            // txtWuXiaoUnknow42
+            // 
+            this.txtWuXiaoUnknow42.Location = new System.Drawing.Point(298, 811);
             this.txtWuXiaoUnknow42.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoUnknow42.Name = "txtWuXiaoUnknow42";
-            this.txtWuXiaoUnknow42.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoUnknow42.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoUnknow42.TabIndex = 26;
             this.txtWuXiaoUnknow42.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label54.Location = new System.Drawing.Point(7, 864);
+            // 
+            // label54
+            // 
+            this.label54.Location = new System.Drawing.Point(7, 875);
             this.label54.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(277, 72);
             this.label54.TabIndex = 24;
             this.label54.Text = "特殊格斗损伤无效 Special Melee Immune";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoUnKnow43.Location = new System.Drawing.Point(138, 872);
+            // 
+            // txtWuXiaoUnKnow43
+            // 
+            this.txtWuXiaoUnKnow43.Location = new System.Drawing.Point(298, 883);
             this.txtWuXiaoUnKnow43.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoUnKnow43.Name = "txtWuXiaoUnKnow43";
-            this.txtWuXiaoUnKnow43.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoUnKnow43.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoUnKnow43.TabIndex = 27;
             this.txtWuXiaoUnKnow43.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label55.Location = new System.Drawing.Point(7, 936);
+            // 
+            // label55
+            // 
+            this.label55.Location = new System.Drawing.Point(7, 947);
             this.label55.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(277, 72);
             this.label55.TabIndex = 25;
             this.label55.Text = "MAP武器损伤无效 Immune";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtWuXiaoMap.Location = new System.Drawing.Point(138, 944);
+            // 
+            // txtWuXiaoMap
+            // 
+            this.txtWuXiaoMap.Location = new System.Drawing.Point(298, 955);
             this.txtWuXiaoMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtWuXiaoMap.Name = "txtWuXiaoMap";
-            this.txtWuXiaoMap.Size = new System.Drawing.Size(117, 39);
+            this.txtWuXiaoMap.Size = new System.Drawing.Size(117, 32);
             this.txtWuXiaoMap.TabIndex = 28;
             this.txtWuXiaoMap.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label56.Location = new System.Drawing.Point(7, 1008);
+            // 
+            // label56
+            // 
+            this.label56.Location = new System.Drawing.Point(7, 1019);
             this.label56.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(277, 72);
             this.label56.TabIndex = 29;
             this.label56.Text = "最终敌方受到伤害 Bonus DMG";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShangHaiFinal.Location = new System.Drawing.Point(138, 1016);
+            // 
+            // txtShangHaiFinal
+            // 
+            this.txtShangHaiFinal.Location = new System.Drawing.Point(298, 1027);
             this.txtShangHaiFinal.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShangHaiFinal.Name = "txtShangHaiFinal";
-            this.txtShangHaiFinal.Size = new System.Drawing.Size(117, 39);
+            this.txtShangHaiFinal.Size = new System.Drawing.Size(117, 32);
             this.txtShangHaiFinal.TabIndex = 30;
             this.txtShangHaiFinal.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label57.Location = new System.Drawing.Point(7, 1080);
+            // 
+            // label57
+            // 
+            this.label57.Location = new System.Drawing.Point(7, 1091);
             this.label57.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(277, 72);
             this.label57.TabIndex = 31;
             this.label57.Text = "最终自身受到伤害 Hurt Self";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtShangHaiFinalSelf.Location = new System.Drawing.Point(138, 1088);
+            // 
+            // txtShangHaiFinalSelf
+            // 
+            this.txtShangHaiFinalSelf.Location = new System.Drawing.Point(298, 1099);
             this.txtShangHaiFinalSelf.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShangHaiFinalSelf.Name = "txtShangHaiFinalSelf";
-            this.txtShangHaiFinalSelf.Size = new System.Drawing.Size(117, 39);
+            this.txtShangHaiFinalSelf.Size = new System.Drawing.Size(117, 32);
             this.txtShangHaiFinalSelf.TabIndex = 32;
             this.txtShangHaiFinalSelf.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label37.Location = new System.Drawing.Point(7, 1152);
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(7, 1163);
             this.label37.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(277, 72);
             this.label37.TabIndex = 33;
             this.label37.Text = "未知 (Unknown)47";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnknow47.Location = new System.Drawing.Point(138, 1160);
+            // 
+            // txtUnknow47
+            // 
+            this.txtUnknow47.Location = new System.Drawing.Point(298, 1171);
             this.txtUnknow47.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnknow47.Name = "txtUnknow47";
-            this.txtUnknow47.Size = new System.Drawing.Size(117, 39);
+            this.txtUnknow47.Size = new System.Drawing.Size(117, 32);
             this.txtUnknow47.TabIndex = 34;
             this.txtUnknow47.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label38.Location = new System.Drawing.Point(7, 1224);
+            // 
+            // label38
+            // 
+            this.label38.Location = new System.Drawing.Point(7, 1235);
             this.label38.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(277, 72);
             this.label38.TabIndex = 35;
             this.label38.Text = "未知 (Unknown)48";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnknow48.Location = new System.Drawing.Point(138, 1232);
+            // 
+            // txtUnknow48
+            // 
+            this.txtUnknow48.Location = new System.Drawing.Point(298, 1243);
             this.txtUnknow48.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnknow48.Name = "txtUnknow48";
-            this.txtUnknow48.Size = new System.Drawing.Size(117, 39);
+            this.txtUnknow48.Size = new System.Drawing.Size(117, 32);
             this.txtUnknow48.TabIndex = 36;
             this.txtUnknow48.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label39.Location = new System.Drawing.Point(7, 1296);
+            // 
+            // label39
+            // 
+            this.label39.Location = new System.Drawing.Point(7, 1307);
             this.label39.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(277, 72);
             this.label39.TabIndex = 37;
             this.label39.Text = "未知 (Unknown)49";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnknow49.Location = new System.Drawing.Point(138, 1304);
+            // 
+            // txtUnknow49
+            // 
+            this.txtUnknow49.Location = new System.Drawing.Point(298, 1315);
             this.txtUnknow49.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnknow49.Name = "txtUnknow49";
-            this.txtUnknow49.Size = new System.Drawing.Size(117, 39);
+            this.txtUnknow49.Size = new System.Drawing.Size(117, 32);
             this.txtUnknow49.TabIndex = 38;
             this.txtUnknow49.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
-            this.label40.Location = new System.Drawing.Point(7, 1368);
+            // 
+            // label40
+            // 
+            this.label40.Location = new System.Drawing.Point(7, 1379);
             this.label40.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(277, 72);
             this.label40.TabIndex = 39;
             this.label40.Text = "未知 (Unknown)50";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtUnknow50.Location = new System.Drawing.Point(138, 1376);
+            // 
+            // txtUnknow50
+            // 
+            this.txtUnknow50.Location = new System.Drawing.Point(298, 1387);
             this.txtUnknow50.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtUnknow50.Name = "txtUnknow50";
-            this.txtUnknow50.Size = new System.Drawing.Size(117, 39);
+            this.txtUnknow50.Size = new System.Drawing.Size(117, 32);
             this.txtUnknow50.TabIndex = 40;
             this.txtUnknow50.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // pan2
+            // 
             this.pan2.Controls.Add(this.label63);
             this.pan2.Controls.Add(this.txtSheChenSheJi);
             this.pan2.Controls.Add(this.label64);
@@ -1308,6 +1738,9 @@
             this.pan2.Name = "pan2";
             this.pan2.Size = new System.Drawing.Size(433, 1359);
             this.pan2.TabIndex = 15;
+            // 
+            // label63
+            // 
             this.label63.Location = new System.Drawing.Point(7, 0);
             this.label63.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label63.Name = "label63";
@@ -1315,12 +1748,18 @@
             this.label63.TabIndex = 12;
             this.label63.Text = "射击武器射程 Ranged Range";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtSheChenSheJi.Location = new System.Drawing.Point(138, 8);
+            // 
+            // txtSheChenSheJi
+            // 
+            this.txtSheChenSheJi.Location = new System.Drawing.Point(298, 8);
             this.txtSheChenSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSheChenSheJi.Name = "txtSheChenSheJi";
             this.txtSheChenSheJi.Size = new System.Drawing.Size(117, 39);
             this.txtSheChenSheJi.TabIndex = 13;
             this.txtSheChenSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label64
+            // 
             this.label64.Location = new System.Drawing.Point(7, 72);
             this.label64.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label64.Name = "label64";
@@ -1328,12 +1767,18 @@
             this.label64.TabIndex = 12;
             this.label64.Text = "格斗武器射程 Melee Ranged";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtSheChenGeDou.Location = new System.Drawing.Point(138, 80);
+            // 
+            // txtSheChenGeDou
+            // 
+            this.txtSheChenGeDou.Location = new System.Drawing.Point(298, 80);
             this.txtSheChenGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSheChenGeDou.Name = "txtSheChenGeDou";
             this.txtSheChenGeDou.Size = new System.Drawing.Size(117, 39);
             this.txtSheChenGeDou.TabIndex = 13;
             this.txtSheChenGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label65
+            // 
             this.label65.Location = new System.Drawing.Point(7, 144);
             this.label65.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label65.Name = "label65";
@@ -1341,12 +1786,18 @@
             this.label65.TabIndex = 12;
             this.label65.Text = "物理武器射程 Physical Range";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtSheChenWuLi.Location = new System.Drawing.Point(138, 152);
+            // 
+            // txtSheChenWuLi
+            // 
+            this.txtSheChenWuLi.Location = new System.Drawing.Point(298, 152);
             this.txtSheChenWuLi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSheChenWuLi.Name = "txtSheChenWuLi";
             this.txtSheChenWuLi.Size = new System.Drawing.Size(117, 39);
             this.txtSheChenWuLi.TabIndex = 13;
             this.txtSheChenWuLi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label66
+            // 
             this.label66.Location = new System.Drawing.Point(7, 216);
             this.label66.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label66.Name = "label66";
@@ -1354,12 +1805,18 @@
             this.label66.TabIndex = 12;
             this.label66.Text = "BEAN武器射程 Range";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtSheChenBean.Location = new System.Drawing.Point(138, 224);
+            // 
+            // txtSheChenBean
+            // 
+            this.txtSheChenBean.Location = new System.Drawing.Point(298, 224);
             this.txtSheChenBean.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSheChenBean.Name = "txtSheChenBean";
             this.txtSheChenBean.Size = new System.Drawing.Size(117, 39);
             this.txtSheChenBean.TabIndex = 13;
             this.txtSheChenBean.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label67
+            // 
             this.label67.Location = new System.Drawing.Point(7, 288);
             this.label67.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label67.Name = "label67";
@@ -1367,12 +1824,18 @@
             this.label67.TabIndex = 12;
             this.label67.Text = "MAP武器射程 Range";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtSheChenMap.Location = new System.Drawing.Point(138, 296);
+            // 
+            // txtSheChenMap
+            // 
+            this.txtSheChenMap.Location = new System.Drawing.Point(298, 296);
             this.txtSheChenMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSheChenMap.Name = "txtSheChenMap";
             this.txtSheChenMap.Size = new System.Drawing.Size(117, 39);
             this.txtSheChenMap.TabIndex = 13;
             this.txtSheChenMap.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label68
+            // 
             this.label68.Location = new System.Drawing.Point(7, 360);
             this.label68.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label68.Name = "label68";
@@ -1380,12 +1843,18 @@
             this.label68.TabIndex = 14;
             this.label68.Text = "射击武器EN消耗 Range EN";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENXiaoHaoSheJi.Location = new System.Drawing.Point(138, 368);
+            // 
+            // txtENXiaoHaoSheJi
+            // 
+            this.txtENXiaoHaoSheJi.Location = new System.Drawing.Point(298, 368);
             this.txtENXiaoHaoSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENXiaoHaoSheJi.Name = "txtENXiaoHaoSheJi";
             this.txtENXiaoHaoSheJi.Size = new System.Drawing.Size(117, 39);
             this.txtENXiaoHaoSheJi.TabIndex = 19;
             this.txtENXiaoHaoSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label69
+            // 
             this.label69.Location = new System.Drawing.Point(7, 432);
             this.label69.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label69.Name = "label69";
@@ -1393,12 +1862,18 @@
             this.label69.TabIndex = 15;
             this.label69.Text = "格斗武器EN消耗";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENXiaoHaoGeDou.Location = new System.Drawing.Point(138, 440);
+            // 
+            // txtENXiaoHaoGeDou
+            // 
+            this.txtENXiaoHaoGeDou.Location = new System.Drawing.Point(298, 440);
             this.txtENXiaoHaoGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENXiaoHaoGeDou.Name = "txtENXiaoHaoGeDou";
             this.txtENXiaoHaoGeDou.Size = new System.Drawing.Size(117, 39);
             this.txtENXiaoHaoGeDou.TabIndex = 20;
             this.txtENXiaoHaoGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label70
+            // 
             this.label70.Location = new System.Drawing.Point(7, 504);
             this.label70.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label70.Name = "label70";
@@ -1406,12 +1881,18 @@
             this.label70.TabIndex = 16;
             this.label70.Text = "物理武器EN消耗";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENXiaoHaoWuLi.Location = new System.Drawing.Point(138, 512);
+            // 
+            // txtENXiaoHaoWuLi
+            // 
+            this.txtENXiaoHaoWuLi.Location = new System.Drawing.Point(298, 512);
             this.txtENXiaoHaoWuLi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENXiaoHaoWuLi.Name = "txtENXiaoHaoWuLi";
             this.txtENXiaoHaoWuLi.Size = new System.Drawing.Size(117, 39);
             this.txtENXiaoHaoWuLi.TabIndex = 21;
             this.txtENXiaoHaoWuLi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label71
+            // 
             this.label71.Location = new System.Drawing.Point(7, 576);
             this.label71.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label71.Name = "label71";
@@ -1419,12 +1900,18 @@
             this.label71.TabIndex = 17;
             this.label71.Text = "BEAN武器EN消耗";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENXiaoHaoBean.Location = new System.Drawing.Point(138, 584);
+            // 
+            // txtENXiaoHaoBean
+            // 
+            this.txtENXiaoHaoBean.Location = new System.Drawing.Point(298, 584);
             this.txtENXiaoHaoBean.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENXiaoHaoBean.Name = "txtENXiaoHaoBean";
             this.txtENXiaoHaoBean.Size = new System.Drawing.Size(117, 39);
             this.txtENXiaoHaoBean.TabIndex = 22;
             this.txtENXiaoHaoBean.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label72
+            // 
             this.label72.Location = new System.Drawing.Point(7, 648);
             this.label72.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label72.Name = "label72";
@@ -1432,12 +1919,18 @@
             this.label72.TabIndex = 18;
             this.label72.Text = "MAP武器EN消耗";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtENXiaoHaoMap.Location = new System.Drawing.Point(138, 656);
+            // 
+            // txtENXiaoHaoMap
+            // 
+            this.txtENXiaoHaoMap.Location = new System.Drawing.Point(298, 656);
             this.txtENXiaoHaoMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtENXiaoHaoMap.Name = "txtENXiaoHaoMap";
             this.txtENXiaoHaoMap.Size = new System.Drawing.Size(117, 39);
             this.txtENXiaoHaoMap.TabIndex = 23;
             this.txtENXiaoHaoMap.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label73
+            // 
             this.label73.Location = new System.Drawing.Point(7, 720);
             this.label73.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label73.Name = "label73";
@@ -1445,12 +1938,18 @@
             this.label73.TabIndex = 24;
             this.label73.Text = "武器MP消耗";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtXiaoHaoMP.Location = new System.Drawing.Point(138, 728);
+            // 
+            // txtXiaoHaoMP
+            // 
+            this.txtXiaoHaoMP.Location = new System.Drawing.Point(298, 728);
             this.txtXiaoHaoMP.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtXiaoHaoMP.Name = "txtXiaoHaoMP";
             this.txtXiaoHaoMP.Size = new System.Drawing.Size(117, 39);
             this.txtXiaoHaoMP.TabIndex = 25;
             this.txtXiaoHaoMP.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label74
+            // 
             this.label74.Location = new System.Drawing.Point(7, 792);
             this.label74.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label74.Name = "label74";
@@ -1458,12 +1957,18 @@
             this.label74.TabIndex = 26;
             this.label74.Text = "射击武器暴击率";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtBaoJiSheJi.Location = new System.Drawing.Point(138, 800);
+            // 
+            // txtBaoJiSheJi
+            // 
+            this.txtBaoJiSheJi.Location = new System.Drawing.Point(298, 800);
             this.txtBaoJiSheJi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtBaoJiSheJi.Name = "txtBaoJiSheJi";
             this.txtBaoJiSheJi.Size = new System.Drawing.Size(117, 39);
             this.txtBaoJiSheJi.TabIndex = 28;
             this.txtBaoJiSheJi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label75
+            // 
             this.label75.Location = new System.Drawing.Point(7, 864);
             this.label75.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label75.Name = "label75";
@@ -1471,12 +1976,18 @@
             this.label75.TabIndex = 27;
             this.label75.Text = "格斗武器暴击率";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtBaoJiGeDou.Location = new System.Drawing.Point(138, 872);
+            // 
+            // txtBaoJiGeDou
+            // 
+            this.txtBaoJiGeDou.Location = new System.Drawing.Point(298, 872);
             this.txtBaoJiGeDou.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtBaoJiGeDou.Name = "txtBaoJiGeDou";
             this.txtBaoJiGeDou.Size = new System.Drawing.Size(117, 39);
             this.txtBaoJiGeDou.TabIndex = 29;
             this.txtBaoJiGeDou.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label76
+            // 
             this.label76.Location = new System.Drawing.Point(7, 936);
             this.label76.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label76.Name = "label76";
@@ -1484,12 +1995,18 @@
             this.label76.TabIndex = 30;
             this.label76.Text = "物理武器暴击率?";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtBaoJiWuLI.Location = new System.Drawing.Point(138, 944);
+            // 
+            // txtBaoJiWuLI
+            // 
+            this.txtBaoJiWuLI.Location = new System.Drawing.Point(298, 944);
             this.txtBaoJiWuLI.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtBaoJiWuLI.Name = "txtBaoJiWuLI";
             this.txtBaoJiWuLI.Size = new System.Drawing.Size(117, 39);
             this.txtBaoJiWuLI.TabIndex = 32;
             this.txtBaoJiWuLI.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label77
+            // 
             this.label77.Location = new System.Drawing.Point(7, 1008);
             this.label77.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label77.Name = "label77";
@@ -1497,12 +2014,18 @@
             this.label77.TabIndex = 31;
             this.label77.Text = "BEAN武器暴击率?";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtBaoJiBean.Location = new System.Drawing.Point(138, 1016);
+            // 
+            // txtBaoJiBean
+            // 
+            this.txtBaoJiBean.Location = new System.Drawing.Point(298, 1016);
             this.txtBaoJiBean.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtBaoJiBean.Name = "txtBaoJiBean";
             this.txtBaoJiBean.Size = new System.Drawing.Size(117, 39);
             this.txtBaoJiBean.TabIndex = 33;
             this.txtBaoJiBean.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label78
+            // 
             this.label78.Location = new System.Drawing.Point(7, 1080);
             this.label78.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label78.Name = "label78";
@@ -1510,12 +2033,18 @@
             this.label78.TabIndex = 34;
             this.label78.Text = "未使用 (Unused)72";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtBaoJiUnKnow72.Location = new System.Drawing.Point(138, 1088);
+            // 
+            // txtBaoJiUnKnow72
+            // 
+            this.txtBaoJiUnKnow72.Location = new System.Drawing.Point(298, 1088);
             this.txtBaoJiUnKnow72.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtBaoJiUnKnow72.Name = "txtBaoJiUnKnow72";
             this.txtBaoJiUnKnow72.Size = new System.Drawing.Size(117, 39);
             this.txtBaoJiUnKnow72.TabIndex = 35;
             this.txtBaoJiUnKnow72.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label79
+            // 
             this.label79.Location = new System.Drawing.Point(7, 1152);
             this.label79.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label79.Name = "label79";
@@ -1523,12 +2052,18 @@
             this.label79.TabIndex = 36;
             this.label79.Text = "命中";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.txtMinZhong.Location = new System.Drawing.Point(138, 1160);
+            // 
+            // txtMinZhong
+            // 
+            this.txtMinZhong.Location = new System.Drawing.Point(298, 1160);
             this.txtMinZhong.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMinZhong.Name = "txtMinZhong";
             this.txtMinZhong.Size = new System.Drawing.Size(117, 39);
             this.txtMinZhong.TabIndex = 37;
             this.txtMinZhong.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // label80
+            // 
             this.label80.Location = new System.Drawing.Point(7, 1224);
             this.label80.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label80.Name = "label80";
@@ -1536,21 +2071,30 @@
             this.label80.TabIndex = 38;
             this.label80.Text = "闪避";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtShanBi
+            // 
             this.txtShanBi.BackColor = System.Drawing.SystemColors.Window;
-            this.txtShanBi.Location = new System.Drawing.Point(138, 1232);
+            this.txtShanBi.Location = new System.Drawing.Point(298, 1232);
             this.txtShanBi.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtShanBi.Name = "txtShanBi";
             this.txtShanBi.Size = new System.Drawing.Size(117, 39);
             this.txtShanBi.TabIndex = 39;
             this.txtShanBi.TextChanged += new System.EventHandler(this.txtHP_TextChanged);
+            // 
+            // button1
+            // 
             this.button1.Location = new System.Drawing.Point(698, 1787);
             this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(1757, 69);
             this.button1.TabIndex = 16;
-            this.button1.Text = "全部保存";
+            this.button1.Text = "全部保存 SAVE ALL";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cboSkill
+            // 
             this.cboSkill.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboSkill.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSkill.FormattingEnabled = true;
@@ -1561,17 +2105,24 @@
             this.cboSkill.TabIndex = 17;
             this.cboSkill.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.cboSkill_DrawItem);
             this.cboSkill.SelectedIndexChanged += new System.EventHandler(this.cboSkill_SelectedIndexChanged);
+            // 
+            // btnCopy
+            // 
             this.btnCopy.Location = new System.Drawing.Point(30, 1706);
             this.btnCopy.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(609, 150);
             this.btnCopy.TabIndex = 18;
-            this.btnCopy.Text = "复制选中技能(实时生效,请做好备份)";
+            this.btnCopy.Text = "复制选中技能(实时生效,请做好备份)\r\nCopy selected skills (effective immediately, please make a ba" +
+                                "ckup)";
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
+            // FrmEditAbility
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2487, 1923);
+            this.ClientSize = new System.Drawing.Size(2487, 2019);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.cboSkill);
             this.Controls.Add(this.label5);

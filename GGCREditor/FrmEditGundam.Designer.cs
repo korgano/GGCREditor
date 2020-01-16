@@ -120,7 +120,7 @@
             this.txtSearch.Location = new System.Drawing.Point(146, 24);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(647, 39);
+            this.txtSearch.Size = new System.Drawing.Size(668, 39);
             this.txtSearch.TabIndex = 10;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -140,7 +140,7 @@
             this.lsGundam.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.lsGundam.Name = "lsGundam";
             this.lsGundam.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lsGundam.Size = new System.Drawing.Size(767, 1742);
+            this.lsGundam.Size = new System.Drawing.Size(787, 1774);
             this.lsGundam.TabIndex = 9;
             this.lsGundam.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lsGundam_DrawItem);
             this.lsGundam.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lsGundam_MeasureItem);
@@ -229,11 +229,11 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtDef);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(810, 24);
+            this.groupBox1.Location = new System.Drawing.Point(830, 24);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.groupBox1.Size = new System.Drawing.Size(1018, 1814);
+            this.groupBox1.Size = new System.Drawing.Size(1018, 1838);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "属性 ATTR";
@@ -243,7 +243,7 @@
             this.btnBatchImport.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBatchImport.Location = new System.Drawing.Point(886, 1677);
+            this.btnBatchImport.Location = new System.Drawing.Point(886, 1701);
             this.btnBatchImport.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnBatchImport.Name = "btnBatchImport";
             this.btnBatchImport.Size = new System.Drawing.Size(111, 106);
@@ -257,7 +257,7 @@
             this.btnExportAll.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExportAll.Location = new System.Drawing.Point(886, 1568);
+            this.btnExportAll.Location = new System.Drawing.Point(886, 1592);
             this.btnExportAll.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnExportAll.Name = "btnExportAll";
             this.btnExportAll.Size = new System.Drawing.Size(111, 106);
@@ -284,7 +284,7 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
             this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(42, 1674);
+            this.label32.Location = new System.Drawing.Point(42, 1698);
             this.label32.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(572, 64);
@@ -307,7 +307,7 @@
             this.button1.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(713, 1723);
+            this.button1.Location = new System.Drawing.Point(713, 1747);
             this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 61);
@@ -321,7 +321,7 @@
             this.btnExport.Anchor =
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExport.Location = new System.Drawing.Point(713, 1645);
+            this.btnExport.Location = new System.Drawing.Point(713, 1669);
             this.btnExport.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(163, 61);
@@ -477,7 +477,7 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
             this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(45, 1742);
+            this.label30.Location = new System.Drawing.Point(46, 1766);
             this.label30.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(589, 64);
@@ -501,7 +501,7 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(54, 1567);
+            this.label18.Location = new System.Drawing.Point(54, 1591);
             this.label18.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(441, 96);
@@ -516,7 +516,7 @@
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Enabled = false;
-            this.btnSave.Location = new System.Drawing.Point(713, 1568);
+            this.btnSave.Location = new System.Drawing.Point(713, 1592);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(163, 61);
@@ -578,7 +578,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(45, 1374);
+            this.label22.Location = new System.Drawing.Point(46, 1373);
             this.label22.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(347, 32);
@@ -685,7 +685,7 @@
             // 
             // txtFirstMap
             // 
-            this.txtFirstMap.Location = new System.Drawing.Point(212, 1520);
+            this.txtFirstMap.Location = new System.Drawing.Point(212, 1521);
             this.txtFirstMap.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtFirstMap.Name = "txtFirstMap";
             this.txtFirstMap.Size = new System.Drawing.Size(180, 39);
@@ -813,7 +813,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(589, 1227);
+            this.label21.Location = new System.Drawing.Point(589, 1228);
             this.label21.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(150, 32);
@@ -823,7 +823,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(589, 1127);
+            this.label20.Location = new System.Drawing.Point(589, 1126);
             this.label20.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(150, 32);
@@ -853,7 +853,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(596, 843);
+            this.label14.Location = new System.Drawing.Point(596, 844);
             this.label14.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(150, 32);
@@ -911,7 +911,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(78, 1072);
+            this.label5.Location = new System.Drawing.Point(78, 1073);
             this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 32);
@@ -923,10 +923,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]
                 {this.tslblFile, this.tsmiLblState, this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1866);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1898);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 30, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1844, 37);
+            this.statusStrip1.Size = new System.Drawing.Size(1864, 37);
             this.statusStrip1.TabIndex = 12;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -940,7 +940,7 @@
             // 
             this.tsmiLblState.Margin = new System.Windows.Forms.Padding(0, 3, 5, 2);
             this.tsmiLblState.Name = "tsmiLblState";
-            this.tsmiLblState.Size = new System.Drawing.Size(1206, 32);
+            this.tsmiLblState.Size = new System.Drawing.Size(1226, 32);
             this.tsmiLblState.Spring = true;
             this.tsmiLblState.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -954,7 +954,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1844, 1903);
+            this.ClientSize = new System.Drawing.Size(1864, 1935);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSearch);
