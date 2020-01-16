@@ -24,7 +24,7 @@ namespace GGCREditor
         private void 选择路径ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog dialog = new FolderBrowserDialog();
-            dialog.Description = "请设置火线纵横data文件夹所在目录";
+            dialog.Description = "Please set the directory where the FireWire data folder is located";
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             if (config.AppSettings.Settings["path"] != null)
             {
@@ -35,7 +35,7 @@ namespace GGCREditor
             {
                 if (!dialog.SelectedPath.EndsWith("data"))
                 {
-                    MessageBox.Show("请选择[火线纵横]的data文件夹", "目录无效", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please select the data folder of [FireWire]", "Directory is invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {

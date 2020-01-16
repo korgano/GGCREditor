@@ -250,7 +250,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(17, 12);
             this.label19.TabIndex = 8;
-            this.label19.Text = "搜";
+            this.label19.Text = "搜 Search";
             // 
             // statusStrip1
             // 
@@ -290,7 +290,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 27);
             this.label1.TabIndex = 12;
-            this.label1.Text = "地址";
+            this.label1.Text = "地址 Address";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtAddress
@@ -307,7 +307,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 27);
             this.label2.TabIndex = 12;
-            this.label2.Text = "单位名称";
+            this.label2.Text = "单位名称 Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtName
@@ -323,7 +323,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 27);
             this.label3.TabIndex = 12;
-            this.label3.Text = "对应技能效果编号";
+            this.label3.Text = "对应技能效果编号 Skill Effect #";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
@@ -333,7 +333,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 12);
             this.label4.TabIndex = 12;
-            this.label4.Text = "效果说明(也可以修改哦)";
+            this.label4.Text = "效果说明(也可以修改哦) Effect description (can also be modified)";
             // 
             // txtXiaoGuoRemark
             // 
@@ -350,7 +350,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 27);
             this.label5.TabIndex = 12;
-            this.label5.Text = "技能效果说明编号";
+            this.label5.Text = "技能效果说明编号 Skill effect description number";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtRemarkId
@@ -369,7 +369,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 12);
             this.label6.TabIndex = 14;
-            this.label6.Text = "搜索功能支持效果说明";
+            this.label6.Text = "搜索功能支持效果说明 The search feature supports Effect Description ???";
             // 
             // label7
             // 
@@ -411,7 +411,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 27);
             this.label9.TabIndex = 12;
-            this.label9.Text = "攻击";
+            this.label9.Text = "攻击 ATK";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtEN
@@ -428,7 +428,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 27);
             this.label10.TabIndex = 12;
-            this.label10.Text = "防御";
+            this.label10.Text = "防御 DEF";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerWuLi
@@ -445,7 +445,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 27);
             this.label11.TabIndex = 12;
-            this.label11.Text = "机动";
+            this.label11.Text = "机动 MAN";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMachAct
@@ -462,7 +462,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(54, 27);
             this.label12.TabIndex = 12;
-            this.label12.Text = "射击Power";
+            this.label12.Text = "射击Power RANGED";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerBean
@@ -479,7 +479,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(54, 27);
             this.label13.TabIndex = 12;
-            this.label13.Text = "格斗Power";
+            this.label13.Text = "格斗Power MELEE";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMachDef
@@ -496,7 +496,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 27);
             this.label14.TabIndex = 12;
-            this.label14.Text = "物理Power";
+            this.label14.Text = "物理Power PHYSICAL";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerMap
@@ -513,7 +513,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(54, 27);
             this.label15.TabIndex = 12;
-            this.label15.Text = "BEAN Power";
+            this.label15.Text = "BEAM Power";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMachSpd
@@ -530,7 +530,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(54, 27);
             this.label16.TabIndex = 12;
-            this.label16.Text = "地图Power";
+            this.label16.Text = "地图Power MAP";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerZhanJianUnion
@@ -547,7 +547,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(54, 27);
             this.label17.TabIndex = 12;
-            this.label17.Text = "战舰联攻Power";
+            this.label17.Text = "战舰联攻Power Warship Link";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerSheJi
@@ -564,7 +564,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(54, 27);
             this.label18.TabIndex = 12;
-            this.label18.Text = "游击联攻Power";
+            this.label18.Text = "游击联攻Power Raid Link";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPowerXiaoDuiUnion
@@ -581,7 +581,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(54, 27);
             this.label20.TabIndex = 12;
-            this.label20.Text = "射击";
+            this.label20.Text = "射击 Ranged";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerSheJi
@@ -598,7 +598,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(54, 27);
             this.label21.TabIndex = 12;
-            this.label21.Text = "格斗";
+            this.label21.Text = "格斗 Melee";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerShouBei
@@ -615,7 +615,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(54, 27);
             this.label22.TabIndex = 12;
-            this.label22.Text = "守备";
+            this.label22.Text = "守备 Guard";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerGedou
@@ -632,7 +632,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(54, 27);
             this.label23.TabIndex = 12;
-            this.label23.Text = "反应";
+            this.label23.Text = "反应 Reaction";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerCaoDuo
@@ -649,7 +649,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(54, 27);
             this.label24.TabIndex = 12;
-            this.label24.Text = "觉醒";
+            this.label24.Text = "觉醒 Awakening";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerFanYin
@@ -666,7 +666,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(54, 27);
             this.label25.TabIndex = 12;
-            this.label25.Text = "指挥";
+            this.label25.Text = "指挥 Command";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerZhiHui
@@ -683,7 +683,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(54, 27);
             this.label26.TabIndex = 12;
-            this.label26.Text = "辅佐";
+            this.label26.Text = "辅佐 XO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerJueXin
@@ -700,7 +700,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(54, 27);
             this.label27.TabIndex = 12;
-            this.label27.Text = "通讯";
+            this.label27.Text = "通讯 COMM";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerTongXun
@@ -717,7 +717,7 @@
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(54, 27);
             this.label28.TabIndex = 12;
-            this.label28.Text = "操舵";
+            this.label28.Text = "操舵 Navigation";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerFuZuo
@@ -734,7 +734,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(54, 27);
             this.label29.TabIndex = 12;
-            this.label29.Text = "维修";
+            this.label29.Text = "维修 Repair";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerWeiXiu
@@ -751,7 +751,7 @@
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(54, 27);
             this.label30.TabIndex = 12;
-            this.label30.Text = "魅力";
+            this.label30.Text = "魅力 Charisma";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerMeiLi
@@ -811,7 +811,7 @@
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(54, 27);
             this.label31.TabIndex = 14;
-            this.label31.Text = "战意MP";
+            this.label31.Text = "战意MP War?";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerZhanYi
@@ -828,7 +828,7 @@
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(54, 27);
             this.label82.TabIndex = 16;
-            this.label82.Text = "额外行动次数";
+            this.label82.Text = "额外行动次数 Extra Action";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtPerEWaiXinDong
@@ -845,7 +845,7 @@
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(54, 27);
             this.label83.TabIndex = 18;
-            this.label83.Text = "指挥区域";
+            this.label83.Text = "指挥区域 Comm Area";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtAreaZhiHui
@@ -862,7 +862,7 @@
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(54, 27);
             this.label84.TabIndex = 20;
-            this.label84.Text = "未使用78";
+            this.label84.Text = "未使用 (Unused)78 UNUSED";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtAreaUnknow78
@@ -879,7 +879,7 @@
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(54, 27);
             this.label85.TabIndex = 22;
-            this.label85.Text = "范围技能范围";
+            this.label85.Text = "范围技能范围 Skill Range";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtAreaJiNen
@@ -896,7 +896,7 @@
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(54, 27);
             this.label81.TabIndex = 40;
-            this.label81.Text = "未使用75";
+            this.label81.Text = "未使用 (Unused)75";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnKnow75
@@ -913,7 +913,7 @@
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(54, 27);
             this.label86.TabIndex = 24;
-            this.label86.Text = "未知80?";
+            this.label86.Text = "未知 (Unknown) (Unknown)80?";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnknow80
@@ -1017,7 +1017,7 @@
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(54, 27);
             this.label41.TabIndex = 24;
-            this.label41.Text = "移动力";
+            this.label41.Text = "移动力 MOV";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtMove
@@ -1034,7 +1034,7 @@
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(54, 27);
             this.label34.TabIndex = 18;
-            this.label34.Text = "适(宇)";
+            this.label34.Text = "适(宇) Space Suitable";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShiXin1
@@ -1051,7 +1051,7 @@
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(54, 27);
             this.label35.TabIndex = 20;
-            this.label35.Text = "适(空)";
+            this.label35.Text = "适(空) Can Fly";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShiXin2
@@ -1068,7 +1068,7 @@
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(54, 27);
             this.label36.TabIndex = 22;
-            this.label36.Text = "适(地)";
+            this.label36.Text = "适(地) Can Ground";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShiXin3
@@ -1085,7 +1085,7 @@
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(54, 27);
             this.label58.TabIndex = 26;
-            this.label58.Text = "适(水面)";
+            this.label58.Text = "适(水面) Can Water Surface";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShiXin4
@@ -1102,7 +1102,7 @@
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(54, 27);
             this.label59.TabIndex = 28;
-            this.label59.Text = "适(水中)";
+            this.label59.Text = "适(水中) Can underwater";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShiXin5
@@ -1119,7 +1119,7 @@
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(54, 27);
             this.label60.TabIndex = 30;
-            this.label60.Text = "取得经验";
+            this.label60.Text = "取得经验 Gain EXP";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtJinYan
@@ -1136,7 +1136,7 @@
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(54, 27);
             this.label61.TabIndex = 32;
-            this.label61.Text = "取得积分";
+            this.label61.Text = "取得积分 Score Points";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtJiFen
@@ -1153,7 +1153,7 @@
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(54, 27);
             this.label62.TabIndex = 34;
-            this.label62.Text = "售出金额";
+            this.label62.Text = "售出金额 Sell Price";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtJinE
@@ -1217,7 +1217,7 @@
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(54, 27);
             this.label43.TabIndex = 12;
-            this.label43.Text = "物理射击损伤减轻";
+            this.label43.Text = "物理射击损伤减轻 Physical Ranged damage reduction";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgWuLiSheJi
@@ -1234,7 +1234,7 @@
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(54, 27);
             this.label42.TabIndex = 12;
-            this.label42.Text = "物理格斗损伤减轻";
+            this.label42.Text = "物理格斗损伤减轻 Physical Melee DMG Reduction";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgWuLiGeDou
@@ -1251,7 +1251,7 @@
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(54, 27);
             this.label44.TabIndex = 12;
-            this.label44.Text = "Bean射击损伤减轻";
+            this.label44.Text = "Beam射击损伤减轻 Ranged DMG Reduction";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgBeanSheJi
@@ -1268,7 +1268,7 @@
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(54, 27);
             this.label45.TabIndex = 12;
-            this.label45.Text = "Bean格斗损伤减轻";
+            this.label45.Text = "Beam格斗损伤减轻 Melee DMG Reduction";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgBeanGeDou
@@ -1285,7 +1285,7 @@
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(54, 27);
             this.label46.TabIndex = 12;
-            this.label46.Text = "特殊射击损伤减轻";
+            this.label46.Text = "特殊射击损伤减轻 Special Ranged DMG Reduction";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgUnknow35
@@ -1302,7 +1302,7 @@
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(54, 27);
             this.label47.TabIndex = 12;
-            this.label47.Text = "特殊格斗损伤减轻";
+            this.label47.Text = "特殊格斗损伤减轻 Special Melee DMG Reduction";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgUnknow36
@@ -1319,7 +1319,7 @@
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(54, 27);
             this.label48.TabIndex = 12;
-            this.label48.Text = "MAP武器损伤减轻";
+            this.label48.Text = "MAP武器损伤减轻 DMG Reduction";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtDmgMap
@@ -1336,7 +1336,7 @@
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(54, 27);
             this.label50.TabIndex = 12;
-            this.label50.Text = "物理射击损伤无效";
+            this.label50.Text = "物理射击损伤无效 Immune Physical Ranged";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoWuLiSheJi
@@ -1353,7 +1353,7 @@
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(54, 27);
             this.label49.TabIndex = 12;
-            this.label49.Text = "物理格斗损伤无效";
+            this.label49.Text = "物理格斗损伤无效 Immune Physical Melee";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoWuLiGeDou
@@ -1370,7 +1370,7 @@
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(54, 27);
             this.label51.TabIndex = 12;
-            this.label51.Text = "Bean射击损伤无效";
+            this.label51.Text = "Beam射击损伤无效 Ranged Immune";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoBeanSheJi
@@ -1387,7 +1387,7 @@
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(54, 27);
             this.label52.TabIndex = 12;
-            this.label52.Text = "Bean格斗损伤无效";
+            this.label52.Text = "Bean格斗损伤无效 Melee Immune";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoBeanGeDou
@@ -1404,7 +1404,7 @@
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(54, 27);
             this.label53.TabIndex = 23;
-            this.label53.Text = "特殊射击损伤无效";
+            this.label53.Text = "特殊射击损伤无效 Special Ranged Immune";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoUnknow42
@@ -1421,7 +1421,7 @@
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(54, 27);
             this.label54.TabIndex = 24;
-            this.label54.Text = "特殊格斗损伤无效";
+            this.label54.Text = "特殊格斗损伤无效 Special Melee Immune";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoUnKnow43
@@ -1438,7 +1438,7 @@
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(54, 27);
             this.label55.TabIndex = 25;
-            this.label55.Text = "MAP武器损伤无效";
+            this.label55.Text = "MAP武器损伤无效 Immune";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtWuXiaoMap
@@ -1455,7 +1455,7 @@
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(54, 27);
             this.label56.TabIndex = 29;
-            this.label56.Text = "最终敌方受到伤害";
+            this.label56.Text = "最终敌方受到伤害 Bonus DMG";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShangHaiFinal
@@ -1472,7 +1472,7 @@
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(54, 27);
             this.label57.TabIndex = 31;
-            this.label57.Text = "最终自身受到伤害";
+            this.label57.Text = "最终自身受到伤害 Hurt Self";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtShangHaiFinalSelf
@@ -1489,7 +1489,7 @@
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(54, 27);
             this.label37.TabIndex = 33;
-            this.label37.Text = "未知47";
+            this.label37.Text = "未知 (Unknown)47";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnknow47
@@ -1506,7 +1506,7 @@
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(54, 27);
             this.label38.TabIndex = 35;
-            this.label38.Text = "未知48";
+            this.label38.Text = "未知 (Unknown)48";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnknow48
@@ -1523,7 +1523,7 @@
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(54, 27);
             this.label39.TabIndex = 37;
-            this.label39.Text = "未知49";
+            this.label39.Text = "未知 (Unknown)49";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnknow49
@@ -1540,7 +1540,7 @@
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(54, 27);
             this.label40.TabIndex = 39;
-            this.label40.Text = "未知50";
+            this.label40.Text = "未知 (Unknown)50";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtUnknow50
@@ -1600,7 +1600,7 @@
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(54, 27);
             this.label63.TabIndex = 12;
-            this.label63.Text = "射击武器射程";
+            this.label63.Text = "射击武器射程 Ranged Range";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtSheChenSheJi
@@ -1617,7 +1617,7 @@
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(54, 27);
             this.label64.TabIndex = 12;
-            this.label64.Text = "格斗武器射程";
+            this.label64.Text = "格斗武器射程 Melee Ranged";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtSheChenGeDou
@@ -1634,7 +1634,7 @@
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(54, 27);
             this.label65.TabIndex = 12;
-            this.label65.Text = "物理武器射程";
+            this.label65.Text = "物理武器射程 Physical Range";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtSheChenWuLi
@@ -1651,7 +1651,7 @@
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(54, 27);
             this.label66.TabIndex = 12;
-            this.label66.Text = "BEAN武器射程";
+            this.label66.Text = "BEAN武器射程 Range";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtSheChenBean
@@ -1668,7 +1668,7 @@
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(54, 27);
             this.label67.TabIndex = 12;
-            this.label67.Text = "MAP武器射程";
+            this.label67.Text = "MAP武器射程 Range";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtSheChenMap
@@ -1685,7 +1685,7 @@
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(54, 27);
             this.label68.TabIndex = 14;
-            this.label68.Text = "射击武器EN消耗";
+            this.label68.Text = "射击武器EN消耗 Range EN";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtENXiaoHaoSheJi
@@ -1855,7 +1855,7 @@
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(54, 27);
             this.label78.TabIndex = 34;
-            this.label78.Text = "未使用72";
+            this.label78.Text = "未使用 (Unused)72";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtBaoJiUnKnow72

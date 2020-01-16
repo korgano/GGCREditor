@@ -78,13 +78,13 @@
             this.tsmiLanguage});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
             this.文件ToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
-            this.文件ToolStripMenuItem.Text = "文件(File)";
+            this.文件ToolStripMenuItem.Text = "文件(File/Options)";
             // 
             // 选择路径ToolStripMenuItem
             // 
             this.选择路径ToolStripMenuItem.Name = "选择路径ToolStripMenuItem";
             this.选择路径ToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.选择路径ToolStripMenuItem.Text = "设置data文件夹路径";
+            this.选择路径ToolStripMenuItem.Text = "设置data文件夹路径 (Set data folder path)";
             this.选择路径ToolStripMenuItem.Click += new System.EventHandler(this.选择路径ToolStripMenuItem_Click);
             // 
             // tsmiLanguage
@@ -98,7 +98,7 @@
             this.koreanToolStripMenuItem});
             this.tsmiLanguage.Name = "tsmiLanguage";
             this.tsmiLanguage.Size = new System.Drawing.Size(251, 22);
-            this.tsmiLanguage.Text = "选择游戏语言(Game Language)";
+            this.tsmiLanguage.Text = "选择游戏语言(Choose Game Language)";
             // 
             // 简体中文ToolStripMenuItem
             // 
@@ -154,7 +154,7 @@
             this.btnEditMaster.Name = "btnEditMaster";
             this.btnEditMaster.Size = new System.Drawing.Size(77, 54);
             this.btnEditMaster.TabIndex = 1;
-            this.btnEditMaster.Text = "修改角色";
+            this.btnEditMaster.Text = "修改角色 (Modify Pilots)";
             this.btnEditMaster.UseVisualStyleBackColor = true;
             this.btnEditMaster.Click += new System.EventHandler(this.btnEditUser_Click);
             // 
@@ -164,7 +164,7 @@
             this.btnEditGundam.Name = "btnEditGundam";
             this.btnEditGundam.Size = new System.Drawing.Size(77, 54);
             this.btnEditGundam.TabIndex = 2;
-            this.btnEditGundam.Text = "修改机体/战舰";
+            this.btnEditGundam.Text = "修改机体/战舰 (Modify MS/MA/WS)";
             this.btnEditGundam.UseVisualStyleBackColor = true;
             this.btnEditGundam.Click += new System.EventHandler(this.btnEditGundam_Click);
             // 
@@ -174,7 +174,7 @@
             this.btnEditWeapon.Name = "btnEditWeapon";
             this.btnEditWeapon.Size = new System.Drawing.Size(77, 54);
             this.btnEditWeapon.TabIndex = 3;
-            this.btnEditWeapon.Text = "修改武器";
+            this.btnEditWeapon.Text = "修改武器 (Modify weapon)";
             this.btnEditWeapon.UseVisualStyleBackColor = true;
             this.btnEditWeapon.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -194,7 +194,7 @@
             // 
             this.tslblDir.Name = "tslblDir";
             this.tslblDir.Size = new System.Drawing.Size(188, 17);
-            this.tslblDir.Text = "请点击-文件-设置data文件夹路径";
+            this.tslblDir.Text = "请点击-文件-设置data文件夹路径 (Set Data path, under File/Options)";
             // 
             // toolStripStatusLabel1
             // 
@@ -206,7 +206,7 @@
             // 
             this.lblLang.Name = "lblLang";
             this.lblLang.Size = new System.Drawing.Size(57, 17);
-            this.lblLang.Text = "schinese";
+            this.lblLang.Text = "lang";
             // 
             // label1
             // 
@@ -216,7 +216,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 12);
             this.label1.TabIndex = 3;
-            this.label1.Text = "感谢: 泷泽透明 lxdlxd99 gundamdxhk hgjzorro hj mediar";
+            this.label1.Text = "感谢: 泷泽透明 lxdlxd99 gundamdxhk hgjzorro hj mediar (Credits)";
             // 
             // btnEditPeopleText
             // 
@@ -224,7 +224,7 @@
             this.btnEditPeopleText.Name = "btnEditPeopleText";
             this.btnEditPeopleText.Size = new System.Drawing.Size(77, 54);
             this.btnEditPeopleText.TabIndex = 3;
-            this.btnEditPeopleText.Text = "修改角色相关文本";
+            this.btnEditPeopleText.Text = "修改角色相关文本 Modify character text";
             this.btnEditPeopleText.UseVisualStyleBackColor = true;
             this.btnEditPeopleText.Click += new System.EventHandler(this.btnEditText_Click);
             // 
@@ -234,7 +234,7 @@
             this.btnEditMachineTxt.Name = "btnEditMachineTxt";
             this.btnEditMachineTxt.Size = new System.Drawing.Size(77, 54);
             this.btnEditMachineTxt.TabIndex = 3;
-            this.btnEditMachineTxt.Text = "修改机体/武器文本";
+            this.btnEditMachineTxt.Text = "修改机体/武器文本 (Modify body / weapon text)";
             this.btnEditMachineTxt.UseVisualStyleBackColor = true;
             this.btnEditMachineTxt.Click += new System.EventHandler(this.btnEditMachineTxt_Click);
             // 
@@ -244,7 +244,7 @@
             this.btnEditMachineDesc.Name = "btnEditMachineDesc";
             this.btnEditMachineDesc.Size = new System.Drawing.Size(77, 54);
             this.btnEditMachineDesc.TabIndex = 3;
-            this.btnEditMachineDesc.Text = "修改角色/机体描述";
+            this.btnEditMachineDesc.Text = "修改角色/机体描述 Modify pilot / body description";
             this.btnEditMachineDesc.UseVisualStyleBackColor = true;
             this.btnEditMachineDesc.Click += new System.EventHandler(this.btnEditMachineDesc_Click);
             // 
@@ -254,7 +254,7 @@
             this.btnEditAbilityText.Name = "btnEditAbilityText";
             this.btnEditAbilityText.Size = new System.Drawing.Size(77, 54);
             this.btnEditAbilityText.TabIndex = 3;
-            this.btnEditAbilityText.Text = "修改技能相关文本";
+            this.btnEditAbilityText.Text = "修改技能相关文本 Modify skill related text";
             this.btnEditAbilityText.UseVisualStyleBackColor = true;
             this.btnEditAbilityText.Click += new System.EventHandler(this.btnEditAbility_Click);
             // 
@@ -278,7 +278,7 @@
             this.btnEditAbility.Name = "btnEditAbility";
             this.btnEditAbility.Size = new System.Drawing.Size(77, 54);
             this.btnEditAbility.TabIndex = 3;
-            this.btnEditAbility.Text = "修改能力/技能/OP";
+            this.btnEditAbility.Text = "修改能力/技能/OP (Modify ability / skill)";
             this.btnEditAbility.UseVisualStyleBackColor = true;
             this.btnEditAbility.Click += new System.EventHandler(this.btnEditAbility_Click_1);
             // 
@@ -288,7 +288,7 @@
             this.btnEditTBL.Name = "btnEditTBL";
             this.btnEditTBL.Size = new System.Drawing.Size(77, 54);
             this.btnEditTBL.TabIndex = 3;
-            this.btnEditTBL.Text = "修改其他TBL文件";
+            this.btnEditTBL.Text = "修改其他TBL文件 (other TBL files)";
             this.btnEditTBL.UseVisualStyleBackColor = true;
             this.btnEditTBL.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -322,7 +322,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "火线纵横-静态修改器 v2.5.1 - Power By RenYueHD";
+            this.Text = "GGCREditor 火线纵横-静态修改器 v2.5.1 - Power By RenYueHD";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -64,7 +64,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(77, 23);
             this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "复位";
+            this.btnReset.Text = "复位 Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -75,7 +75,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 12);
             this.label1.TabIndex = 3;
-            this.label1.Text = "搜";
+            this.label1.Text = "搜 Search";
             // 
             // txtEdit
             // 
@@ -100,7 +100,7 @@
             this.btnEnsure.Name = "btnEnsure";
             this.btnEnsure.Size = new System.Drawing.Size(86, 91);
             this.btnEnsure.TabIndex = 5;
-            this.btnEnsure.Text = "确定";
+            this.btnEnsure.Text = "确定 OK";
             this.btnEnsure.UseVisualStyleBackColor = true;
             this.btnEnsure.Click += new System.EventHandler(this.btnEnsure_Click);
             // 
@@ -112,7 +112,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 46);
             this.btnSave.TabIndex = 5;
-            this.btnSave.Text = "写入文件";
+            this.btnSave.Text = "写入文件 Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -200,7 +200,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEditText";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "文本修改";
+            this.Text = "文本修改 Text";
             this.Load += new System.EventHandler(this.FrmEditText_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

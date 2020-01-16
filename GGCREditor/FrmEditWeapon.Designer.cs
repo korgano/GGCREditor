@@ -140,7 +140,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(17, 12);
             this.label19.TabIndex = 8;
-            this.label19.Text = "搜";
+            this.label19.Text = "搜 (search)";
             // 
             // groupBox1
             // 
@@ -201,7 +201,7 @@
             this.groupBox1.Size = new System.Drawing.Size(470, 567);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "属性";
+            this.groupBox1.Text = "属性 Attributes";
             // 
             // btnBatchImport
             // 
@@ -210,7 +210,7 @@
             this.btnBatchImport.Name = "btnBatchImport";
             this.btnBatchImport.Size = new System.Drawing.Size(51, 81);
             this.btnBatchImport.TabIndex = 37;
-            this.btnBatchImport.Text = "批量\r\n导入";
+            this.btnBatchImport.Text = "批量\r\n导入\r\nbulk";
             this.btnBatchImport.UseVisualStyleBackColor = true;
             this.btnBatchImport.Click += new System.EventHandler(this.btnBatchImport_Click);
             // 
@@ -223,7 +223,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(293, 12);
             this.label29.TabIndex = 36;
-            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出";
+            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出 (Save before export)";
             // 
             // button1
             // 
@@ -232,7 +232,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 35;
-            this.button1.Text = "导入";
+            this.button1.Text = "导入 Import";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -245,7 +245,7 @@
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(287, 12);
             this.label30.TabIndex = 34;
-            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存";
+            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存 Please save after import";
             // 
             // panNormal
             // 
@@ -283,7 +283,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 2;
-            this.label9.Text = "暴击";
+            this.label9.Text = "暴击 Crit";
             // 
             // label11
             // 
@@ -292,7 +292,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 12);
             this.label11.TabIndex = 2;
-            this.label11.Text = "命中";
+            this.label11.Text = "命中 Life?";
             // 
             // txtHitCount
             // 
@@ -335,7 +335,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(65, 12);
             this.label26.TabIndex = 2;
-            this.label26.Text = "攻击机体数";
+            this.label26.Text = "攻击机体数 ATK Body #";
             // 
             // label25
             // 
@@ -344,7 +344,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(47, 12);
             this.label25.TabIndex = 2;
-            this.label25.Text = "MAP类型";
+            this.label25.Text = "MAP类型 Type";
             // 
             // label24
             // 
@@ -353,7 +353,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(47, 12);
             this.label24.TabIndex = 2;
-            this.label24.Text = "MAP转向";
+            this.label24.Text = "MAP转向 Turn";
             // 
             // txtAttMaxCount
             // 
@@ -378,7 +378,7 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(75, 23);
             this.btnExport.TabIndex = 31;
-            this.btnExport.Text = "导出";
+            this.btnExport.Text = "导出 Export";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -479,7 +479,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(17, 12);
             this.label13.TabIndex = 20;
-            this.label13.Text = "宇";
+            this.label13.Text = "宇 Space";
             // 
             // label15
             // 
@@ -488,7 +488,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(17, 12);
             this.label15.TabIndex = 21;
-            this.label15.Text = "空";
+            this.label15.Text = "空 AIR";
             // 
             // label20
             // 
@@ -497,7 +497,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(17, 12);
             this.label20.TabIndex = 22;
-            this.label20.Text = "地";
+            this.label20.Text = "地 Ground";
             // 
             // label21
             // 
@@ -506,7 +506,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(29, 12);
             this.label21.TabIndex = 23;
-            this.label21.Text = "水上";
+            this.label21.Text = "水上 Aquatic";
             // 
             // label22
             // 
@@ -515,7 +515,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(29, 12);
             this.label22.TabIndex = 24;
-            this.label22.Text = "水中";
+            this.label22.Text = "水中 Underwater";
             // 
             // chkUse5
             // 
@@ -524,7 +524,7 @@
             this.chkUse5.Name = "chkUse5";
             this.chkUse5.Size = new System.Drawing.Size(48, 16);
             this.chkUse5.TabIndex = 17;
-            this.chkUse5.Text = "水中";
+            this.chkUse5.Text = "水中 Underwater";
             this.chkUse5.UseVisualStyleBackColor = true;
             // 
             // chkUse4
@@ -534,7 +534,7 @@
             this.chkUse4.Name = "chkUse4";
             this.chkUse4.Size = new System.Drawing.Size(48, 16);
             this.chkUse4.TabIndex = 17;
-            this.chkUse4.Text = "水面";
+            this.chkUse4.Text = "水面 Water Surface?";
             this.chkUse4.UseVisualStyleBackColor = true;
             // 
             // chkUse3
@@ -544,7 +544,7 @@
             this.chkUse3.Name = "chkUse3";
             this.chkUse3.Size = new System.Drawing.Size(36, 16);
             this.chkUse3.TabIndex = 17;
-            this.chkUse3.Text = "地";
+            this.chkUse3.Text = "地 Ground";
             this.chkUse3.UseVisualStyleBackColor = true;
             // 
             // chkUse2
@@ -554,7 +554,7 @@
             this.chkUse2.Name = "chkUse2";
             this.chkUse2.Size = new System.Drawing.Size(36, 16);
             this.chkUse2.TabIndex = 17;
-            this.chkUse2.Text = "空";
+            this.chkUse2.Text = "空 Air";
             this.chkUse2.UseVisualStyleBackColor = true;
             // 
             // chkUse1
@@ -564,7 +564,7 @@
             this.chkUse1.Name = "chkUse1";
             this.chkUse1.Size = new System.Drawing.Size(36, 16);
             this.chkUse1.TabIndex = 17;
-            this.chkUse1.Text = "宇";
+            this.chkUse1.Text = "宇 Space";
             this.chkUse1.UseVisualStyleBackColor = true;
             // 
             // label18
@@ -576,7 +576,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(215, 12);
             this.label18.TabIndex = 6;
-            this.label18.Text = "每个人物单独保存,保存前请备份原文件";
+            this.label18.Text = "每个人物单独保存,保存前请备份原文件 Each is saved seperately, please backup";
             // 
             // btnSave
             // 
@@ -586,7 +586,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "保存";
+            this.btnSave.Text = "保存 save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -597,7 +597,7 @@
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(29, 12);
             this.lblAddress.TabIndex = 2;
-            this.lblAddress.Text = "地址";
+            this.lblAddress.Text = "地址 address";
             // 
             // label12
             // 
@@ -615,7 +615,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 12);
             this.label17.TabIndex = 2;
-            this.label17.Text = "武器名";
+            this.label17.Text = "武器名 Name";
             // 
             // label16
             // 
@@ -688,7 +688,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(29, 12);
             this.label14.TabIndex = 2;
-            this.label14.Text = "射程";
+            this.label14.Text = "射程 Range";
             // 
             // label3
             // 
@@ -720,7 +720,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(29, 12);
             this.label23.TabIndex = 2;
-            this.label23.Text = "属性";
+            this.label23.Text = "属性 Attributes";
             // 
             // label10
             // 
@@ -729,7 +729,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 12);
             this.label10.TabIndex = 2;
-            this.label10.Text = "使用适性";
+            this.label10.Text = "使用适性 Appliciblity";
             // 
             // label6
             // 
@@ -738,7 +738,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 2;
-            this.label6.Text = "武器效果";
+            this.label6.Text = "武器效果 Effect";
             // 
             // label4
             // 
@@ -747,7 +747,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 2;
-            this.label4.Text = "对应适性";
+            this.label4.Text = "对应适性 Corespondense???";
             // 
             // label7
             // 
@@ -756,7 +756,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 2;
-            this.label7.Text = "移动后攻击";
+            this.label7.Text = "移动后攻击 Attack After Move";
             // 
             // label5
             // 
@@ -765,7 +765,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 12);
             this.label5.TabIndex = 2;
-            this.label5.Text = "图标1";
+            this.label5.Text = "图标1 Icon1";
             // 
             // statusStrip1
             // 
@@ -797,7 +797,7 @@
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(192, 17);
-            this.toolStripStatusLabel1.Text = "感谢 mediar,泷泽透明 的武器数据";
+            this.toolStripStatusLabel1.Text = "感谢 mediar,泷泽透明 的武器数据 credits?";
             // 
             // FrmEditWeapon
             // 
@@ -813,7 +813,7 @@
             this.MinimumSize = new System.Drawing.Size(840, 640);
             this.Name = "FrmEditWeapon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "武器信息修改";
+            this.Text = "武器信息修改 Mod Info";
             this.Load += new System.EventHandler(this.FrmEditGundam_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
