@@ -225,7 +225,7 @@
             // 
             // btnEditPeopleText
             // 
-            this.btnEditPeopleText.Location = new System.Drawing.Point(7, 8);
+            this.btnEditPeopleText.Location = new System.Drawing.Point(731, 8);
             this.btnEditPeopleText.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditPeopleText.Name = "btnEditPeopleText";
             this.btnEditPeopleText.Size = new System.Drawing.Size(167, 143);
@@ -236,10 +236,10 @@
             // 
             // btnEditMachineTxt
             // 
-            this.btnEditMachineTxt.Location = new System.Drawing.Point(188, 8);
+            this.btnEditMachineTxt.Location = new System.Drawing.Point(7, 8);
             this.btnEditMachineTxt.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditMachineTxt.Name = "btnEditMachineTxt";
-            this.btnEditMachineTxt.Size = new System.Drawing.Size(167, 143);
+            this.btnEditMachineTxt.Size = new System.Drawing.Size(233, 143);
             this.btnEditMachineTxt.TabIndex = 3;
             this.btnEditMachineTxt.Text = "修改机体/武器文本 (unit / weapon text";
             this.btnEditMachineTxt.UseVisualStyleBackColor = true;
@@ -247,21 +247,21 @@
             // 
             // btnEditMachineDesc
             // 
-            this.btnEditMachineDesc.Location = new System.Drawing.Point(369, 8);
+            this.btnEditMachineDesc.Location = new System.Drawing.Point(254, 8);
             this.btnEditMachineDesc.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditMachineDesc.Name = "btnEditMachineDesc";
-            this.btnEditMachineDesc.Size = new System.Drawing.Size(167, 143);
+            this.btnEditMachineDesc.Size = new System.Drawing.Size(215, 143);
             this.btnEditMachineDesc.TabIndex = 3;
-            this.btnEditMachineDesc.Text = "修改角色/机体描述 pilot / unit description";
+            this.btnEditMachineDesc.Text = "修改角色/机体描述\r\npilot / unit description";
             this.btnEditMachineDesc.UseVisualStyleBackColor = true;
             this.btnEditMachineDesc.Click += new System.EventHandler(this.btnEditMachineDesc_Click);
             // 
             // btnEditAbilityText
             // 
-            this.btnEditAbilityText.Location = new System.Drawing.Point(550, 8);
+            this.btnEditAbilityText.Location = new System.Drawing.Point(483, 8);
             this.btnEditAbilityText.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditAbilityText.Name = "btnEditAbilityText";
-            this.btnEditAbilityText.Size = new System.Drawing.Size(167, 143);
+            this.btnEditAbilityText.Size = new System.Drawing.Size(232, 143);
             this.btnEditAbilityText.TabIndex = 3;
             this.btnEditAbilityText.Text = "修改技能相关文本 Modify skill related text";
             this.btnEditAbilityText.UseVisualStyleBackColor = true;
@@ -277,6 +277,7 @@
             this.flowContainer.Controls.Add(this.btnEditGundam);
             this.flowContainer.Controls.Add(this.btnEditWeapon);
             this.flowContainer.Controls.Add(this.btnEditAbility);
+            this.flowContainer.Controls.Add(this.btnEditPeopleText);
             this.flowContainer.Enabled = false;
             this.flowContainer.Location = new System.Drawing.Point(26, 74);
             this.flowContainer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
@@ -297,7 +298,7 @@
             // 
             // btnEditTBL
             // 
-            this.btnEditTBL.Location = new System.Drawing.Point(731, 8);
+            this.btnEditTBL.Location = new System.Drawing.Point(729, 8);
             this.btnEditTBL.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnEditTBL.Name = "btnEditTBL";
             this.btnEditTBL.Size = new System.Drawing.Size(167, 143);
@@ -312,7 +313,6 @@
                 ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top |
                                                         System.Windows.Forms.AnchorStyles.Left) |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.flowContainer2.Controls.Add(this.btnEditPeopleText);
             this.flowContainer2.Controls.Add(this.btnEditMachineTxt);
             this.flowContainer2.Controls.Add(this.btnEditMachineDesc);
             this.flowContainer2.Controls.Add(this.btnEditAbilityText);
