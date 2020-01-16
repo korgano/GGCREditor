@@ -117,7 +117,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 578);
+            this.label2.Location = new System.Drawing.Point(54, 579);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 32);
@@ -135,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 679);
+            this.label3.Location = new System.Drawing.Point(82, 678);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 32);
@@ -207,7 +207,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(587, 574);
+            this.label7.Location = new System.Drawing.Point(587, 573);
             this.label7.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 32);
@@ -243,7 +243,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(578, 776);
+            this.label9.Location = new System.Drawing.Point(579, 776);
             this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(112, 32);
@@ -297,7 +297,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(45, 975);
+            this.label12.Location = new System.Drawing.Point(46, 975);
             this.label12.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(136, 32);
@@ -335,7 +335,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(45, 1136);
+            this.label14.Location = new System.Drawing.Point(46, 1137);
             this.label14.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(315, 32);
@@ -345,7 +345,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(553, 1136);
+            this.label15.Location = new System.Drawing.Point(553, 1137);
             this.label15.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(315, 32);
@@ -510,12 +510,12 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
             this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(85, 1531);
+            this.label30.Location = new System.Drawing.Point(143, 1517);
             this.label30.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(771, 32);
+            this.label30.Size = new System.Drawing.Size(577, 64);
             this.label30.TabIndex = 26;
-            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存 Save After Import";
+            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存\r\nSave After Import";
             // 
             // btnExport
             // 
@@ -538,13 +538,12 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(14, 1432);
+            this.label29.Location = new System.Drawing.Point(143, 1437);
             this.label29.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(815, 32);
+            this.label29.Size = new System.Drawing.Size(572, 64);
             this.label29.TabIndex = 24;
-            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出 Save before exporting";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
+            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出\r\n Save before exporting, CTRL for multiselect";
             // 
             // label21
             // 
@@ -559,7 +558,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(514, 367);
+            this.label24.Location = new System.Drawing.Point(505, 370);
             this.label24.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(185, 32);
@@ -601,12 +600,12 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(39, 1340);
+            this.label18.Location = new System.Drawing.Point(274, 1360);
             this.label18.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(853, 32);
+            this.label18.Size = new System.Drawing.Size(431, 64);
             this.label18.TabIndex = 6;
-            this.label18.Text = "每个人物单独保存,保存前请备份原文件 Each is saved seperately please backup";
+            this.label18.Text = "每个人物单独保存,保存前请备份原文件\r\nEach is saved seperately please backup";
             // 
             // btnSave
             // 
@@ -646,7 +645,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(119, 275);
+            this.label17.Location = new System.Drawing.Point(47, 275);
             this.label17.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(134, 32);
@@ -727,10 +726,10 @@
                                                          System.Windows.Forms.AnchorStyles.Bottom) |
                                                         System.Windows.Forms.AnchorStyles.Left) |
                                                        System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(72, 32);
+            this.txtSearch.Location = new System.Drawing.Point(139, 32);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(654, 39);
+            this.txtSearch.Size = new System.Drawing.Size(587, 39);
             this.txtSearch.TabIndex = 7;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 

@@ -413,7 +413,7 @@ namespace GGCREditor
             {
                 using (StreamWriter sw = new StreamWriter(dialog.FileName, false, Encoding.UTF8))
                 {
-                    sw.Write("地址\t系列\t姓名\t射击\t格斗\t守备\t反应\t觉醒\t经验值\t指挥\t辅佐\t通讯\t操舵\t维修\t魅力");
+                    sw.Write("系列\t姓名\t射击\t格斗\t守备\t反应\t觉醒\t经验值\t指挥\t辅佐\t通讯\t操舵\t维修\t魅力");
                     sw.Write("\t成长\t技能1\t技能2\t技能3\t招聘可能");
                     sw.WriteLine();
 
@@ -489,11 +489,6 @@ namespace GGCREditor
                 MessageBox.Show("导入成功,已自动保存", "操作提示");
                 // lsGundam.SelectedIndex = 0;
             }
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
