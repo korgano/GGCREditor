@@ -224,7 +224,7 @@
             this.btnEditPeopleText.Name = "btnEditPeopleText";
             this.btnEditPeopleText.Size = new System.Drawing.Size(77, 54);
             this.btnEditPeopleText.TabIndex = 3;
-            this.btnEditPeopleText.Text = "修改角色相关文本 character text";
+            this.btnEditPeopleText.Text = "修改角色相关文本 Modify character text";
             this.btnEditPeopleText.UseVisualStyleBackColor = true;
             this.btnEditPeopleText.Click += new System.EventHandler(this.btnEditText_Click);
             // 
@@ -234,7 +234,7 @@
             this.btnEditMachineTxt.Name = "btnEditMachineTxt";
             this.btnEditMachineTxt.Size = new System.Drawing.Size(77, 54);
             this.btnEditMachineTxt.TabIndex = 3;
-            this.btnEditMachineTxt.Text = "修改机体/武器文本 (body / weapon text)";
+            this.btnEditMachineTxt.Text = "修改机体/武器文本 (Modify body / weapon text)";
             this.btnEditMachineTxt.UseVisualStyleBackColor = true;
             this.btnEditMachineTxt.Click += new System.EventHandler(this.btnEditMachineTxt_Click);
             // 
@@ -254,7 +254,7 @@
             this.btnEditAbilityText.Name = "btnEditAbilityText";
             this.btnEditAbilityText.Size = new System.Drawing.Size(77, 54);
             this.btnEditAbilityText.TabIndex = 3;
-            this.btnEditAbilityText.Text = "修改技能相关文本 skill related text";
+            this.btnEditAbilityText.Text = "修改技能相关文本 Modify skill related text";
             this.btnEditAbilityText.UseVisualStyleBackColor = true;
             this.btnEditAbilityText.Click += new System.EventHandler(this.btnEditAbility_Click);
             // 
@@ -278,7 +278,7 @@
             this.btnEditAbility.Name = "btnEditAbility";
             this.btnEditAbility.Size = new System.Drawing.Size(77, 54);
             this.btnEditAbility.TabIndex = 3;
-            this.btnEditAbility.Text = "修改能力/技能/OP (ability / skill)";
+            this.btnEditAbility.Text = "修改能力/技能/OP (Modify ability / skill)";
             this.btnEditAbility.UseVisualStyleBackColor = true;
             this.btnEditAbility.Click += new System.EventHandler(this.btnEditAbility_Click_1);
             // 
