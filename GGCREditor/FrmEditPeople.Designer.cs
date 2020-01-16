@@ -102,7 +102,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 2;
-            this.label1.Text = "射击";
+            this.label1.Text = "射击 Ranged";
             // 
             // txtSheJi
             // 
@@ -118,7 +118,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "格斗";
+            this.label2.Text = "格斗 Melee";
             // 
             // txtGeDou
             // 
@@ -134,7 +134,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 2;
-            this.label3.Text = "守备";
+            this.label3.Text = "守备 Def";
             // 
             // txtShouBei
             // 
@@ -150,7 +150,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 2;
-            this.label4.Text = "反应";
+            this.label4.Text = "反应 React";
             // 
             // txtFanYin
             // 
@@ -166,7 +166,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 2;
-            this.label5.Text = "觉醒";
+            this.label5.Text = "觉醒 Awakening";
             // 
             // txtJueXin
             // 
@@ -182,7 +182,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 2;
-            this.label6.Text = "指挥";
+            this.label6.Text = "指挥 Command";
             // 
             // txtZhiHui
             // 
@@ -198,7 +198,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 12);
             this.label7.TabIndex = 2;
-            this.label7.Text = "辅佐";
+            this.label7.Text = "辅佐 XO";
             // 
             // txtFuZuo
             // 
@@ -214,7 +214,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(29, 12);
             this.label8.TabIndex = 2;
-            this.label8.Text = "通讯";
+            this.label8.Text = "通讯 COMM";
             // 
             // txtTongXun
             // 
@@ -230,7 +230,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 2;
-            this.label9.Text = "操舵";
+            this.label9.Text = "操舵 Nav";
             // 
             // txtCaoDuo
             // 
@@ -246,7 +246,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 2;
-            this.label10.Text = "维修";
+            this.label10.Text = "维修 Repair";
             // 
             // txtWeiXiu
             // 
@@ -262,7 +262,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 12);
             this.label11.TabIndex = 2;
-            this.label11.Text = "魅力";
+            this.label11.Text = "魅力 Charisma";
             // 
             // txtMeiLi
             // 
@@ -278,7 +278,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 12);
             this.label12.TabIndex = 2;
-            this.label12.Text = "经验值";
+            this.label12.Text = "经验值 EXP";
             // 
             // txtJinYan
             // 
@@ -294,7 +294,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 12);
             this.label13.TabIndex = 2;
-            this.label13.Text = "成长规律";
+            this.label13.Text = "成长规律 Growth Patern";
             // 
             // cboGuYou1
             // 
@@ -312,7 +312,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 12);
             this.label14.TabIndex = 2;
-            this.label14.Text = "固有技能1";
+            this.label14.Text = "固有技能1 Inherent Ability 1";
             // 
             // label15
             // 
@@ -321,7 +321,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(59, 12);
             this.label15.TabIndex = 2;
-            this.label15.Text = "固有技能2";
+            this.label15.Text = "固有技能2 Inherent Ability 2";
             // 
             // cboGuYou2
             // 
@@ -339,7 +339,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(59, 12);
             this.label16.TabIndex = 2;
-            this.label16.Text = "固有技能3";
+            this.label16.Text = "固有技能3 Inherent Ability 3";
             // 
             // cboGuYou3
             // 
@@ -412,7 +412,7 @@
             this.groupBox1.Size = new System.Drawing.Size(470, 602);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "属性";
+            this.groupBox1.Text = "属性 ATTR";
             // 
             // btnImportBatch
             // 
@@ -421,7 +421,7 @@
             this.btnImportBatch.Name = "btnImportBatch";
             this.btnImportBatch.Size = new System.Drawing.Size(51, 40);
             this.btnImportBatch.TabIndex = 29;
-            this.btnImportBatch.Text = "批量\r\n导入";
+            this.btnImportBatch.Text = "批量\r\n导入\r\nBulk";
             this.btnImportBatch.UseVisualStyleBackColor = true;
             this.btnImportBatch.Click += new System.EventHandler(this.btnImportBatch_Click);
             // 
@@ -432,7 +432,7 @@
             this.btnExportAll.Name = "btnExportAll";
             this.btnExportAll.Size = new System.Drawing.Size(51, 40);
             this.btnExportAll.TabIndex = 29;
-            this.btnExportAll.Text = "导出\r\nTXT";
+            this.btnExportAll.Text = "导出\r\nTXT\r\nExport";
             this.btnExportAll.UseVisualStyleBackColor = true;
             this.btnExportAll.Click += new System.EventHandler(this.btnExportAll_Click);
             // 
@@ -453,7 +453,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 27;
-            this.button1.Text = "导入";
+            this.button1.Text = "导入 Import";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -466,7 +466,7 @@
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(287, 12);
             this.label30.TabIndex = 26;
-            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存";
+            this.label30.Text = "导入功能会根据数据头自动匹配数据,导入完成请保存 Save After Import";
             // 
             // btnExport
             // 
@@ -475,7 +475,7 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(75, 23);
             this.btnExport.TabIndex = 25;
-            this.btnExport.Text = "导出";
+            this.btnExport.Text = "导出 Export";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -488,7 +488,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(293, 12);
             this.label29.TabIndex = 24;
-            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出";
+            this.label29.Text = "若有修改,请先保存再导出 按住Ctrl可多选后批量导出 Save before exporting";
             // 
             // label21
             // 
@@ -497,7 +497,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(53, 12);
             this.label21.TabIndex = 17;
-            this.label21.Text = "招聘可能";
+            this.label21.Text = "招聘可能 Recruitable";
             // 
             // label24
             // 
@@ -506,7 +506,7 @@
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(29, 12);
             this.label24.TabIndex = 17;
-            this.label24.Text = "未知";
+            this.label24.Text = "未知 (Unknown)";
             // 
             // label20
             // 
@@ -542,7 +542,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(215, 12);
             this.label18.TabIndex = 6;
-            this.label18.Text = "每个人物单独保存,保存前请备份原文件";
+            this.label18.Text = "每个人物单独保存,保存前请备份原文件 Each is saved seperately please backup";
             // 
             // btnSave
             // 
@@ -552,7 +552,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "保存";
+            this.btnSave.Text = "保存 Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.txtSave_Click);
             // 
@@ -563,7 +563,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(29, 12);
             this.label22.TabIndex = 2;
-            this.label22.Text = "立绘";
+            this.label22.Text = "立绘 Standing Picture";
             // 
             // lblAddress
             // 
@@ -572,7 +572,7 @@
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(29, 12);
             this.lblAddress.TabIndex = 2;
-            this.lblAddress.Text = "地址";
+            this.lblAddress.Text = "地址 Address";
             // 
             // label17
             // 
@@ -581,7 +581,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(29, 12);
             this.label17.TabIndex = 2;
-            this.label17.Text = "姓名";
+            this.label17.Text = "姓名 Name";
             // 
             // txtPic
             // 
@@ -660,7 +660,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(17, 12);
             this.label19.TabIndex = 2;
-            this.label19.Text = "搜";
+            this.label19.Text = "搜 Search";
             // 
             // statusStrip1
             // 
@@ -709,7 +709,7 @@
             this.MinimumSize = new System.Drawing.Size(840, 680);
             this.Name = "FrmEditPeople";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "角色信息修改";
+            this.Text = "角色信息修改 Edit People";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEditPeople_FormClosed);
             this.Load += new System.EventHandler(this.FrmEditPeople_Load);
             this.groupBox1.ResumeLayout(false);
