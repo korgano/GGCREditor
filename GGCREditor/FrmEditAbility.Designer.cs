@@ -244,7 +244,7 @@
             this.lsAbility.Location = new System.Drawing.Point(26, 123);
             this.lsAbility.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.lsAbility.Name = "lsAbility";
-            this.lsAbility.Size = new System.Drawing.Size(604, 1658);
+            this.lsAbility.Size = new System.Drawing.Size(604, 1477);
             this.lsAbility.TabIndex = 9;
             this.lsAbility.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lsMasters_DrawItem);
             this.lsAbility.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.lsMasters_MeasureItem);
@@ -265,7 +265,7 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]
                 {this.tsmiFile, this.tsmiState, this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1982);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 2121);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 30, 0);
             this.statusStrip1.Size = new System.Drawing.Size(2487, 37);
@@ -351,12 +351,12 @@
             // 
             // txtXiaoGuoRemark
             // 
-            this.txtXiaoGuoRemark.Location = new System.Drawing.Point(1144, 1555);
+            this.txtXiaoGuoRemark.Location = new System.Drawing.Point(1149, 1565);
             this.txtXiaoGuoRemark.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtXiaoGuoRemark.Multiline = true;
             this.txtXiaoGuoRemark.Name = "txtXiaoGuoRemark";
             this.txtXiaoGuoRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtXiaoGuoRemark.Size = new System.Drawing.Size(1306, 201);
+            this.txtXiaoGuoRemark.Size = new System.Drawing.Size(1109, 197);
             this.txtXiaoGuoRemark.TabIndex = 13;
             // 
             // label5
@@ -1054,7 +1054,7 @@
             this.pan1.Location = new System.Drawing.Point(698, 106);
             this.pan1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(433, 1664);
+            this.pan1.Size = new System.Drawing.Size(433, 1702);
             this.pan1.TabIndex = 15;
             // 
             // label32
@@ -2084,10 +2084,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(698, 1787);
+            this.button1.Location = new System.Drawing.Point(2266, 1565);
             this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1757, 69);
+            this.button1.Size = new System.Drawing.Size(205, 205);
             this.button1.TabIndex = 16;
             this.button1.Text = "全部保存 SAVE ALL";
             this.button1.UseVisualStyleBackColor = true;
@@ -2108,7 +2108,7 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(30, 1706);
+            this.btnCopy.Location = new System.Drawing.Point(26, 1620);
             this.btnCopy.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(609, 150);
@@ -2120,9 +2120,9 @@
             // 
             // FrmEditAbility
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2487, 2019);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(2487, 2158);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.cboSkill);
             this.Controls.Add(this.label5);
