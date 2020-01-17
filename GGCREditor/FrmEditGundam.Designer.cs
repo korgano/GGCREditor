@@ -284,7 +284,7 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
             this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(42, 1698);
+            this.label32.Location = new System.Drawing.Point(42, 1699);
             this.label32.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(572, 64);

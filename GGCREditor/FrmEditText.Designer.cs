@@ -124,7 +124,7 @@
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Enabled = false;
-            this.btnSave.Location = new System.Drawing.Point(1783, 268);
+            this.btnSave.Location = new System.Drawing.Point(1783, 267);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(186, 123);

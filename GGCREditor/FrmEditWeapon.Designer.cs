@@ -236,7 +236,7 @@
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(112, 1351);
+            this.label29.Location = new System.Drawing.Point(112, 1350);
             this.label29.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(579, 64);
@@ -306,7 +306,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(38, 126);
+            this.label9.Location = new System.Drawing.Point(38, 125);
             this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 32);
@@ -355,7 +355,7 @@
             // 
             // txtMapTurn
             // 
-            this.txtMapTurn.Location = new System.Drawing.Point(148, 57);
+            this.txtMapTurn.Location = new System.Drawing.Point(148, 58);
             this.txtMapTurn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.txtMapTurn.Name = "txtMapTurn";
             this.txtMapTurn.Size = new System.Drawing.Size(307, 39);
@@ -507,7 +507,7 @@
             // 
             this.cboAE4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAE4.FormattingEnabled = true;
-            this.cboAE4.Location = new System.Drawing.Point(207, 1072);
+            this.cboAE4.Location = new System.Drawing.Point(207, 1073);
             this.cboAE4.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.cboAE4.Name = "cboAE4";
             this.cboAE4.Size = new System.Drawing.Size(106, 40);
@@ -517,7 +517,7 @@
             // 
             this.cboAE5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAE5.FormattingEnabled = true;
-            this.cboAE5.Location = new System.Drawing.Point(600, 1077);
+            this.cboAE5.Location = new System.Drawing.Point(600, 1076);
             this.cboAE5.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.cboAE5.Name = "cboAE5";
             this.cboAE5.Size = new System.Drawing.Size(106, 40);
@@ -556,7 +556,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(43, 1077);
+            this.label21.Location = new System.Drawing.Point(43, 1076);
             this.label21.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(150, 32);
@@ -660,7 +660,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(514, 57);
+            this.lblAddress.Location = new System.Drawing.Point(514, 58);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(151, 32);
@@ -762,7 +762,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(32, 827);
+            this.label14.Location = new System.Drawing.Point(33, 827);
             this.label14.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(137, 32);
@@ -798,7 +798,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(-4, 734);
+            this.label23.Location = new System.Drawing.Point(-4, 733);
             this.label23.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(174, 32);
@@ -808,7 +808,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 927);
+            this.label10.Location = new System.Drawing.Point(33, 927);
             this.label10.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(236, 32);
@@ -818,7 +818,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(487, 249);
+            this.label6.Location = new System.Drawing.Point(488, 250);
             this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(178, 32);
@@ -828,7 +828,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 972);
+            this.label4.Location = new System.Drawing.Point(33, 972);
             this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(319, 32);

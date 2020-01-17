@@ -282,7 +282,7 @@
             this.flowContainer.Location = new System.Drawing.Point(26, 74);
             this.flowContainer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.flowContainer.Name = "flowContainer";
-            this.flowContainer.Size = new System.Drawing.Size(1020, 163);
+            this.flowContainer.Size = new System.Drawing.Size(1021, 163);
             this.flowContainer.TabIndex = 4;
             // 
             // btnEditAbility
@@ -321,7 +321,7 @@
             this.flowContainer2.Location = new System.Drawing.Point(26, 253);
             this.flowContainer2.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.flowContainer2.Name = "flowContainer2";
-            this.flowContainer2.Size = new System.Drawing.Size(1020, 163);
+            this.flowContainer2.Size = new System.Drawing.Size(1021, 163);
             this.flowContainer2.TabIndex = 5;
             // 
             // FrmMain
