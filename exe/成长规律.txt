@@ -1,76 +1,76 @@
-﻿-1:自建角色 专用
-0:平均类型1 (ALL294)
-1:平均类型1 (ALL294) 觉醒0
-2:平均类型2
-3:平均类型2 觉醒0
-4:平均类型3 (ALL420)
-5:平均类型3 (ALL420) 觉醒0
-6:平均类型4
-7:平均类型4 觉醒0
-8:平均类型5
-9:平均类型5 觉醒0
-10:平均类型6 (ALL500)
-11:平均类型6 (ALL500) 觉醒0
-12:射击・中(早熟)
-13:射击・中(早熟) 觉醒0
-14:射击・中(晩成)
-15:射击・中(晩成) 觉醒0
-16:射击・高(早熟)
-17:射击・高(早熟) 觉醒0
-18:射击特化
-19:射击特化 觉醒0
-20:射击&守备(格斗・低)
-21:射击&守备(格斗・低) 觉醒0
-22:射击&反应(格斗・低)
-23:射击&反应(格斗・低) 觉醒0
-24:格斗・中(早熟)
-25:格斗・中(早熟) 觉醒0
-26:格斗・中(晩成)
-27:格斗・中(晩成) 觉醒0
-28:格斗・高(早熟)
-29:格斗・高(早熟) 觉醒0
-30:格斗特化
-31:格斗特化 觉醒0
-32:格斗&守备(射击・低)
-33:格斗&守备(射击・低) 觉醒0
-34:格斗&反应(射击・低)
-35:格斗&反应(射击・低) 觉醒0
-36:攻击特化
-37:攻击特化 觉醒0
-38:守备・中
-39:守备・中 觉醒0
-40:守备・高(反应・低)
-41:守备・高(反应・低) 觉醒0
-42:反应・中
-43:反应・中 觉醒0
-44:反应・高(守备・低)
-45:反应・高(守备・低) 觉醒0
-46:守备特化
-47:守备特化 觉醒0
-48:觉醒・中
-49:觉醒・高
-50:觉醒特化
-51:觉醒・高(超晩成)
-52:平均类型7
-53:平均类型7 觉醒0
-54:指揮・高(射击・中)
-55:指揮・高(射击・中) 觉醒0
-56:指揮・高(守备・中)
-57:指揮・高(守备・中) 觉醒0
-58:指揮・高(反应・中)
-59:指揮・高(反应・中) 觉醒0
-60:辅佐特化
-61:辅佐特化 觉醒0
-62:通信特化
-63:通信特化 觉醒0
-64:操舵特化
-65:操舵特化 觉醒0
-66:整備特化
-67:整備特化 觉醒0
-68:魅力特化
-69:魅力特化 觉醒0
-70:裘纳斯·利亚姆 专用
-71:伊万·依瓦诺夫 专用(ALL166) 觉醒859
+﻿-1:自建角色 专用 Self-built character only
+0:平均类型1 (ALL294) average 1
+1:平均类型1 (ALL294) 觉醒0 average 1, unawakened
+2:平均类型2 average 2
+3:平均类型2 觉醒0 average 2 unawakened
+4:平均类型3 (ALL420) average type 3
+5:平均类型3 (ALL420) 觉醒0 average type 3 unawakened
+6:平均类型4 average type 4
+7:平均类型4 觉醒0 average type 4 unawakened
+8:平均类型5  average type 5
+9:平均类型5 觉醒0  average type 5 unawakened
+10:平均类型6 (ALL500) average type 6 
+11:平均类型6 (ALL500) 觉醒0 average type 6 unawakened
+12:射击・中(早熟) Shooting ・ Medium (Early)
+13:射击・中(早熟) 觉醒0 Shooting ・ Medium (Early) unawakened
+14:射击・中(晩成) Shooting ・ Medium (Mid)
+15:射击・中(晩成) 觉醒0 Shooting ・ Medium (Mid) unawakened
+16:射击・高(早熟) Shooting ・ High (Early)
+17:射击・高(早熟) 觉醒0 Shooting ・ High (Early) unawakened
+18:射击特化 Shooting Specialization
+19:射击特化 觉醒0 Shooting Specialization unawakened
+20:射击&守备(格斗・低) Ranged & Defense  (Melee Down)
+21:射击&守备(格斗・低) 觉醒0 Ranged & Defense  (Melee Down) unawakened
+22:射击&反应(格斗・低) Ranged & Reaction (Melee Down)
+23:射击&反应(格斗・低) 觉醒0 Ranged & Reaction (Melee Down) unawakened
+24:格斗・中(早熟)  Melee・Mid (Early) 
+25:格斗・中(早熟) 觉醒0 Melee・Mid (Early) unawakened
+26:格斗・中(晩成) Melee・Mid (Late)
+27:格斗・中(晩成) 觉醒0 Melee・Mid (Late) unawakened
+28:格斗・高(早熟) Melee・High (Late)
+29:格斗・高(早熟) 觉醒0 Melee・High (Late) unawakened
+30:格斗特化 Melee Specialization
+31:格斗特化 觉醒0 Melee Specialization unawakened
+32:格斗&守备(射击・低) Melee & Def (Ranged Low)
+33:格斗&守备(射击・低) 觉醒0 Melee & Def (Ranged Low) unawakened
+34:格斗&反应(射击・低) Melee & React (Ranged Low)
+35:格斗&反应(射击・低) 觉醒0 Melee & React (Ranged Low) unawakened
+36:攻击特化 Attack Specialization
+37:攻击特化 觉醒0 Attack Specialization unawakened
+38:守备・中  Defense ・ Medium
+39:守备・中 觉醒0  Defense ・ Medium unawakened
+40:守备・高(反应・低) Defense, High (React low)
+41:守备・高(反应・低) 觉醒0 Defense, High (React low) unawakened
+42:反应・中 React Medium
+43:反应・中 觉醒0 React Medium unawakened
+44:反应・高(守备・低) React High (Def low)
+45:反应・高(守备・低) 觉醒0 React High (Def low) unawakened
+46:守备特化 Defence Specialization
+47:守备特化 觉醒0 Defence Specialization unawakened
+48:觉醒・中 Awakening ・ Medium
+49:觉醒・高 Awakening ・ High
+50:觉醒特化 Specialization of Awakening
+51:觉醒・高(超晩成) Awakening (Ultimate)
+52:平均类型7 average type 7
+53:平均类型7 觉醒0 average type 7 unawakened
+54:指揮・高(射击・中) Command ・ High (Ranged ・ Medium)
+55:指揮・高(射击・中) 觉醒0 Command ・ High (Shooting ・ Medium) unawakened
+56:指揮・高(守备・中) Command ・ High (Defense ・ Medium)
+57:指揮・高(守备・中) 觉醒0  Command ・ High (Defense ・ Medium) unawakened
+58:指揮・高(反应・中) Command ・ High (React ・ Medium)
+59:指揮・高(反应・中) 觉醒0 Command ・ High (React ・ Medium) unawakened
+60:辅佐特化 XO auxiliary specialization
+61:辅佐特化 觉醒0 XO auxiliary specialization unawakened
+62:通信特化 Communication specialization
+63:通信特化 觉醒0 Communication specialization unawakened
+64:操舵特化 Steering Specialization
+65:操舵特化 觉醒0 Steering Specialization unawakened
+66:整備特化 Repair Specialization
+67:整備特化 觉醒0 Repair Specialization unawakened
+68:魅力特化 Charisma Specialization
+69:魅力特化 觉醒0 Charisma Specialization unawakened
+70:裘纳斯·利亚姆 专用 For Jonas Liam
+71:伊万·依瓦诺夫 专用(ALL166) 觉醒859 ALL166, Awakening 859
 72:哈啰 专用(ALL686)
-73:ユーコ・オルテンシア专用
+73:ユーコ・オルテンシア专用 For Yuko・?Some Weird Noun about being super durable?
 74:骑士超越之龙 专用(ALL100)
