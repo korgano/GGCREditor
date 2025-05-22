@@ -137,6 +137,7 @@
     <ProjectReference Include="..\GGCREditorLib\GGCREditorLib.csproj">
       <Project>{2ed0051c-a593-4dc9-af02-1d66fbe5ae36}</Project>
       <Name>GGCREditorLib</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

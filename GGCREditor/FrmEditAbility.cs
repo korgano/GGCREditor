@@ -30,7 +30,15 @@ namespace GGCREditor
         {
             file = new AbilitySpecFile();
             abilitys = file.ListAbilitys();
-            xiaoguos = file.ListXiaoGuo();
+            //xiaoguos = file.ListXiaoGuo();
+            List<XiaoGuoAbility> xiaoguos = new List<XiaoGuoAbility>();
+            foreach (AbstractAbility ability in file.ListAbilitys())
+            {
+                if (ability is XiaoGuoAbility xgAbility)
+                {
+                    xiaoguos.Add(xgAbility);
+                }
+            }
 
             tsmiFile.Text = file.FileName;
 

@@ -6,96 +6,158 @@ using System.Text;
 
 namespace GGCREditorLib
 {
+    /// <summary>
+    /// Represents a PKD archive file and provides methods to inspect and modify its inner files.
+    /// </summary>
     public class GGCRPkdFile : GGCRResourceFile
     {
-        public GGCRPkdFile(string file) : base(file)
+        public GGCRPkdFile(string filePath)
+            : base(filePath)
         {
-
+ //           Logger.Log($"Opened PKD file: {filePath}");
         }
 
+        /// <summary>
+        /// Finds and returns an inner file by name, or null if not found.
+        /// </summary>
         public GGCRPkdInnerFile GetInnerFile(string name)
         {
-            List<GGCRPkdInnerFile> list = this.ListInnerFiles();
-            foreach (GGCRPkdInnerFile file in list)
+ //           Logger.Log($"Searching for inner file '{name}'.");
+            try
             {
-                if (file.FileName == name)
+                var all = ListInnerFiles();
+                foreach (GGCRPkdInnerFile inner in all)
                 {
-                    return file;
+                    if (inner.FileName == name)
+                    {
+//                        Logger.Log($"Found inner file '{name}' at index {inner.StartIndex}.");
+                        return inner;
+                    }
                 }
+//                Logger.Log($"Inner file '{name}' not found.");
+                return null;
             }
-            return null;
+            catch (Exception ex)
+            {
+//                Logger.Error($"Error in GetInnerFile('{name}')", ex);
+                throw;
+            }
         }
 
+        /// <summary>
+        /// Lists all inner files in the PKD, reading file count, header length, and filenames.
+        /// </summary>
         public List<GGCRPkdInnerFile> ListInnerFiles()
         {
-            //取PKD中文件数量
-            int count = BitConverter.ToInt32(this.Data, 8);
-            //文件头的总数据量(去除最后的00位)
-            int headLength = BitConverter.ToInt32(this.Data, 16) - 1;
-            //文件名起始索引
-            int cdbNamesIndexStart = 20 + count * 12;
-            //文件名终止索引
-            byte[] cdbNamesData = new byte[headLength - count * 12];
-            Array.Copy(this.Data, 20 + count * 12, cdbNamesData, 0, cdbNamesData.Length);
-
-            string[] cdbNames = Encoding.UTF8.GetString(cdbNamesData).Split('\0');
-
-            List<GGCRPkdInnerFile> files = new List<GGCRPkdInnerFile>();
-            //取每个文件名和地址
-            for (int i = 0; i < count; i++)
+//            Logger.Log("Listing all inner files.");
+            try
             {
-                GGCRPkdInnerFile f = new GGCRPkdInnerFile();
-                f.FileName = cdbNames[i];
-                f.StartIndex = BitConverter.ToInt32(this.Data, 20 + 12 * i);
-                f.StartIndexLocation = 20 + 12 * i;
-                files.Add(f);
+                // Number of inner files
+                int count = BitConverter.ToInt32(this.Data, 8);
+
+                // Total header length (excluding trailing 0x00)
+                int headLength = BitConverter.ToInt32(this.Data, 16) - 1;
+
+                // Start position of concatenated filenames
+                int namesOffset = 20 + count * 12;
+                int namesLength = headLength - count * 12;
+
+                // Extract raw filename bytes
+                byte[] nameBytes = new byte[namesLength];
+                Buffer.BlockCopy(this.Data, namesOffset, nameBytes, 0, namesLength);
+
+                // Split UTF-8 zero‐terminated strings
+                string[] allNames = Encoding.UTF8.GetString(nameBytes).Split('\0');
+
+                var result = new List<GGCRPkdInnerFile>(count);
+                for (int i = 0; i < count; i++)
+                {
+                    var f = new GGCRPkdInnerFile
+                    {
+                        FileName = allNames.Length > i ? allNames[i] : string.Empty,
+                        StartIndex = BitConverter.ToInt32(this.Data, 20 + 12 * i),
+                        StartIndexLocation = 20 + 12 * i
+                    };
+                    result.Add(f);
+                }
+
+//                Logger.Log($"Found {result.Count} inner files.");
+                return result;
             }
-            return files;
+            catch (Exception ex)
+            {
+//                Logger.Error("Error in ListInnerFiles()", ex);
+                throw;
+            }
         }
 
         /// <summary>
-        /// 在某一个内部文件的某个索引(以内部文件的文件头作为索引0)处插入新的数据,并同时调整后续所有文件的地址数据,并直接写入文件
+        /// Inserts new data into a specific inner file at the given offset,
+        /// then shifts all subsequent inner‐file start indices forward.
         /// </summary>
-        /// <param name="file"></param>
-        /// <param name="newIndex"></param>
-        public void AppendInnerFile(GGCRPkdInnerFile file, int insertIndex, byte[] data)
+        public void AppendInnerFile(GGCRPkdInnerFile file, int insertOffset, byte[] data)
         {
-            //寻找后续文件并重排位置
-            foreach (GGCRPkdInnerFile next in ListInnerFiles())
+//            Logger.Log($"Appending {data.Length} bytes to '{file?.FileName}' at offset {insertOffset}.");
+            if (file == null) throw new ArgumentNullException(nameof(file));
+
+            try
             {
-                if (next.StartIndex > file.StartIndex)
+                var all = ListInnerFiles();
+                foreach (var next in all)
                 {
-                    byte[] arr = BitConverter.GetBytes(next.StartIndex + data.Length);
-                    for (int i = 0; i < arr.Length; i++)
+                    if (next.StartIndex > file.StartIndex)
                     {
-                        this.Data[next.StartIndexLocation + i] = arr[i];
+                        int newStart = next.StartIndex + data.Length;
+                        byte[] bytes = BitConverter.GetBytes(newStart);
+                        // Overwrite start index in header
+                        Buffer.BlockCopy(bytes, 0, this.Data, next.StartIndexLocation, bytes.Length);
+//                        Logger.Log($"Adjusted start of '{next.FileName}' to {newStart}.");
                     }
                 }
+
+                // Insert new data block
+                this.Insert(file.StartIndex + insertOffset, data);
+//                Logger.Log($"Inserted data into '{file.FileName}'.");
             }
-            this.Insert(file.StartIndex + insertIndex, data);
+            catch (Exception ex)
+            {
+ //               Logger.Error($"Error in AppendInnerFile('{file.FileName}')", ex);
+                throw;
+            }
         }
 
         /// <summary>
-        /// 在某一个内部文件的某个索引(以pkd文件头作为索引0)处删除数据,并同时调整后续所有文件的地址数据,并直接写入文件
+        /// Deletes a block of bytes from a specific inner file at the given position (absolute to PKD header),
+        /// then shifts subsequent inner‐file start indices backward.
         /// </summary>
-        /// <param name="file"></param>
-        /// <param name="from"></param>
-        /// <param name="length"></param>
-        public void DeleteInnerFile(GGCRPkdInnerFile file, int from, int length)
+        public void DeleteInnerFile(GGCRPkdInnerFile file, int deletePosition, int length)
         {
-            //寻找后续文件并重排位置
-            foreach (GGCRPkdInnerFile next in ListInnerFiles())
+//            Logger.Log($"Deleting {length} bytes from '{file?.FileName}' at position {deletePosition}.");
+            if (file == null) throw new ArgumentNullException(nameof(file));
+
+            try
             {
-                if (next.StartIndex > file.StartIndex)
+                var all = ListInnerFiles();
+                foreach (var next in all)
                 {
-                    byte[] arr = BitConverter.GetBytes(next.StartIndex - length);
-                    for (int i = 0; i < arr.Length; i++)
+                    if (next.StartIndex > file.StartIndex)
                     {
-                        this.Data[next.StartIndexLocation + i] = arr[i];
+                        int newStart = next.StartIndex - length;
+                        byte[] bytes = BitConverter.GetBytes(newStart);
+                        Buffer.BlockCopy(bytes, 0, this.Data, next.StartIndexLocation, bytes.Length);
+//                        Logger.Log($"Adjusted start of '{next.FileName}' to {newStart}.");
                     }
                 }
+
+                // Remove data block
+                this.Delete(deletePosition, length);
+//                Logger.Log($"Deleted data from '{file.FileName}'.");
             }
-            this.Delete(from, length);
+            catch (Exception ex)
+            {
+//                Logger.Error($"Error in DeleteInnerFile('{file.FileName}')", ex);
+                throw;
+            }
         }
     }
 }

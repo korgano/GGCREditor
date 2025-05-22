@@ -1,4 +1,4 @@
-﻿1:敌方随机 random enemy
-2:敌方单体(狙击) single enemy (Sniper)
-3:敌方全员 all enemies
-4:我方全员 everyone
+﻿1:敌方随机 Random Enemy
+2:敌方单体(狙击) Solo Enemy (Sniper)
+3:敌方全员 All enemies
+4:我方全员 Everyone

@@ -1,4 +1,4 @@
-﻿using GGCREditorLib;
+using GGCREditorLib;
 using ICSharpCode.SharpZipLib.Zip;
 using System;
 using System.Collections.Generic;
@@ -19,7 +19,7 @@ namespace GGCREditor
         private FrmEditPeople()
         {
             InitializeComponent();
-            
+
         }
 
         public static FrmEditPeople CreateForm()
@@ -199,7 +199,8 @@ namespace GGCREditor
             {
                 LoadData(null);
             }
-            tsmiLblState.Text = "等待修改";
+            //tsmiLblState.Text = "等待修改";
+            tsmiLblState.Text = "Waiting for changes";
             tsmiLblState.ForeColor = Color.Black;
         }
 
@@ -252,7 +253,8 @@ namespace GGCREditor
                 }
                 catch
                 {
-                    MessageBox.Show("固有技能1编号未知,已使用原始能力" + master.GuYou1);
+                    MessageBox.Show("Skill 1 unknown ID, original value used + master.GuYou1");
+                    //MessageBox.Show("固有技能1编号未知,已使用原始能力" // Skill 1 unknown ID, original value used + master.GuYou1);
                 }
                 try
                 {
@@ -260,7 +262,8 @@ namespace GGCREditor
                 }
                 catch
                 {
-                    MessageBox.Show("固有技能2编号未知,已使用原始能力" + master.GuYou2);
+                    MessageBox.Show("Skill 2: unknown ID, original value used + master.GuYou2");
+                    //MessageBox.Show("固有技能2编号未知,已使用原始能力" // Skill 2 unknown ID, original value used + master.GuYou2);
                 }
                 try
                 {
@@ -268,7 +271,8 @@ namespace GGCREditor
                 }
                 catch
                 {
-                    MessageBox.Show("固有技能3编号未知,已使用原始能力" + master.GuYou3);
+                    MessageBox.Show("Skill 3: unknown ID, original value used + master.GuYou3");
+                    //MessageBox.Show("固有技能3编号未知,已使用原始能力" // Skill 3 unknown ID, original value used + master.GuYou3);
                 }
 
                 master.Last4 = short.Parse(cboLast4.SelectedValue.ToString());
@@ -278,7 +282,8 @@ namespace GGCREditor
                 master.Refresh();
                 LoadData(master);
 
-                tsmiLblState.Text = "保存成功";
+                //tsmiLblState.Text = "保存成功";
+                tsmiLblState.Text = "Save successful";
                 tsmiLblState.ForeColor = Color.Green;
             }
         }
@@ -325,17 +330,23 @@ namespace GGCREditor
                     if (dialog.ShowDialog() == DialogResult.OK)
                     {
                         export(gundam, dialog.FileName);
-                    }
-                    tsmiLblState.Text = "导出成功";
-                    tsmiLblState.ForeColor = Color.Green;
+                        /*tsmiLblState.Text = "导出成功";
+                        tsmiLblState.ForeColor = Color.Green;
 
-                    MessageBox.Show("导出成功", "操作提示");
+                        MessageBox.Show("导出成功", "操作提示");*/
+                        tsmiLblState.Text = "Export successful";
+                        tsmiLblState.ForeColor = Color.Green;
+
+                        MessageBox.Show("Export successful", "Operation Prompt");
+                    }
+
                 }
             }
             else if (list.Count > 0)
             {
                 FolderBrowserDialog dialog = new FolderBrowserDialog();
-                dialog.Description = "请选择导出目录(自动覆盖)";
+                dialog.Description = "Please select export directory (automatically overwriten)";
+                //dialog.Description = "请选择导出目录(自动覆盖)" // Please select export directory (will overwrite automatically);
 
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
@@ -345,10 +356,12 @@ namespace GGCREditor
                         string name = dialog.SelectedPath + "\\" + gundam.PicName + "-" + gundam.UnitName.Replace(" ", "_") + ".master";
                         export(gundam, name);
                     }
-                    tsmiLblState.Text = "导出成功";
+                    tsmiLblState.Text = "Export successful";
+                    //tsmiLblState.Text = "导出成功" // Export successful;
                     tsmiLblState.ForeColor = Color.Green;
 
-                    MessageBox.Show("导出成功", "操作提示");
+                    MessageBox.Show("Export successful", "Operation Prompt");
+                    //MessageBox.Show("导出成功" // Export successful, "操作提示" // Operation Prompt);
                 }
             }
         }
@@ -388,7 +401,8 @@ namespace GGCREditor
                 }
                 if (select == null)
                 {
-                    MessageBox.Show("该角色不存在,无法导入", "导入失败", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("This character does not exist, import failed", "Import Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //MessageBox.Show("该角色不存在,无法导入" // This character does not exist, import failed, "导入失败" // Import failed, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -396,7 +410,8 @@ namespace GGCREditor
                     lsMasters.SelectedItem = null;
                     lsMasters.SelectedItem = select;
 
-                    tsmiLblState.Text = "请保存";
+                    tsmiLblState.Text = "Please save";
+                    //tsmiLblState.Text = "请保存" // Please save;
                     tsmiLblState.ForeColor = Color.Red;
                 }
             }
@@ -407,13 +422,14 @@ namespace GGCREditor
             SaveFileDialog dialog = new SaveFileDialog();
             //dialog.RestoreDirectory = true;
             dialog.Filter = "文本文件|*.txt";
-            dialog.FileName = "全部人物数据";
+            dialog.FileName = "All Character Data";
+            //dialog.FileName = "全部人物数据" // All Character Data;
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 using (StreamWriter sw = new StreamWriter(dialog.FileName, false, Encoding.UTF8))
                 {
-                    sw.Write("系列\t姓名\t射击\t格斗\t守备\t反应\t觉醒\t经验值\t指挥\t辅佐\t通讯\t操舵\t维修\t魅力");
+                    sw.Write("地址\t系列\t姓名\t射击\t格斗\t守备\t反应\t觉醒\t经验值\t指挥\t辅佐\t通讯\t操舵\t维修\t魅力");
                     sw.Write("\t成长\t技能1\t技能2\t技能3\t招聘可能");
                     sw.WriteLine();
 
@@ -486,7 +502,8 @@ namespace GGCREditor
 
                 bindAll();
 
-                MessageBox.Show("导入成功,已自动保存", "操作提示");
+                MessageBox.Show("Import successful, saved automatically", "Operation Prompt");
+                //MessageBox.Show("导入成功,已自动保存" // Import successful, saved automatically, "操作提示" // Operation Prompt);
                 // lsGundam.SelectedIndex = 0;
             }
         }

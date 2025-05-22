@@ -31,15 +31,17 @@ namespace GGCREditor
 
         public static int GundamAbilityStart = 48;
 
-        public static int GundamAbilityLength = 8;
+        public static int GundamAbilityLength = 16; //alycecil value = 8
 
-        public static int PeopleAbilityLength = 34;
+        public static int PeopleAbilityLength = 40; //alycecil value = 34
 
-        public static int OPAbilityLength = 40;
+        public static int OPAbilityLength = 60; //alycecil value = 40
 
         public static int WarAbilityLength = 14;
 
         public static int XiaoGuoLength = 132;
+        public static int GundamAbilityCount;
+        public static int OPCount;
 
         /// <summary>
         /// 当前data目录

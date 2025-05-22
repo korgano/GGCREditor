@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.选择路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,44 +64,47 @@
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.文件ToolStripMenuItem});
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.文件ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 5, 0, 5);
-            this.menuStrip1.Size = new System.Drawing.Size(1070, 46);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 文件ToolStripMenuItem
             // 
-            this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]
-                {this.选择路径ToolStripMenuItem, this.tsmiLanguage});
+            this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.选择路径ToolStripMenuItem,
+            this.tsmiLanguage});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
-            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(219, 36);
+            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.文件ToolStripMenuItem.Text = "文件(File/Options)";
             // 
             // 选择路径ToolStripMenuItem
             // 
             this.选择路径ToolStripMenuItem.Name = "选择路径ToolStripMenuItem";
-            this.选择路径ToolStripMenuItem.Size = new System.Drawing.Size(563, 38);
+            this.选择路径ToolStripMenuItem.Size = new System.Drawing.Size(376, 26);
             this.选择路径ToolStripMenuItem.Text = "设置data文件夹路径 (Set data folder path)";
             this.选择路径ToolStripMenuItem.Click += new System.EventHandler(this.选择路径ToolStripMenuItem_Click);
             // 
             // tsmiLanguage
             // 
-            this.tsmiLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]
-            {
-                this.简体中文ToolStripMenuItem, this.繁体中文ToolStripMenuItem, this.繁体中文台湾ToolStripMenuItem,
-                this.englishToolStripMenuItem, this.japaneseToolStripMenuItem, this.koreanToolStripMenuItem
-            });
+            this.tsmiLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.简体中文ToolStripMenuItem,
+            this.繁体中文ToolStripMenuItem,
+            this.繁体中文台湾ToolStripMenuItem,
+            this.englishToolStripMenuItem,
+            this.japaneseToolStripMenuItem,
+            this.koreanToolStripMenuItem});
             this.tsmiLanguage.Name = "tsmiLanguage";
-            this.tsmiLanguage.Size = new System.Drawing.Size(563, 38);
+            this.tsmiLanguage.Size = new System.Drawing.Size(376, 26);
             this.tsmiLanguage.Text = "选择游戏语言(Choose Game Language)";
             // 
             // 简体中文ToolStripMenuItem
             // 
             this.简体中文ToolStripMenuItem.Name = "简体中文ToolStripMenuItem";
-            this.简体中文ToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.简体中文ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.简体中文ToolStripMenuItem.Tag = "schinese";
             this.简体中文ToolStripMenuItem.Text = "简体中文";
             this.简体中文ToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
@@ -110,7 +112,7 @@
             // 繁体中文ToolStripMenuItem
             // 
             this.繁体中文ToolStripMenuItem.Name = "繁体中文ToolStripMenuItem";
-            this.繁体中文ToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.繁体中文ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.繁体中文ToolStripMenuItem.Tag = "tchinese\\hk";
             this.繁体中文ToolStripMenuItem.Text = "繁体中文-香港";
             this.繁体中文ToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
@@ -118,7 +120,7 @@
             // 繁体中文台湾ToolStripMenuItem
             // 
             this.繁体中文台湾ToolStripMenuItem.Name = "繁体中文台湾ToolStripMenuItem";
-            this.繁体中文台湾ToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.繁体中文台湾ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.繁体中文台湾ToolStripMenuItem.Tag = "tchinese\\tw";
             this.繁体中文台湾ToolStripMenuItem.Text = "繁体中文-台湾";
             this.繁体中文台湾ToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
@@ -126,7 +128,7 @@
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.englishToolStripMenuItem.Tag = "english";
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
@@ -134,7 +136,7 @@
             // japaneseToolStripMenuItem
             // 
             this.japaneseToolStripMenuItem.Name = "japaneseToolStripMenuItem";
-            this.japaneseToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.japaneseToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.japaneseToolStripMenuItem.Tag = "japanese";
             this.japaneseToolStripMenuItem.Text = "Japanese";
             this.japaneseToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
@@ -142,17 +144,17 @@
             // koreanToolStripMenuItem
             // 
             this.koreanToolStripMenuItem.Name = "koreanToolStripMenuItem";
-            this.koreanToolStripMenuItem.Size = new System.Drawing.Size(268, 38);
+            this.koreanToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.koreanToolStripMenuItem.Tag = "korean";
             this.koreanToolStripMenuItem.Text = "Korean";
             this.koreanToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
             // 
             // btnEditMaster
             // 
-            this.btnEditMaster.Location = new System.Drawing.Point(7, 8);
-            this.btnEditMaster.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditMaster.Location = new System.Drawing.Point(129, 4);
+            this.btnEditMaster.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditMaster.Name = "btnEditMaster";
-            this.btnEditMaster.Size = new System.Drawing.Size(167, 143);
+            this.btnEditMaster.Size = new System.Drawing.Size(103, 72);
             this.btnEditMaster.TabIndex = 1;
             this.btnEditMaster.Text = "修改角色 (Modify Pilots)";
             this.btnEditMaster.UseVisualStyleBackColor = true;
@@ -160,10 +162,10 @@
             // 
             // btnEditGundam
             // 
-            this.btnEditGundam.Location = new System.Drawing.Point(188, 8);
-            this.btnEditGundam.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditGundam.Location = new System.Drawing.Point(242, 4);
+            this.btnEditGundam.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditGundam.Name = "btnEditGundam";
-            this.btnEditGundam.Size = new System.Drawing.Size(167, 143);
+            this.btnEditGundam.Size = new System.Drawing.Size(135, 72);
             this.btnEditGundam.TabIndex = 2;
             this.btnEditGundam.Text = "修改机体/战舰 (Modify MS/MA/WS)";
             this.btnEditGundam.UseVisualStyleBackColor = true;
@@ -171,10 +173,10 @@
             // 
             // btnEditWeapon
             // 
-            this.btnEditWeapon.Location = new System.Drawing.Point(369, 8);
-            this.btnEditWeapon.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditWeapon.Location = new System.Drawing.Point(551, 4);
+            this.btnEditWeapon.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditWeapon.Name = "btnEditWeapon";
-            this.btnEditWeapon.Size = new System.Drawing.Size(195, 143);
+            this.btnEditWeapon.Size = new System.Drawing.Size(120, 72);
             this.btnEditWeapon.TabIndex = 3;
             this.btnEditWeapon.Text = "修改武器 (Modify weapon)";
             this.btnEditWeapon.UseVisualStyleBackColor = true;
@@ -183,114 +185,112 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]
-                {this.tslblDir, this.toolStripStatusLabel1, this.lblLang});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 512);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tslblDir,
+            this.toolStripStatusLabel1,
+            this.lblLang});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 277);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 30, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1070, 37);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 18, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(782, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tslblDir
             // 
             this.tslblDir.Name = "tslblDir";
-            this.tslblDir.Size = new System.Drawing.Size(751, 32);
+            this.tslblDir.Size = new System.Drawing.Size(470, 20);
             this.tslblDir.Text = "请点击-文件-设置data文件夹路径 (Set Data path, under File/Options)";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(226, 32);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(255, 20);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // lblLang
             // 
             this.lblLang.Name = "lblLang";
-            this.lblLang.Size = new System.Drawing.Size(61, 32);
+            this.lblLang.Size = new System.Drawing.Size(38, 20);
             this.lblLang.Text = "lang";
             // 
             // label1
             // 
-            this.label1.Anchor =
-                ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom |
-                                                       System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 435);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(16, 247);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(715, 32);
+            this.label1.Size = new System.Drawing.Size(396, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "感谢: 泷泽透明 lxdlxd99 gundamdxhk hgjzorro hj mediar (Credits)";
             // 
             // btnEditPeopleText
             // 
-            this.btnEditPeopleText.Location = new System.Drawing.Point(842, 8);
-            this.btnEditPeopleText.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditPeopleText.Location = new System.Drawing.Point(5, 4);
+            this.btnEditPeopleText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditPeopleText.Name = "btnEditPeopleText";
-            this.btnEditPeopleText.Size = new System.Drawing.Size(167, 143);
+            this.btnEditPeopleText.Size = new System.Drawing.Size(114, 72);
             this.btnEditPeopleText.TabIndex = 3;
-            this.btnEditPeopleText.Text = "修改角色相关文本 pilot text";
+            this.btnEditPeopleText.Text = "修改角色相关文本 Pilot Name";
             this.btnEditPeopleText.UseVisualStyleBackColor = true;
             this.btnEditPeopleText.Click += new System.EventHandler(this.btnEditText_Click);
             // 
             // btnEditMachineTxt
             // 
-            this.btnEditMachineTxt.Location = new System.Drawing.Point(7, 8);
-            this.btnEditMachineTxt.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditMachineTxt.Location = new System.Drawing.Point(5, 4);
+            this.btnEditMachineTxt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditMachineTxt.Name = "btnEditMachineTxt";
-            this.btnEditMachineTxt.Size = new System.Drawing.Size(233, 143);
+            this.btnEditMachineTxt.Size = new System.Drawing.Size(143, 72);
             this.btnEditMachineTxt.TabIndex = 3;
-            this.btnEditMachineTxt.Text = "修改机体/武器文本 (unit / weapon text";
+            this.btnEditMachineTxt.Text = "修改机体/武器文本 Unit / Weapon Name";
             this.btnEditMachineTxt.UseVisualStyleBackColor = true;
             this.btnEditMachineTxt.Click += new System.EventHandler(this.btnEditMachineTxt_Click);
             // 
             // btnEditMachineDesc
             // 
-            this.btnEditMachineDesc.Location = new System.Drawing.Point(254, 8);
-            this.btnEditMachineDesc.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditMachineDesc.Location = new System.Drawing.Point(158, 4);
+            this.btnEditMachineDesc.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditMachineDesc.Name = "btnEditMachineDesc";
-            this.btnEditMachineDesc.Size = new System.Drawing.Size(215, 143);
+            this.btnEditMachineDesc.Size = new System.Drawing.Size(155, 72);
             this.btnEditMachineDesc.TabIndex = 3;
-            this.btnEditMachineDesc.Text = "修改角色/机体描述\r\npilot / unit description";
+            this.btnEditMachineDesc.Text = "修改角色/机体描述\r\nPilot / Unit Description";
             this.btnEditMachineDesc.UseVisualStyleBackColor = true;
             this.btnEditMachineDesc.Click += new System.EventHandler(this.btnEditMachineDesc_Click);
             // 
             // btnEditAbilityText
             // 
-            this.btnEditAbilityText.Location = new System.Drawing.Point(483, 8);
-            this.btnEditAbilityText.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditAbilityText.Location = new System.Drawing.Point(323, 4);
+            this.btnEditAbilityText.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditAbilityText.Name = "btnEditAbilityText";
-            this.btnEditAbilityText.Size = new System.Drawing.Size(232, 143);
+            this.btnEditAbilityText.Size = new System.Drawing.Size(143, 72);
             this.btnEditAbilityText.TabIndex = 3;
-            this.btnEditAbilityText.Text = "修改技能相关文本 Modify skill related text";
+            this.btnEditAbilityText.Text = "修改技能相关文本 Modify Skill Name";
             this.btnEditAbilityText.UseVisualStyleBackColor = true;
             this.btnEditAbilityText.Click += new System.EventHandler(this.btnEditAbility_Click);
             // 
             // flowContainer
             // 
-            this.flowContainer.Anchor =
-                ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top |
-                                                        System.Windows.Forms.AnchorStyles.Left) |
-                                                       System.Windows.Forms.AnchorStyles.Right)));
+            this.flowContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowContainer.Controls.Add(this.btnEditPeopleText);
             this.flowContainer.Controls.Add(this.btnEditMaster);
             this.flowContainer.Controls.Add(this.btnEditGundam);
-            this.flowContainer.Controls.Add(this.btnEditWeapon);
             this.flowContainer.Controls.Add(this.btnEditAbility);
-            this.flowContainer.Controls.Add(this.btnEditPeopleText);
+            this.flowContainer.Controls.Add(this.btnEditWeapon);
             this.flowContainer.Enabled = false;
-            this.flowContainer.Location = new System.Drawing.Point(26, 74);
-            this.flowContainer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.flowContainer.Location = new System.Drawing.Point(16, 37);
+            this.flowContainer.Margin = new System.Windows.Forms.Padding(4);
             this.flowContainer.Name = "flowContainer";
-            this.flowContainer.Size = new System.Drawing.Size(1021, 163);
+            this.flowContainer.Size = new System.Drawing.Size(752, 82);
             this.flowContainer.TabIndex = 4;
             // 
             // btnEditAbility
             // 
-            this.btnEditAbility.Location = new System.Drawing.Point(578, 8);
-            this.btnEditAbility.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditAbility.Location = new System.Drawing.Point(387, 4);
+            this.btnEditAbility.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditAbility.Name = "btnEditAbility";
-            this.btnEditAbility.Size = new System.Drawing.Size(250, 143);
+            this.btnEditAbility.Size = new System.Drawing.Size(154, 72);
             this.btnEditAbility.TabIndex = 3;
             this.btnEditAbility.Text = "修改能力/技能/OP (Modify ability / skill)";
             this.btnEditAbility.UseVisualStyleBackColor = true;
@@ -298,10 +298,10 @@
             // 
             // btnEditTBL
             // 
-            this.btnEditTBL.Location = new System.Drawing.Point(729, 8);
-            this.btnEditTBL.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.btnEditTBL.Location = new System.Drawing.Point(476, 4);
+            this.btnEditTBL.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditTBL.Name = "btnEditTBL";
-            this.btnEditTBL.Size = new System.Drawing.Size(211, 143);
+            this.btnEditTBL.Size = new System.Drawing.Size(130, 72);
             this.btnEditTBL.TabIndex = 3;
             this.btnEditTBL.Text = "修改其他TBL文件 (other TBL files)";
             this.btnEditTBL.UseVisualStyleBackColor = true;
@@ -309,35 +309,33 @@
             // 
             // flowContainer2
             // 
-            this.flowContainer2.Anchor =
-                ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top |
-                                                        System.Windows.Forms.AnchorStyles.Left) |
-                                                       System.Windows.Forms.AnchorStyles.Right)));
+            this.flowContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowContainer2.Controls.Add(this.btnEditMachineTxt);
             this.flowContainer2.Controls.Add(this.btnEditMachineDesc);
             this.flowContainer2.Controls.Add(this.btnEditAbilityText);
             this.flowContainer2.Controls.Add(this.btnEditTBL);
             this.flowContainer2.Enabled = false;
-            this.flowContainer2.Location = new System.Drawing.Point(26, 253);
-            this.flowContainer2.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.flowContainer2.Location = new System.Drawing.Point(16, 126);
+            this.flowContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.flowContainer2.Name = "flowContainer2";
-            this.flowContainer2.Size = new System.Drawing.Size(1021, 163);
+            this.flowContainer2.Size = new System.Drawing.Size(752, 82);
             this.flowContainer2.TabIndex = 5;
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 549);
+            this.ClientSize = new System.Drawing.Size(782, 303);
             this.Controls.Add(this.flowContainer2);
             this.Controls.Add(this.flowContainer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GGCREditor 火线纵横-静态修改器 v2.5.1 - Power By RenYueHD";
@@ -350,6 +348,7 @@
             this.flowContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -20,17 +20,24 @@ namespace GGCREditorLib.CDBItem.Ability
         {
             get
             {
-                short idx = BitConverter.ToInt16(this.Data, 2);
-                if (PkdFile.AbilityText.Count > idx)
-                {
-                    return PkdFile.AbilityText[BitConverter.ToInt16(this.Data, 2)];
-                }
-                else
+                // Guard: Data must contain at least 2 bytes for startIndex plus 2 bytes for the 16-bit value
+                if (Data == null || Data.Length < 4)
                 {
                     return null;
                 }
+
+                // Read the ability index from bytes 2–3
+                short idx = BitConverter.ToInt16(this.Data, 2);
+                // Ensure idx is within valid range [0, Count)
+                if (idx >= 0 && idx < PkdFile.AbilityText.Count)
+                {
+                    return PkdFile.AbilityText[idx];  // Safe indexed access :contentReference[oaicite:2]{index=2}
+                }
+                // Fallback when index is out of range
+                return null;
             }
         }
+
 
         public abstract string TypeName { get; }
 
