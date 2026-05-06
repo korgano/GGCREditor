@@ -54,6 +54,7 @@
     <Compile Include="GGCRResource\GGCRTblFile.cs" />
     <Compile Include="CDBItem\GGCRUnitInfo.cs" />
     <Compile Include="GGCRUtil.cs" />
+    <Compile Include="UILanguageManager.cs" />
     <Compile Include="GGCRResource\GundamFile.cs" />
     <Compile Include="GGCRResource\AbilitySpecFile.cs" />
     <Compile Include="CDBItem\WeaponInfo.cs" />

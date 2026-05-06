@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Main Window -->
+  <data name="AppTitle" xml:space="preserve">
+    <value>GGCREditor - FireWire Static Editor v2.5.1</value>
+  </data>
+  <data name="Menu_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Menu_SetDataPath" xml:space="preserve">
+    <value>Set data folder path</value>
+  </data>
+  <data name="Menu_GameLanguage" xml:space="preserve">
+    <value>Game Language</value>
+  </data>
+  <data name="Menu_UILanguage" xml:space="preserve">
+    <value>UI Language</value>
+  </data>
+  <data name="Menu_LinkLanguages" xml:space="preserve">
+    <value>Link UI and Game Language</value>
+  </data>
+  <data name="Btn_EditMaster" xml:space="preserve">
+    <value>Modify Pilots</value>
+  </data>
+  <data name="Btn_EditGundam" xml:space="preserve">
+    <value>Modify MS/MA/WS</value>
+  </data>
+  <data name="Btn_EditWeapon" xml:space="preserve">
+    <value>Modify Weapon</value>
+  </data>
+  <data name="Btn_EditPeopleText" xml:space="preserve">
+    <value>Pilot Name</value>
+  </data>
+  <data name="Btn_EditMachineTxt" xml:space="preserve">
+    <value>Unit / Weapon Name</value>
+  </data>
+  <data name="Btn_EditMachineDesc" xml:space="preserve">
+    <value>Pilot / Unit Description</value>
+  </data>
+  <data name="Btn_EditAbilityText" xml:space="preserve">
+    <value>Modify Skill Name</value>
+  </data>
+  <data name="Btn_EditAbility" xml:space="preserve">
+    <value>Modify ability / skill</value>
+  </data>
+  <data name="Btn_EditTBL" xml:space="preserve">
+    <value>Other TBL files</value>
+  </data>
+  <data name="Status_SetDataPath" xml:space="preserve">
+    <value>Please set data folder path under File/Options</value>
+  </data>
+  <data name="Status_Lang" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Label_Credits" xml:space="preserve">
+    <value>Thanks: lxdlxd99 gundamdxhk hgjzorro hj mediar</value>
+  </data>
+  <data name="Msg_InvalidDirectory" xml:space="preserve">
+    <value>Please select the data folder of FireWire</value>
+  </data>
+  <data name="Msg_DirectoryInvalid" xml:space="preserve">
+    <value>Directory is invalid</value>
+  </data>
+
+  <!-- FrmEditWeapon -->
+  <data name="Form_Weapon" xml:space="preserve">
+    <value>Weapon Info Editor</value>
+  </data>
+  <data name="Label_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Group_Attributes" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Btn_Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Btn_BatchImport" xml:space="preserve">
+    <value>Batch Import</value>
+  </data>
+  <data name="Label_Power" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="Label_EN" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="Label_MP" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="Label_Range" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="Label_HitRate" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="Label_Crit" xml:space="preserve">
+    <value>Crit</value>
+  </data>
+  <data name="Label_HitCount" xml:space="preserve">
+    <value>Hit Count</value>
+  </data>
+  <data name="Label_MapTurn" xml:space="preserve">
+    <value>MAP Targeting</value>
+  </data>
+  <data name="Label_MapType" xml:space="preserve">
+    <value>MAP Type</value>
+  </data>
+  <data name="Label_TargetCount" xml:space="preserve">
+    <value># of Targets</value>
+  </data>
+  <data name="Label_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Label_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Label_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Label_Effect" xml:space="preserve">
+    <value>Effect</value>
+  </data>
+  <data name="Label_Suitability" xml:space="preserve">
+    <value>Applicability</value>
+  </data>
+  <data name="Label_CorrespondingSuit" xml:space="preserve">
+    <value>Corresponding Suitability</value>
+  </data>
+  <data name="Label_AttackAfterMove" xml:space="preserve">
+    <value>Attack After Move</value>
+  </data>
+  <data name="Label_Icon" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="Label_Terrain_Space" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="Label_Terrain_Air" xml:space="preserve">
+    <value>Air</value>
+  </data>
+  <data name="Label_Terrain_Ground" xml:space="preserve">
+    <value>Ground</value>
+  </data>
+  <data name="Label_Terrain_Water" xml:space="preserve">
+    <value>Water Surface</value>
+  </data>
+  <data name="Label_Terrain_Underwater" xml:space="preserve">
+    <value>Underwater</value>
+  </data>
+  <data name="Status_Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="Status_SaveSuccess" xml:space="preserve">
+    <value>Saved successfully</value>
+  </data>
+  <data name="Status_ExportSuccess" xml:space="preserve">
+    <value>Exported successfully</value>
+  </data>
+  <data name="Status_PleaseSave" xml:space="preserve">
+    <value>Please save</value>
+  </data>
+  <data name="Msg_ImportFailed" xml:space="preserve">
+    <value>Weapon does not exist, cannot import</value>
+  </data>
+  <data name="Msg_SaveBeforeExport" xml:space="preserve">
+    <value>If modified, please save before export. Hold CTRL to multi-select for batch export.</value>
+  </data>
+  <data name="Msg_SaveAfterImport" xml:space="preserve">
+    <value>Import will auto-match by data header. Please save after import.</value>
+  </data>
+
+  <!-- FrmEditPeople -->
+  <data name="Form_People" xml:space="preserve">
+    <value>Pilot Info Editor</value>
+  </data>
+  <data name="Label_Ranged" xml:space="preserve">
+    <value>Ranged</value>
+  </data>
+  <data name="Label_Melee" xml:space="preserve">
+    <value>Melee</value>
+  </data>
+  <data name="Label_Defense" xml:space="preserve">
+    <value>Defense</value>
+  </data>
+  <data name="Label_Reaction" xml:space="preserve">
+    <value>Reaction</value>
+  </data>
+  <data name="Label_Awakening" xml:space="preserve">
+    <value>Awakening</value>
+  </data>
+  <data name="Label_Command" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="Label_XO" xml:space="preserve">
+    <value>XO</value>
+  </data>
+  <data name="Label_Comm" xml:space="preserve">
+    <value>COMM</value>
+  </data>
+  <data name="Label_Nav" xml:space="preserve">
+    <value>Nav</value>
+  </data>
+  <data name="Label_Repair" xml:space="preserve">
+    <value>Repair</value>
+  </data>
+  <data name="Label_Charisma" xml:space="preserve">
+    <value>Charisma</value>
+  </data>
+  <data name="Label_EXP" xml:space="preserve">
+    <value>EXP</value>
+  </data>
+  <data name="Label_GrowthPattern" xml:space="preserve">
+    <value>Growth Pattern</value>
+  </data>
+  <data name="Label_InherentAbility1" xml:space="preserve">
+    <value>Inherent Ability 1</value>
+  </data>
+  <data name="Label_InherentAbility2" xml:space="preserve">
+    <value>Inherent Ability 2</value>
+  </data>
+  <data name="Label_InherentAbility3" xml:space="preserve">
+    <value>Inherent Ability 3</value>
+  </data>
+  <data name="Label_Recruitable" xml:space="preserve">
+    <value>Recruitable</value>
+  </data>
+  <data name="Label_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Btn_ExportAll" xml:space="preserve">
+    <value>Export All</value>
+  </data>
+  <data name="Label_EachSavedSeparately" xml:space="preserve">
+    <value>Each is saved separately, please backup before saving.</value>
+  </data>
+
+  <!-- FrmEditText -->
+  <data name="Form_Text" xml:space="preserve">
+    <value>Text Editor</value>
+  </data>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_WriteFile" xml:space="preserve">
+    <value>Save to File</value>
+  </data>
+
+  <!-- FrmEditGundam -->
+  <data name="Form_Gundam" xml:space="preserve">
+    <value>Unit Info Editor</value>
+  </data>
+  <data name="Btn_Convert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="Btn_EditWeapon" xml:space="preserve">
+    <value>Edit Weapon</value>
+  </data>
+  <data name="Label_Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Label_FirstMap" xml:space="preserve">
+    <value>First Map</value>
+  </data>
+  <data name="Label_MapCount" xml:space="preserve">
+    <value>Map Count</value>
+  </data>
+  <data name="Label_WeaponCount" xml:space="preserve">
+    <value>Weapon Count</value>
+  </data>
+  <data name="Label_WeaponID" xml:space="preserve">
+    <value>Weapon ID</value>
+  </data>
+  <data name="Label_Picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="Label_Pilot" xml:space="preserve">
+    <value>Pilot</value>
+  </data>
+  <data name="Label_Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="Label_EarthSize" xml:space="preserve">
+    <value>Earth Size</value>
+  </data>
+  <data name="Label_Skill" xml:space="preserve">
+    <value>Skill</value>
+  </data>
+
+  <!-- FrmEditAbility -->
+  <data name="Form_Ability" xml:space="preserve">
+    <value>Ability Editor</value>
+  </data>
+  <data name="Label_AbilityType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Label_AbilityEffect" xml:space="preserve">
+    <value>Effect</value>
+  </data>
+  <data name="Label_AbilityCost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="Label_AbilityRange" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="Label_AbilityArea" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Label_AbilityHitRate" xml:space="preserve">
+    <value>Hit Rate</value>
+  </data>
+  <data name="Label_AbilityTurns" xml:space="preserve">
+    <value>Turns</value>
+  </data>
+
+  <!-- FrmEditMachineConvert -->
+  <data name="Form_MachineConvert" xml:space="preserve">
+    <value>Unit Converter</value>
+  </data>
+  <data name="Btn_ConvertAll" xml:space="preserve">
+    <value>Convert All</value>
+  </data>
+  <data name="Label_SourceFile" xml:space="preserve">
+    <value>Source File</value>
+  </data>
+  <data name="Label_TargetFile" xml:space="preserve">
+    <value>Target File</value>
+  </data>
+  <data name="Btn_Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+</root>

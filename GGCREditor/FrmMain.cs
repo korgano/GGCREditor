@@ -5,8 +5,10 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -73,15 +75,90 @@ namespace GGCREditor
                 enableAll();
             }
 
-            if (config.AppSettings.Settings["language"] != null)
+            bool hasOldLanguageKey = config.AppSettings.Settings["language"] != null;
+            string oldLanguageValue = hasOldLanguageKey ? config.AppSettings.Settings["language"].Value : null;
+
+            string uiLanguage = null;
+            string gameLanguage = null;
+            bool linkLanguages = true;
+
+            if (config.AppSettings.Settings["uiLanguage"] != null)
             {
-                showLanguage(config.AppSettings.Settings["language"].Value);
+                uiLanguage = config.AppSettings.Settings["uiLanguage"].Value;
+            }
+
+            if (config.AppSettings.Settings["gameLanguage"] != null)
+            {
+                gameLanguage = config.AppSettings.Settings["gameLanguage"].Value;
+            }
+
+            if (config.AppSettings.Settings["linkLanguages"] != null)
+            {
+                string linkValue = config.AppSettings.Settings["linkLanguages"].Value;
+                linkLanguages = (linkValue == "true" || linkValue == "1");
+            }
+
+            if (hasOldLanguageKey && oldLanguageValue != null)
+            {
+                gameLanguage = oldLanguageValue;
+                config.AppSettings.Settings.Remove("language");
+            }
+
+            if (string.IsNullOrEmpty(uiLanguage))
+            {
+                uiLanguage = UILanguageManager.GetDefaultUILanguage();
+            }
+
+            if (string.IsNullOrEmpty(gameLanguage))
+            {
+                gameLanguage = "schinese";
+            }
+
+            UILanguageManager.LinkLanguages = linkLanguages;
+            UILanguageManager.UILanguage = uiLanguage;
+            UILanguageManager.GameLanguage = gameLanguage;
+
+            if (config.AppSettings.Settings["uiLanguage"] == null)
+            {
+                config.AppSettings.Settings.Add("uiLanguage", uiLanguage);
             }
             else
             {
-                showLanguage("schinese");
+                config.AppSettings.Settings["uiLanguage"].Value = uiLanguage;
             }
 
+            if (config.AppSettings.Settings["gameLanguage"] == null)
+            {
+                config.AppSettings.Settings.Add("gameLanguage", gameLanguage);
+            }
+            else
+            {
+                config.AppSettings.Settings["gameLanguage"].Value = gameLanguage;
+            }
+
+            if (config.AppSettings.Settings["linkLanguages"] == null)
+            {
+                config.AppSettings.Settings.Add("linkLanguages", linkLanguages ? "true" : "false");
+            }
+            else
+            {
+                config.AppSettings.Settings["linkLanguages"].Value = linkLanguages ? "true" : "false";
+            }
+
+            config.Save();
+
+            showGameLanguage(gameLanguage);
+            showUILanguage(uiLanguage);
+            showLinkLanguages(linkLanguages);
+
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            showUILanguage(UILanguageManager.UILanguage);
+            showGameLanguage(UILanguageManager.GameLanguage);
+            showLinkLanguages(UILanguageManager.LinkLanguages);
         }
 
         private void enableAll()
@@ -148,19 +225,53 @@ namespace GGCREditor
 
         private void koreanToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string language = (sender as ToolStripMenuItem).Tag.ToString();
+
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-            if (config.AppSettings.Settings["language"] == null)
+            if (config.AppSettings.Settings["gameLanguage"] == null)
             {
-                config.AppSettings.Settings.Add("language", (sender as ToolStripMenuItem).Tag.ToString());
+                config.AppSettings.Settings.Add("gameLanguage", language);
             }
-            config.AppSettings.Settings["language"].Value = (sender as ToolStripMenuItem).Tag.ToString();
+            config.AppSettings.Settings["gameLanguage"].Value = language;
             config.Save();
 
-            showLanguage((sender as ToolStripMenuItem).Tag.ToString());
+            UILanguageManager.SetGameLanguage(language);
         }
 
-        private void showLanguage(string language)
+        private void uiLanguageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string language = (sender as ToolStripMenuItem).Tag.ToString();
+
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+            if (config.AppSettings.Settings["uiLanguage"] == null)
+            {
+                config.AppSettings.Settings.Add("uiLanguage", language);
+            }
+            config.AppSettings.Settings["uiLanguage"].Value = language;
+            config.Save();
+
+            UILanguageManager.SetUILanguage(language);
+        }
+
+        private void tsmiLinkLanguages_Click(object sender, EventArgs e)
+        {
+            bool newLinkState = !UILanguageManager.LinkLanguages;
+
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+            if (config.AppSettings.Settings["linkLanguages"] == null)
+            {
+                config.AppSettings.Settings.Add("linkLanguages", newLinkState ? "true" : "false");
+            }
+            config.AppSettings.Settings["linkLanguages"].Value = newLinkState ? "true" : "false";
+            config.Save();
+
+            UILanguageManager.SetLinkLanguages(newLinkState);
+        }
+
+        private void showGameLanguage(string language)
         {
             lblLang.Text = language;
             GGCRStaticConfig.Language = language;
@@ -176,6 +287,30 @@ namespace GGCREditor
                     (item as ToolStripMenuItem).Checked = false;
                 }
             }
+        }
+
+        private void showUILanguage(string language)
+        {
+            foreach (ToolStripDropDownItem item in tsmiUILanguage.DropDownItems)
+            {
+                if (item is ToolStripMenuItem && item.Tag != null)
+                {
+                    if (item.Tag.ToString() == language)
+                    {
+                        (item as ToolStripMenuItem).Checked = true;
+                    }
+                    else
+                    {
+                        (item as ToolStripMenuItem).Checked = false;
+                    }
+                }
+            }
+        }
+
+        private void showLinkLanguages(bool linked)
+        {
+            tsmiLinkLanguages.Checked = linked;
+            tsmiLinkLanguages.CheckState = linked ? CheckState.Checked : CheckState.Unchecked;
         }
 
     }

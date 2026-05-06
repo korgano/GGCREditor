@@ -76,7 +76,8 @@
             // 
             this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.选择路径ToolStripMenuItem,
-            this.tsmiLanguage});
+            this.tsmiLanguage,
+            this.tsmiUILanguage});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
             this.文件ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.文件ToolStripMenuItem.Text = "文件(File/Options)";
@@ -148,7 +149,93 @@
             this.koreanToolStripMenuItem.Tag = "korean";
             this.koreanToolStripMenuItem.Text = "Korean";
             this.koreanToolStripMenuItem.Click += new System.EventHandler(this.koreanToolStripMenuItem_Click);
-            // 
+            //
+            // tsmiUILanguage
+            //
+            this.tsmiUILangSchinese = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangTchineseHK = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangTchineseTW = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangEnglish = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangJapanese = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangKorean = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiLinkLanguages = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILanguage = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiUILangSchinese,
+            this.tsmiUILangTchineseHK,
+            this.tsmiUILangTchineseTW,
+            this.tsmiUILangEnglish,
+            this.tsmiUILangJapanese,
+            this.tsmiUILangKorean,
+            this.tsmiSeparator1,
+            this.tsmiLinkLanguages});
+            this.tsmiUILanguage.Name = "tsmiUILanguage";
+            this.tsmiUILanguage.Size = new System.Drawing.Size(376, 26);
+            this.tsmiUILanguage.Text = "UI Language";
+            //
+            // tsmiUILangSchinese
+            //
+            this.tsmiUILangSchinese.Name = "tsmiUILangSchinese";
+            this.tsmiUILangSchinese.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangSchinese.Tag = "schinese";
+            this.tsmiUILangSchinese.Text = "简体中文";
+            this.tsmiUILangSchinese.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiUILangTchineseHK
+            //
+            this.tsmiUILangTchineseHK.Name = "tsmiUILangTchineseHK";
+            this.tsmiUILangTchineseHK.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangTchineseHK.Tag = "tchinese\\hk";
+            this.tsmiUILangTchineseHK.Text = "繁体中文-香港";
+            this.tsmiUILangTchineseHK.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiUILangTchineseTW
+            //
+            this.tsmiUILangTchineseTW.Name = "tsmiUILangTchineseTW";
+            this.tsmiUILangTchineseTW.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangTchineseTW.Tag = "tchinese\\tw";
+            this.tsmiUILangTchineseTW.Text = "繁体中文-台湾";
+            this.tsmiUILangTchineseTW.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiUILangEnglish
+            //
+            this.tsmiUILangEnglish.Name = "tsmiUILangEnglish";
+            this.tsmiUILangEnglish.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangEnglish.Tag = "english";
+            this.tsmiUILangEnglish.Text = "English";
+            this.tsmiUILangEnglish.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiUILangJapanese
+            //
+            this.tsmiUILangJapanese.Name = "tsmiUILangJapanese";
+            this.tsmiUILangJapanese.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangJapanese.Tag = "japanese";
+            this.tsmiUILangJapanese.Text = "Japanese";
+            this.tsmiUILangJapanese.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiUILangKorean
+            //
+            this.tsmiUILangKorean.Name = "tsmiUILangKorean";
+            this.tsmiUILangKorean.Size = new System.Drawing.Size(188, 26);
+            this.tsmiUILangKorean.Tag = "korean";
+            this.tsmiUILangKorean.Text = "Korean";
+            this.tsmiUILangKorean.Click += new System.EventHandler(this.uiLanguageToolStripMenuItem_Click);
+            //
+            // tsmiSeparator1
+            //
+            this.tsmiSeparator1.Name = "tsmiSeparator1";
+            this.tsmiSeparator1.Size = new System.Drawing.Size(188, 6);
+            //
+            // tsmiLinkLanguages
+            //
+            this.tsmiLinkLanguages.Checked = true;
+            this.tsmiLinkLanguages.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tsmiLinkLanguages.Name = "tsmiLinkLanguages";
+            this.tsmiLinkLanguages.Size = new System.Drawing.Size(188, 26);
+            this.tsmiLinkLanguages.Text = "Link UI and Game Language";
+            this.tsmiLinkLanguages.Click += new System.EventHandler(this.tsmiLinkLanguages_Click);
+            //
             // btnEditMaster
             // 
             this.btnEditMaster.Location = new System.Drawing.Point(129, 4);
@@ -379,6 +466,15 @@
         private System.Windows.Forms.ToolStripMenuItem koreanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 繁体中文ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 繁体中文台湾ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILanguage;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangSchinese;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangTchineseHK;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangTchineseTW;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangEnglish;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangJapanese;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUILangKorean;
+        private System.Windows.Forms.ToolStripSeparator tsmiSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLinkLanguages;
     }
 }
 

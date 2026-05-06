@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Main Window -->
+  <data name="AppTitle" xml:space="preserve">
+    <value>火线纵横-静态修改器 v2.5.1</value>
+  </data>
+  <data name="Menu_File" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="Menu_SetDataPath" xml:space="preserve">
+    <value>设置data文件夹路径</value>
+  </data>
+  <data name="Menu_GameLanguage" xml:space="preserve">
+    <value>游戏语言</value>
+  </data>
+  <data name="Menu_UILanguage" xml:space="preserve">
+    <value>界面语言</value>
+  </data>
+  <data name="Menu_LinkLanguages" xml:space="preserve">
+    <value>关联界面和游戏语言</value>
+  </data>
+  <data name="Btn_EditMaster" xml:space="preserve">
+    <value>修改角色</value>
+  </data>
+  <data name="Btn_EditGundam" xml:space="preserve">
+    <value>修改机体/战舰</value>
+  </data>
+  <data name="Btn_EditWeapon" xml:space="preserve">
+    <value>修改武器</value>
+  </data>
+  <data name="Btn_EditPeopleText" xml:space="preserve">
+    <value>修改角色相关文本</value>
+  </data>
+  <data name="Btn_EditMachineTxt" xml:space="preserve">
+    <value>修改机体/武器文本</value>
+  </data>
+  <data name="Btn_EditMachineDesc" xml:space="preserve">
+    <value>修改角色/机体描述</value>
+  </data>
+  <data name="Btn_EditAbilityText" xml:space="preserve">
+    <value>修改技能相关文本</value>
+  </data>
+  <data name="Btn_EditAbility" xml:space="preserve">
+    <value>修改能力/技能/OP</value>
+  </data>
+  <data name="Btn_EditTBL" xml:space="preserve">
+    <value>修改其他TBL文件</value>
+  </data>
+  <data name="Status_SetDataPath" xml:space="preserve">
+    <value>请点击-文件-设置data文件夹路径</value>
+  </data>
+  <data name="Status_Lang" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Label_Credits" xml:space="preserve">
+    <value>感谢: 泷泽透明 lxdlxd99 gundamdxhk hgjzorro hj mediar</value>
+  </data>
+  <data name="Msg_InvalidDirectory" xml:space="preserve">
+    <value>请选择火线纵横的data文件夹</value>
+  </data>
+  <data name="Msg_DirectoryInvalid" xml:space="preserve">
+    <value>目录无效</value>
+  </data>
+
+  <!-- FrmEditWeapon -->
+  <data name="Form_Weapon" xml:space="preserve">
+    <value>武器信息修改</value>
+  </data>
+  <data name="Label_Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Group_Attributes" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Btn_Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="Btn_Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Btn_BatchImport" xml:space="preserve">
+    <value>批量导入</value>
+  </data>
+  <data name="Label_Power" xml:space="preserve">
+    <value>攻击力</value>
+  </data>
+  <data name="Label_EN" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="Label_MP" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="Label_Range" xml:space="preserve">
+    <value>射程</value>
+  </data>
+  <data name="Label_HitRate" xml:space="preserve">
+    <value>命中率</value>
+  </data>
+  <data name="Label_Crit" xml:space="preserve">
+    <value>暴击</value>
+  </data>
+  <data name="Label_HitCount" xml:space="preserve">
+    <value>命中数</value>
+  </data>
+  <data name="Label_MapTurn" xml:space="preserve">
+    <value>MAP转向</value>
+  </data>
+  <data name="Label_MapType" xml:space="preserve">
+    <value>MAP类型</value>
+  </data>
+  <data name="Label_TargetCount" xml:space="preserve">
+    <value>目标数</value>
+  </data>
+  <data name="Label_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Label_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Label_Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Label_Effect" xml:space="preserve">
+    <value>武器效果</value>
+  </data>
+  <data name="Label_Suitability" xml:space="preserve">
+    <value>使用适性</value>
+  </data>
+  <data name="Label_CorrespondingSuit" xml:space="preserve">
+    <value>对应适性</value>
+  </data>
+  <data name="Label_AttackAfterMove" xml:space="preserve">
+    <value>移动后攻击</value>
+  </data>
+  <data name="Label_Icon" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="Label_Terrain_Space" xml:space="preserve">
+    <value>宇</value>
+  </data>
+  <data name="Label_Terrain_Air" xml:space="preserve">
+    <value>空</value>
+  </data>
+  <data name="Label_Terrain_Ground" xml:space="preserve">
+    <value>地</value>
+  </data>
+  <data name="Label_Terrain_Water" xml:space="preserve">
+    <value>水面</value>
+  </data>
+  <data name="Label_Terrain_Underwater" xml:space="preserve">
+    <value>水中</value>
+  </data>
+  <data name="Status_Waiting" xml:space="preserve">
+    <value>等待修改</value>
+  </data>
+  <data name="Status_SaveSuccess" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="Status_ExportSuccess" xml:space="preserve">
+    <value>导出成功</value>
+  </data>
+  <data name="Status_PleaseSave" xml:space="preserve">
+    <value>请保存</value>
+  </data>
+  <data name="Msg_ImportFailed" xml:space="preserve">
+    <value>该武器不存在,无法导入</value>
+  </data>
+  <data name="Msg_SaveBeforeExport" xml:space="preserve">
+    <value>若有修改,请先保存再导出 按住Ctrl可多选后批量导出</value>
+  </data>
+  <data name="Msg_SaveAfterImport" xml:space="preserve">
+    <value>导入功能会根据数据头自动匹配数据,导入完成请保存</value>
+  </data>
+
+  <!-- FrmEditPeople -->
+  <data name="Form_People" xml:space="preserve">
+    <value>角色信息修改</value>
+  </data>
+  <data name="Label_Ranged" xml:space="preserve">
+    <value>射击</value>
+  </data>
+  <data name="Label_Melee" xml:space="preserve">
+    <value>格斗</value>
+  </data>
+  <data name="Label_Defense" xml:space="preserve">
+    <value>防御</value>
+  </data>
+  <data name="Label_Reaction" xml:space="preserve">
+    <value>反应</value>
+  </data>
+  <data name="Label_Awakening" xml:space="preserve">
+    <value>觉醒</value>
+  </data>
+  <data name="Label_Command" xml:space="preserve">
+    <value>指挥</value>
+  </data>
+  <data name="Label_XO" xml:space="preserve">
+    <value>辅佐</value>
+  </data>
+  <data name="Label_Comm" xml:space="preserve">
+    <value>通讯</value>
+  </data>
+  <data name="Label_Nav" xml:space="preserve">
+    <value>操舵</value>
+  </data>
+  <data name="Label_Repair" xml:space="preserve">
+    <value>维修</value>
+  </data>
+  <data name="Label_Charisma" xml:space="preserve">
+    <value>魅力</value>
+  </data>
+  <data name="Label_EXP" xml:space="preserve">
+    <value>经验值</value>
+  </data>
+  <data name="Label_GrowthPattern" xml:space="preserve">
+    <value>成长规律</value>
+  </data>
+  <data name="Label_InherentAbility1" xml:space="preserve">
+    <value>固有技能1</value>
+  </data>
+  <data name="Label_InherentAbility2" xml:space="preserve">
+    <value>固有技能2</value>
+  </data>
+  <data name="Label_InherentAbility3" xml:space="preserve">
+    <value>固有技能3</value>
+  </data>
+  <data name="Label_Recruitable" xml:space="preserve">
+    <value>招聘可能</value>
+  </data>
+  <data name="Label_Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Btn_ExportAll" xml:space="preserve">
+    <value>导出全部</value>
+  </data>
+  <data name="Label_EachSavedSeparately" xml:space="preserve">
+    <value>每个人物单独保存,保存前请备份原文件</value>
+  </data>
+
+  <!-- FrmEditText -->
+  <data name="Form_Text" xml:space="preserve">
+    <value>文本修改</value>
+  </data>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>复位</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Btn_WriteFile" xml:space="preserve">
+    <value>写入文件</value>
+  </data>
+
+  <!-- FrmEditGundam -->
+  <data name="Form_Gundam" xml:space="preserve">
+    <value>机体信息修改</value>
+  </data>
+  <data name="Btn_Convert" xml:space="preserve">
+    <value>转换</value>
+  </data>
+  <data name="Btn_EditWeapon" xml:space="preserve">
+    <value>编辑武器</value>
+  </data>
+  <data name="Label_Group" xml:space="preserve">
+    <value>编组</value>
+  </data>
+  <data name="Label_FirstMap" xml:space="preserve">
+    <value>初始关卡</value>
+  </data>
+  <data name="Label_MapCount" xml:space="preserve">
+    <value>关卡数</value>
+  </data>
+  <data name="Label_WeaponCount" xml:space="preserve">
+    <value>武器数</value>
+  </data>
+  <data name="Label_WeaponID" xml:space="preserve">
+    <value>武器ID</value>
+  </data>
+  <data name="Label_Picture" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="Label_Pilot" xml:space="preserve">
+    <value>驾驶员</value>
+  </data>
+  <data name="Label_Size" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="Label_EarthSize" xml:space="preserve">
+    <value>地球尺寸</value>
+  </data>
+  <data name="Label_Skill" xml:space="preserve">
+    <value>技能</value>
+  </data>
+
+  <!-- FrmEditAbility -->
+  <data name="Form_Ability" xml:space="preserve">
+    <value>能力/技能修改</value>
+  </data>
+  <data name="Label_AbilityType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Label_AbilityEffect" xml:space="preserve">
+    <value>效果</value>
+  </data>
+  <data name="Label_AbilityCost" xml:space="preserve">
+    <value>消耗</value>
+  </data>
+  <data name="Label_AbilityRange" xml:space="preserve">
+    <value>射程</value>
+  </data>
+  <data name="Label_AbilityArea" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="Label_AbilityHitRate" xml:space="preserve">
+    <value>命中率</value>
+  </data>
+  <data name="Label_AbilityTurns" xml:space="preserve">
+    <value>回合</value>
+  </data>
+
+  <!-- FrmEditMachineConvert -->
+  <data name="Form_MachineConvert" xml:space="preserve">
+    <value>机体转换</value>
+  </data>
+  <data name="Btn_ConvertAll" xml:space="preserve">
+    <value>全部转换</value>
+  </data>
+  <data name="Label_SourceFile" xml:space="preserve">
+    <value>源文件</value>
+  </data>
+  <data name="Label_TargetFile" xml:space="preserve">
+    <value>目标文件</value>
+  </data>
+  <data name="Btn_Browse" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+</root>
