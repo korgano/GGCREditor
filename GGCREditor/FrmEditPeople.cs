@@ -19,7 +19,8 @@ namespace GGCREditor
         private FrmEditPeople()
         {
             InitializeComponent();
-
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         public static FrmEditPeople CreateForm()
@@ -66,10 +67,10 @@ namespace GGCREditor
 
         private void FrmEditPeople_Load(object sender, EventArgs e)
         {
-
             bindAll();
 
             masters = masterFile.ListMasters();
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading Master list, count: {0}", masters.Count));
 
             lsMasters.DataSource = masters;
             lsMasters.DisplayMember = "UnitName";
@@ -277,6 +278,7 @@ namespace GGCREditor
 
                 master.Last4 = short.Parse(cboLast4.SelectedValue.ToString());
 
+                GGCREditorLib.Logger.LogEdit(string.Format("Saving Master: {0}", master.UnitName));
                 master.Save();
 
                 master.Refresh();
@@ -506,6 +508,43 @@ namespace GGCREditor
                 //MessageBox.Show("导入成功,已自动保存" // Import successful, saved automatically, "操作提示" // Operation Prompt);
                 // lsGundam.SelectedIndex = 0;
             }
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_People");
+            this.label1.Text = StringResources.Get("Label_Ranged");
+            this.label2.Text = StringResources.Get("Label_Melee");
+            this.label3.Text = StringResources.Get("Label_Defense");
+            this.label4.Text = StringResources.Get("Label_Reaction");
+            this.label5.Text = StringResources.Get("Label_Awakening");
+            this.label6.Text = StringResources.Get("Label_Command");
+            this.label7.Text = StringResources.Get("Label_XO");
+            this.label8.Text = StringResources.Get("Label_Comm");
+            this.label9.Text = StringResources.Get("Label_Nav");
+            this.label10.Text = StringResources.Get("Label_Repair");
+            this.label11.Text = StringResources.Get("Label_Charisma");
+            this.label12.Text = StringResources.Get("Label_EXP");
+            this.label13.Text = StringResources.Get("Label_GrowthPattern");
+            this.label14.Text = StringResources.Get("Label_InherentAbility1");
+            this.label15.Text = StringResources.Get("Label_InherentAbility2");
+            this.label16.Text = StringResources.Get("Label_InherentAbility3");
+            this.groupBox1.Text = StringResources.Get("Group_Attributes");
+            this.btnImportBatch.Text = StringResources.Get("Btn_BatchImport");
+            this.btnExportAll.Text = StringResources.Get("Btn_ExportAll");
+            this.button1.Text = StringResources.Get("Btn_Import");
+            this.btnExport.Text = StringResources.Get("Btn_Export");
+            this.label21.Text = StringResources.Get("Label_ID");
+            this.label24.Text = StringResources.Get("Label_Unknown");
+            this.label20.Text = StringResources.Get("Label_Recruitable");
+            this.label29.Text = StringResources.Get("Msg_SaveBeforeExport");
+            this.label30.Text = StringResources.Get("Msg_SaveAfterImport");
+            
         }
     }
 }

@@ -16,7 +16,8 @@ namespace GGCREditor
         public FrmEditGundam()
         {
             InitializeComponent();
-
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         private GundamFile gundamFile;
@@ -76,10 +77,10 @@ namespace GGCREditor
 
         private void FrmEditGundam_Load(object sender, EventArgs e)
         {
-
             bindAll();
 
             gundams = gundamFile.ListMachines();
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading Gundam list, count: {0}", gundams.Count));
 
             lsGundam.DataSource = gundams;
         }
@@ -334,6 +335,7 @@ namespace GGCREditor
 
                 gundam.Earch = shiyin;
 
+                GGCREditorLib.Logger.LogEdit(string.Format("Saving Gundam: {0} at index {1}", gundam.UnitName, lsGundam.SelectedIndex));
                 gundam.Save();
 
                 gundam.Refresh();
@@ -604,6 +606,41 @@ namespace GGCREditor
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_Gundam");
+            this.label19.Text = StringResources.Get("Label_Search");
+            this.btnSave.Text = StringResources.Get("Btn_Save");
+            this.btnBatchImport.Text = StringResources.Get("Btn_BatchImport");
+            this.btnExportAll.Text = StringResources.Get("Btn_ExportAll");
+            this.btnConvert.Text = StringResources.Get("Btn_Convert");
+            this.button1.Text = StringResources.Get("Btn_Import");
+            this.btnExport.Text = StringResources.Get("Btn_Export");
+            this.btnEditWeapon.Text = StringResources.Get("Btn_EditWeapon");
+            this.label32.Text = StringResources.Get("Label_Group");
+            this.label25.Text = StringResources.Get("Label_FirstMap");
+            this.label1.Text = StringResources.Get("Label_FirstMap");
+            this.label25.Text = StringResources.Get("Label_MapCount");
+            this.label24.Text = StringResources.Get("Label_WeaponCount");
+            this.label17.Text = StringResources.Get("Label_WeaponID");
+            this.label13.Text = StringResources.Get("Label_Picture");
+            this.label11.Text = StringResources.Get("Label_Pilot");
+            this.label10.Text = StringResources.Get("Label_Size");
+            this.label9.Text = StringResources.Get("Label_EarthSize");
+            this.label18.Text = StringResources.Get("Label_Skill");
+            this.label28.Text = StringResources.Get("Label_Skill");
+            this.label23.Text = StringResources.Get("Group_Attributes");
+            this.label27.Text = StringResources.Get("Group_Attributes");
+            this.label22.Text = StringResources.Get("Group_Attributes");
+            this.label26.Text = StringResources.Get("Group_Attributes");
+            this.lblAddress.Text = StringResources.Get("Label_Address");
         }
     }
 }

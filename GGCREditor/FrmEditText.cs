@@ -19,6 +19,8 @@ namespace GGCREditor
             InitializeComponent();
             this.tblFile = new GGCRTblFile(file);
             tsmiFile.Text = tblFile.FileName;
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         List<IndexText> list;
@@ -39,6 +41,7 @@ namespace GGCREditor
             lsMain.ValueMember = "Index";
             lsMain.DisplayMember = "Text";
 
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading TBL file: {0}, count: {1}", tblFile.FileName, data.Count));
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -105,6 +108,7 @@ namespace GGCREditor
             {
                 data.Add(kv.Text);
             }
+            GGCREditorLib.Logger.LogEdit(string.Format("Saving TBL file: {0}", tblFile.FileName));
             tblFile.Save(data);
 
             tsmiState.Text = "写入成功";
@@ -128,6 +132,20 @@ namespace GGCREditor
                 e.Graphics.DrawString(master.Index.ToString(), e.Font, new SolidBrush(Color.Red), e.Bounds);
                 e.Graphics.DrawString(master.Text.Replace('\n', ' '), e.Font, new SolidBrush(e.ForeColor), e.Bounds.Left + 32, e.Bounds.Top);
             }
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_Text");
+            this.btnReset.Text = StringResources.Get("Btn_Reset");
+            this.label1.Text = StringResources.Get("Label_Search");
+            this.btnEnsure.Text = StringResources.Get("Btn_OK");
+            this.btnSave.Text = StringResources.Get("Btn_WriteFile");
         }
     }
 }

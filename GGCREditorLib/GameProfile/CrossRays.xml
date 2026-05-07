@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameProfile>
+  <GameId>cross_rays</GameId>
+  <GameName>SD Gundam G Generation Cross Rays</GameName>
+  <DataStructures>
+    <MasterLength>112</MasterLength>
+    <MasterUIDLength>8</MasterUIDLength>
+    <GundamLength>108</GundamLength>
+    <GundamUIDLength>8</GundamUIDLength>
+    <WeaponLength>36</WeaponLength>
+    <WeaponUIDLength>10</WeaponUIDLength>
+    <GundamAbilityStart>48</GundamAbilityStart>
+    <GundamAbilityLength>16</GundamAbilityLength>
+    <PeopleAbilityLength>40</PeopleAbilityLength>
+    <OPAbilityLength>60</OPAbilityLength>
+    <WarAbilityLength>14</WarAbilityLength>
+    <XiaoGuoLength>132</XiaoGuoLength>
+  </DataStructures>
+  <FilePaths>
+    <ResidentFolder>resident</ResidentFolder>
+    <MachineFile>MachineSpecList.pkd</MachineFile>
+    <MasterFile>CharacterSpecList.pkd</MasterFile>
+    <AbilityFile>AbilitySpecList.cdb</AbilityFile>
+    <SpecProfileFile>SpecProfileList.cdb</SpecProfileFile>
+  </FilePaths>
+  <InnerFiles>
+    <GundamCdb>MachineSpecList.cdb</GundamCdb>
+    <WeaponCdb>WeaponSpecList.cdb</WeaponCdb>
+    <MasterCdb>CharacterSpecList.cdb</MasterCdb>
+    <ConversionCdb>MachineConversionList.cdb</ConversionCdb>
+    <SeriesCdb>SeriesList.cdb</SeriesCdb>
+  </InnerFiles>
+  <LanguageFolder>language</LanguageFolder>
+  <LanguageFiles>
+    <MachineTxt>MachineSpecList.tbl</MachineTxt>
+    <MasterTxt>CharacterSpecList.tbl</MasterTxt>
+    <AbilityTxt>AbilitySpecList.tbl</AbilityTxt>
+  </LanguageFiles>
+  <Detection>
+    <Signature>MachineSpecList.cdb,WeaponSpecList.cdb,MachineConversionList.cdb</Signature>
+  </Detection>
+</GameProfile>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GGCREditorLib.GameProfile;
 
 namespace GGCREditor
 {
@@ -54,6 +55,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.MachineFile))
+                {
+                    return profile.MachineFile;
+                }
                 return PATH + "\\resident\\MachineSpecList.pkd";
             }
         }
@@ -62,6 +68,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.MasterFile))
+                {
+                    return profile.MasterFile;
+                }
                 return PATH + "\\resident\\CharacterSpecList.pkd";
             }
         }
@@ -70,6 +81,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.AbilityFile))
+                {
+                    return profile.AbilityFile;
+                }
                 return PATH + "\\resident\\AbilitySpecList.cdb";
             }
         }
@@ -78,6 +94,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.SpecProfileFile))
+                {
+                    return profile.SpecProfileFile;
+                }
                 return PATH + "\\resident\\SpecProfileList.cdb";
             }
         }
@@ -86,6 +107,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.AbilityTxtFile))
+                {
+                    return profile.AbilityTxtFile;
+                }
                 return PATH + @"\language\" + GGCRStaticConfig.Language + @"\AbilitySpecList.tbl";
             }
         }
@@ -94,6 +120,11 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.MachineTxtFile))
+                {
+                    return profile.MachineTxtFile;
+                }
                 return PATH + @"\language\" + GGCRStaticConfig.Language + @"\MachineSpecList.tbl";
             }
         }
@@ -102,7 +133,40 @@ namespace GGCREditor
         {
             get
             {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile != null && !string.IsNullOrEmpty(profile.MasterTxtFile))
+                {
+                    return profile.MasterTxtFile;
+                }
                 return PATH + @"\language\" + GGCRStaticConfig.Language + @"\CharacterSpecList.tbl";
+            }
+        }
+
+        public static void SyncWithActiveProfile()
+        {
+            try
+            {
+                IGGCGameProfile profile = GameContext.ActiveProfile;
+                if (profile == null)
+                {
+                    return;
+                }
+
+                MasterLength = profile.MasterLength;
+                MasterUIDLength = profile.MasterUIDLength;
+                GundamLength = profile.GundamLength;
+                GundamUIDLength = profile.GundamUIDLength;
+                WeaponLength = profile.WeaponLength;
+                WeaponUIDLength = profile.WeaponUIDLength;
+                GundamAbilityStart = profile.GundamAbilityStart;
+                GundamAbilityLength = profile.GundamAbilityLength;
+                PeopleAbilityLength = profile.PeopleAbilityLength;
+                OPAbilityLength = profile.OPAbilityLength;
+                WarAbilityLength = profile.WarAbilityLength;
+                XiaoGuoLength = profile.XiaoGuoLength;
+            }
+            catch
+            {
             }
         }
 

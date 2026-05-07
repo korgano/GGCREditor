@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameProfile>
+  <GameId>genesis</GameId>
+  <GameName>SD Gundam G Generation Genesis</GameName>
+  <DataStructures>
+    <MasterLength>112</MasterLength>
+    <MasterUIDLength>8</MasterUIDLength>
+    <GundamLength>108</GundamLength>
+    <GundamUIDLength>8</GundamUIDLength>
+    <WeaponLength>36</WeaponLength>
+    <WeaponUIDLength>10</WeaponUIDLength>
+    <GundamAbilityStart>48</GundamAbilityStart>
+    <GundamAbilityLength>16</GundamAbilityLength>
+    <PeopleAbilityLength>40</PeopleAbilityLength>
+    <OPAbilityLength>60</OPAbilityLength>
+    <WarAbilityLength>14</WarAbilityLength>
+    <XiaoGuoLength>132</XiaoGuoLength>
+  </DataStructures>
+  <FilePaths>
+    <ResidentFolder></ResidentFolder>
+    <MachineFile>machinespeclist.pkd</MachineFile>
+    <MasterFile>characterspeclist.pkd</MasterFile>
+    <AbilityFile>abilityspeclist.cdb</AbilityFile>
+    <SpecProfileFile>profilelist.pkd</SpecProfileFile>
+  </FilePaths>
+  <InnerFiles>
+    <GundamCdb>MachineSpecList.cdb</GundamCdb>
+    <WeaponCdb>WeaponSpecList.cdb</WeaponCdb>
+    <MasterCdb>CharacterSpecList.cdb</MasterCdb>
+    <ConversionCdb>MachineConversionList.cdb</ConversionCdb>
+    <SeriesCdb>SeriesList.cdb</SeriesCdb>
+    <GrowthCdb>MachineGrowthList.cdb</GrowthCdb>
+    <DevelopmentCdb>MachineDevelopmentList.cdb</DevelopmentCdb>
+  </InnerFiles>
+  <LanguageFolder>language</LanguageFolder>
+  <LanguageFiles>
+    <MachineTxt>machinespeclist.tbl</MachineTxt>
+    <MasterTxt>characterspeclist.tbl</MasterTxt>
+    <AbilityTxt>abilityspeclist.tbl</AbilityTxt>
+  </LanguageFiles>
+  <Detection>
+    <Signature>machinespeclist.pkd,characterspeclist.pkd,abilityspeclist.cdb</Signature>
+  </Detection>
+  <Notes>Files are directly in data folder (no resident subfolder). Record sizes need verification.</Notes>
+</GameProfile>

@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
+using GGCREditorLib.GameProfile;
 
 namespace GGCREditor
 {
@@ -19,6 +20,8 @@ namespace GGCREditor
         public FrmMain()
         {
             InitializeComponent();
+            UILanguageManager.Initialize();
+            GGCREditorLib.Logger.Initialize();
         }
 
         private string currentDir = null;
@@ -26,7 +29,7 @@ namespace GGCREditor
         private void 选择路径ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog dialog = new FolderBrowserDialog();
-            dialog.Description = "Please set the directory where the FireWire data folder is located";
+            dialog.Description = "Please set the directory where the game data folder is located";
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             if (config.AppSettings.Settings["path"] != null)
             {
@@ -37,7 +40,8 @@ namespace GGCREditor
             {
                 if (!dialog.SelectedPath.EndsWith("data"))
                 {
-                    MessageBox.Show("Please select the data folder of [FireWire]", "Directory is invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    GGCREditorLib.Logger.LogDebug(string.Format("Data folder set FAILED: path does not end with 'data': {0}", dialog.SelectedPath));
+                    MessageBox.Show("Game files must be in a folder named 'data'.", "Directory is invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -50,6 +54,20 @@ namespace GGCREditor
 
                     this.currentDir = dialog.SelectedPath;
                     GGCRStaticConfig.PATH = this.currentDir;
+                    GGCREditorLib.Logger.LogDebug(string.Format("Data folder set: {0}", this.currentDir));
+
+                    GameDetector.DetectionResult detection = GameDetector.Detect(this.currentDir);
+                    if (detection != null && detection.Confidence > 0)
+                    {
+                        string selectedGameId = GameConfirmationDialog.ShowAndGetResult(detection);
+                        if (!string.IsNullOrEmpty(selectedGameId))
+                        {
+                            GameProfileManager.Instance.SetActiveProfileById(selectedGameId);
+                            GameProfileManager.Instance.SetProfilePath(this.currentDir);
+                        }
+                    }
+
+                    GGCRStaticConfig.SyncWithActiveProfile();
                     enableAll();
                     tslblDir.Text = this.currentDir;
                 }
@@ -65,6 +83,10 @@ namespace GGCREditor
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            UILanguageManager.Initialize();
+            GGCREditorLib.Logger.Initialize();
+            GGCREditorLib.Logger.LogDebug("Application started");
+
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
             if (config.AppSettings.Settings["path"] != null)
@@ -72,6 +94,16 @@ namespace GGCREditor
                 this.currentDir = config.AppSettings.Settings["path"].Value;
                 tslblDir.Text = this.currentDir;
                 GGCRStaticConfig.PATH = this.currentDir;
+                GGCREditorLib.Logger.LogDebug(string.Format("Data folder loaded from config: {0}", this.currentDir));
+
+                GameDetector.DetectionResult detection = GameDetector.Detect(this.currentDir);
+                if (detection != null && detection.Confidence > 0 && detection.Profile != null)
+                {
+                    GameProfileManager.Instance.SetActiveProfile(detection.Profile);
+                    GameProfileManager.Instance.SetProfilePath(this.currentDir);
+                    GGCRStaticConfig.SyncWithActiveProfile();
+                }
+
                 enableAll();
             }
 
@@ -150,6 +182,7 @@ namespace GGCREditor
             showGameLanguage(gameLanguage);
             showUILanguage(uiLanguage);
             showLinkLanguages(linkLanguages);
+            showLoggingLevel();
 
             UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
         }
@@ -159,6 +192,7 @@ namespace GGCREditor
             showUILanguage(UILanguageManager.UILanguage);
             showGameLanguage(UILanguageManager.GameLanguage);
             showLinkLanguages(UILanguageManager.LinkLanguages);
+            ApplyLanguage();
         }
 
         private void enableAll()
@@ -291,7 +325,7 @@ namespace GGCREditor
 
         private void showUILanguage(string language)
         {
-            foreach (ToolStripDropDownItem item in tsmiUILanguage.DropDownItems)
+            foreach (ToolStripItem item in tsmiUILanguage.DropDownItems)
             {
                 if (item is ToolStripMenuItem && item.Tag != null)
                 {
@@ -311,6 +345,60 @@ namespace GGCREditor
         {
             tsmiLinkLanguages.Checked = linked;
             tsmiLinkLanguages.CheckState = linked ? CheckState.Checked : CheckState.Unchecked;
+        }
+
+        private void tsmiLogLevel_Click(object sender, EventArgs e)
+        {
+            string level = (sender as ToolStripMenuItem).Tag.ToString();
+            GGCREditorLib.Logger.CurrentLevel = (GGCREditorLib.LogLevel)Enum.Parse(typeof(GGCREditorLib.LogLevel), level);
+            GGCREditorLib.Logger.SaveToConfig();
+            showLoggingLevel();
+            GGCREditorLib.Logger.LogDebug(string.Format("Log level changed to: {0}", level));
+        }
+
+        private void showLoggingLevel()
+        {
+            GGCREditorLib.LogLevel level = GGCREditorLib.Logger.CurrentLevel;
+            tsmiLogOff.Checked = false;
+            tsmiLogDebug.Checked = false;
+            tsmiLogEdits.Checked = false;
+
+            switch (level)
+            {
+                case GGCREditorLib.LogLevel.Off:
+                    tsmiLogOff.Checked = true;
+                    break;
+                case GGCREditorLib.LogLevel.Debug:
+                    tsmiLogDebug.Checked = true;
+                    break;
+                case GGCREditorLib.LogLevel.Edits:
+                    tsmiLogEdits.Checked = true;
+                    break;
+            }
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("AppTitle");
+            this.文件ToolStripMenuItem.Text = StringResources.Get("Menu_File");
+            this.选择路径ToolStripMenuItem.Text = StringResources.Get("Menu_SetDataPath");
+            this.tsmiLanguage.Text = StringResources.Get("Menu_GameLanguage");
+            this.tsmiUILanguage.Text = StringResources.Get("Menu_UILanguage");
+            this.tsmiLinkLanguages.Text = StringResources.Get("Menu_LinkLanguages");
+            this.toolsToolStripMenuItem.Text = StringResources.Get("Menu_Tools");
+
+            this.btnEditMaster.Text = StringResources.Get("Btn_EditMaster");
+            this.btnEditGundam.Text = StringResources.Get("Btn_EditGundam");
+            this.btnEditWeapon.Text = StringResources.Get("Btn_EditWeapon");
+            this.btnEditPeopleText.Text = StringResources.Get("Btn_EditPeopleText");
+            this.btnEditMachineTxt.Text = StringResources.Get("Btn_EditMachineTxt");
+            this.btnEditMachineDesc.Text = StringResources.Get("Btn_EditMachineDesc");
+            this.btnEditAbilityText.Text = StringResources.Get("Btn_EditAbilityText");
+            this.btnEditAbility.Text = StringResources.Get("Btn_EditAbility");
+            this.btnEditTBL.Text = StringResources.Get("Btn_EditTBL");
+
+            this.tslblDir.Text = StringResources.Get("Status_SetDataPath");
+            this.label1.Text = StringResources.Get("Label_Credits");
         }
 
     }

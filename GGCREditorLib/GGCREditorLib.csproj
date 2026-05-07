@@ -31,12 +31,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ByteHelper.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="CDBItem\Ability\OPInfo.cs" />
     <Compile Include="CDBItem\Ability\PersonAbility.cs" />
     <Compile Include="CDBItem\Ability\AbstractAbility.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="CDBItem\GGCRUnitInfo.cs" />
     <Compile Include="GGCRUtil.cs" />
     <Compile Include="UILanguageManager.cs" />
+    <Compile Include="StringResources.cs" />
     <Compile Include="GGCRResource\GundamFile.cs" />
     <Compile Include="GGCRResource\AbilitySpecFile.cs" />
     <Compile Include="CDBItem\WeaponInfo.cs" />
@@ -64,6 +67,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CDBItem\WeaponMapInfo.cs" />
     <Compile Include="CDBItem\WeaponNormalInfo.cs" />
+    <Compile Include="GameProfile\IGGCGameProfile.cs" />
+    <Compile Include="GameProfile\ProfileLoader.cs" />
+    <Compile Include="GameProfile\GameProfileManager.cs" />
+    <Compile Include="GameProfile\GameDetector.cs" />
+    <Compile Include="GameProfile\GameContext.cs" />
+    <Content Include="GameProfile\CrossRays.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GameProfile\Genesis.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

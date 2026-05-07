@@ -55,6 +55,19 @@
             this.btnEditAbility = new System.Windows.Forms.Button();
             this.btnEditTBL = new System.Windows.Forms.Button();
             this.flowContainer2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLogOff = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLogDebug = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLogEdits = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILanguage = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangSchinese = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangTchineseHK = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangTchineseTW = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangEnglish = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangJapanese = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUILangKorean = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiLinkLanguages = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.flowContainer.SuspendLayout();
@@ -65,12 +78,47 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.文件ToolStripMenuItem});
+            this.文件ToolStripMenuItem,
+            this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(782, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiLogOff,
+            this.tsmiLogDebug,
+            this.tsmiLogEdits});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.toolsToolStripMenuItem.Text = "工具(Tools)";
+            // 
+            // tsmiLogOff
+            // 
+            this.tsmiLogOff.Name = "tsmiLogOff";
+            this.tsmiLogOff.Size = new System.Drawing.Size(188, 26);
+            this.tsmiLogOff.Tag = "Off";
+            this.tsmiLogOff.Text = "日志: 关闭 (Logging Off)";
+            this.tsmiLogOff.Click += new System.EventHandler(this.tsmiLogLevel_Click);
+            // 
+            // tsmiLogDebug
+            // 
+            this.tsmiLogDebug.Name = "tsmiLogDebug";
+            this.tsmiLogDebug.Size = new System.Drawing.Size(188, 26);
+            this.tsmiLogDebug.Tag = "Debug";
+            this.tsmiLogDebug.Text = "日志: 调试 (Logging Debug)";
+            this.tsmiLogDebug.Click += new System.EventHandler(this.tsmiLogLevel_Click);
+            // 
+            // tsmiLogEdits
+            // 
+            this.tsmiLogEdits.Name = "tsmiLogEdits";
+            this.tsmiLogEdits.Size = new System.Drawing.Size(188, 26);
+            this.tsmiLogEdits.Tag = "Edits";
+            this.tsmiLogEdits.Text = "日志: 编辑记录 (Logging Edits)";
+            this.tsmiLogEdits.Click += new System.EventHandler(this.tsmiLogLevel_Click);
             // 
             // 文件ToolStripMenuItem
             // 
@@ -475,6 +523,10 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiUILangKorean;
         private System.Windows.Forms.ToolStripSeparator tsmiSeparator1;
         private System.Windows.Forms.ToolStripMenuItem tsmiLinkLanguages;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLogOff;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLogDebug;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLogEdits;
     }
 }
 

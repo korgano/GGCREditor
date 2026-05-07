@@ -18,6 +18,8 @@ namespace GGCREditor
             InitializeComponent();
             this.gundamFile = new GundamFile();
             tslblFile.Text = gundamFile.FileName;
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         public FrmEditWeapon(GundamFile gundanFile, GundamInfo gundamInfo)
@@ -27,6 +29,8 @@ namespace GGCREditor
 
             this.gundamFile = gundanFile;
             this.gundamInfo = gundamInfo;
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         private GundamInfo gundamInfo;
@@ -117,6 +121,7 @@ namespace GGCREditor
             lsGundam.DataSource = weapons;
             lsGundam.DisplayMember = "UnitName";
             lsGundam.ValueMember = "Address";
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading Weapon list, count: {0}", weapons.Count));
         }
 
 
@@ -334,6 +339,7 @@ namespace GGCREditor
                 }
 
                 weapon.Save();
+                GGCREditorLib.Logger.LogEdit(string.Format("Saving Weapon: {0}", weapon.UnitName));
 
                 weapon.Refresh();
                 LoadData(weapon);
@@ -528,6 +534,55 @@ namespace GGCREditor
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_Weapon");
+            this.label19.Text = StringResources.Get("Label_Search");
+            this.groupBox1.Text = StringResources.Get("Group_Attributes");
+            this.btnSave.Text = StringResources.Get("Btn_Save");
+            this.btnBatchImport.Text = StringResources.Get("Btn_BatchImport");
+            this.btnExport.Text = StringResources.Get("Btn_Export");
+            this.button1.Text = StringResources.Get("Btn_Import");
+
+            this.label1.Text = StringResources.Get("Label_Power");
+            this.label2.Text = StringResources.Get("Label_EN");
+            this.label3.Text = StringResources.Get("Label_MP");
+            this.label14.Text = StringResources.Get("Label_Range");
+            this.label8.Text = StringResources.Get("Label_HitCount");
+            this.label9.Text = StringResources.Get("Label_Crit");
+            this.label11.Text = StringResources.Get("Label_HitRate");
+            this.label25.Text = StringResources.Get("Label_MapType");
+            this.label24.Text = StringResources.Get("Label_MapTurn");
+            this.label26.Text = StringResources.Get("Label_TargetCount");
+            this.label13.Text = StringResources.Get("Label_Terrain_Space");
+            this.label15.Text = StringResources.Get("Label_Terrain_Air");
+            this.label20.Text = StringResources.Get("Label_Terrain_Ground");
+            this.label21.Text = StringResources.Get("Label_Terrain_Water");
+            this.label22.Text = StringResources.Get("Label_Terrain_Underwater");
+            this.chkUse5.Text = StringResources.Get("Label_Terrain_Underwater");
+            this.chkUse4.Text = StringResources.Get("Label_Terrain_Water");
+            this.chkUse3.Text = StringResources.Get("Label_Terrain_Ground");
+            this.chkUse2.Text = StringResources.Get("Label_Terrain_Air");
+            this.chkUse1.Text = StringResources.Get("Label_Terrain_Space");
+
+            this.label12.Text = StringResources.Get("Label_ID");
+            this.label17.Text = StringResources.Get("Label_Name");
+            this.lblAddress.Text = StringResources.Get("Label_Address");
+            this.label16.Text = StringResources.Get("Label_MP");
+            this.label6.Text = StringResources.Get("Label_Effect");
+            this.label10.Text = StringResources.Get("Label_Suitability");
+            this.label7.Text = StringResources.Get("Label_AttackAfterMove");
+            this.label5.Text = StringResources.Get("Label_Icon");
+            this.label23.Text = StringResources.Get("Group_Attributes");
+
+            this.tsmiLblState.Text = StringResources.Get("Status_Waiting");
         }
     }
 }

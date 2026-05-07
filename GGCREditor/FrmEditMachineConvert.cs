@@ -30,6 +30,8 @@ namespace GGCREditor
             InitializeComponent();
 
             this.fromUuid = fromUuid;
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
 
@@ -70,6 +72,7 @@ namespace GGCREditor
             cboAction.ValueMember = "Key";
 
             this.gundams = gundamFile.ListMachines();
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading MachineConvert list, count: {0}", gundams.Count));
 
             foreach (GundamInfo g in gundams)
             {
@@ -194,6 +197,7 @@ namespace GGCREditor
                 convert.To = (cboTo.SelectedItem as GundamInfo).UUID;
                 convert.Action = int.Parse(cboAction.SelectedValue.ToString());
 
+                GGCREditorLib.Logger.LogEdit(string.Format("Saving MachineConvert: {0} -> {1}", convert.From, convert.To));
                 convert.Save();
 
                 loadData();
@@ -256,6 +260,19 @@ namespace GGCREditor
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_MachineConvert");
+            this.label1.Text = StringResources.Get("Label_SourceFile");
+            this.label2.Text = StringResources.Get("Label_TargetFile");
+            
         }
     }
 }

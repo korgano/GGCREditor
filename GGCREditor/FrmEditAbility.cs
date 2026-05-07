@@ -15,6 +15,8 @@ namespace GGCREditor
         public FrmEditAbility()
         {
             InitializeComponent();
+            UILanguageManager.LanguageChanged += new EventHandler(OnLanguageChanged);
+            ApplyLanguage();
         }
 
         AbilitySpecFile file;
@@ -41,6 +43,7 @@ namespace GGCREditor
             }
 
             tsmiFile.Text = file.FileName;
+            GGCREditorLib.Logger.LogDebug(string.Format("Loading Ability list, count: {0}", abilitys.Count));
 
             cboSkill.DataSource = xiaoguos;
             cboSkill.ValueMember = "SkillId";
@@ -305,6 +308,7 @@ namespace GGCREditor
                         ability.SetUnitName(txtName.Text);
                     }
                     //保存技能编号
+                    GGCREditorLib.Logger.LogEdit(string.Format("Saving Ability: {0}", ability.UnitName));
                     ability.Save();
                 }
 
@@ -398,6 +402,7 @@ namespace GGCREditor
                     xiaoguo.RemarkDetail = txtXiaoGuoRemark.Text.Replace("\r\n", "\n");
                 }
 
+                GGCREditorLib.Logger.LogEdit(string.Format("Saving XiaoGuoAbility: {0}", xiaoguo.UnitName));
                 xiaoguo.Save();
 
                 tsmiState.Text = "写入成功";
@@ -470,6 +475,16 @@ namespace GGCREditor
 
                 MessageBox.Show("创建成功,请修改数据", "操作提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void OnLanguageChanged(object sender, EventArgs e)
+        {
+            ApplyLanguage();
+        }
+
+        public void ApplyLanguage()
+        {
+            this.Text = StringResources.Get("Form_Ability");
         }
     }
 }

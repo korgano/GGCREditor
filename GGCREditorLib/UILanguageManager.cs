@@ -9,6 +9,7 @@ namespace GGCREditor
         private static string _uiLanguage = "english";
         private static string _gameLanguage = "schinese";
         private static bool _linkLanguages = true;
+        private static bool _initialized = false;
 
         public static event EventHandler LanguageChanged;
 
@@ -30,6 +31,13 @@ namespace GGCREditor
             "한국어"
         };
 
+        public static void Initialize()
+        {
+            if (_initialized) return;
+            StringResources.Initialize();
+            _initialized = true;
+        }
+
         public static string UILanguage
         {
             get { return _uiLanguage; }
@@ -38,6 +46,7 @@ namespace GGCREditor
                 if (_uiLanguage != value && !string.IsNullOrEmpty(value))
                 {
                     _uiLanguage = value;
+                    StringResources.SetLanguage(value);
                     OnLanguageChanged();
                 }
             }
